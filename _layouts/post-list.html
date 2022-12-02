@@ -1,0 +1,14 @@
+---
+layout: post
+title: Blog
+---
+<ul>
+  {% for post in site.posts %}
+ 
+    <li class="list-inline-item">
+      <time class="headings">{{ post.date | date: "%b %-d, %Y" }}</time>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <!-- <p>{{ post.excerpt }}</p> -->
+    </li>
+  {% endfor %}
+</ul>
