@@ -1,27 +1,27 @@
 @font-face {
   font-family: Edmondsans;
-  src: url(/static/fonts/edmondsans-regular-webfont.ttf);
+  src: url(../fonts/edmondsans-regular-webfont.ttf);
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: Edmondsans;
-  src: url(/static/fonts/edmondsans-medium-webfont.ttf);
+  src: url(../fonts/edmondsans-medium-webfont.ttf);
   font-style: normal;
   font-weight: 500;
 }
 
 @font-face {
   font-family: Edmondsans;
-  src: url(/static/fonts/edmondsans-bold-webfont.ttf);
+  src: url(../fonts/edmondsans-bold-webfont.ttf);
   font-style: normal;
   font-weight: 700;
 }
 
 @font-face {
   font-family: southAfrica;
-  src: url(/static/fonts/southafirkas.ttf);
+  src: url(../fonts/southafirkas.ttf);
   font-style: normal;
   font-weight: 400;
 
@@ -29,14 +29,14 @@
 
 @font-face {
   font-family: Circular Std;
-  src: url(/static/fonts/CircularStd-Bold.otf);
+  src: url(../fonts/CircularStd-Bold.otf);
   font-style: normal;
   font-weight: 700;
 }
 
 @font-face {
   font-family: Circular Std;
-  src: url(/static/fonts/CircularStd-BoldItalic.otf);
+  src: url(../fonts/CircularStd-BoldItalic.otf);
   font-style: italic;
   font-weight: 700;
 }
@@ -44,42 +44,42 @@
 
 @font-face {
   font-family: Circular Std;
-  src: url(/static/fonts/CircularStd-Book.otf);
+  src: url(../fonts/CircularStd-Book.otf);
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: Circular Std;
-  src: url(/static/fonts/CircularStd-BookItalic.otf);
+  src: url(../fonts/CircularStd-BookItalic.otf);
   font-style: italic;
   font-weight: 400;
 }
 
 @font-face {
   font-family: Circular Std;
-  src: url(/static/fonts/CircularStd-BlackItalic.otf);
+  src: url(../fonts/CircularStd-BlackItalic.otf);
   font-style: italic;
   font-weight: 700;
 }
 
 @font-face {
   font-family: Circular Std;
-  src: url(/static/fonts/CircularStd-Black.otf);
+  src: url(../fonts/CircularStd-Black.otf);
   font-style: normal;
   font-weight: 700;
 }
 
 @font-face {
   font-family: Circular Std;
-  src: url(/static/fonts/CircularStd-Medium.otf);
+  src: url(../fonts/CircularStd-Medium.otf);
   font-style: normal;
   font-weight: 500;
 }
 
 @font-face {
   font-family: Circular Std;
-  src: url(/static/fonts/CircularStd-MediumItalic.otf);
+  src: url(../fonts/CircularStd-MediumItalic.otf);
   font-style: italic;
   font-weight: 500;
 }
@@ -134,7 +134,7 @@ header {
     left: 814px;
     top: 40px;
     /* svg */
-    background: url(/static/img/site/mic.svg);
+    background: url(../img/site/mic.svg);
 }
 
 .heading-title {
