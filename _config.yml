@@ -5,10 +5,10 @@ description: |
   DjangoCon Africa 2023 conference will take place in 
   from November 9-13, 2023!
 enforce_ssl: "2023.djangocon.africa"
-baseurl: "" 
-url: "https://2023.djangocon.africa" 
+baseurl: "/2023.djangocon.africa" 
+url: "https://djangocon.github.io" 
 twitter_username: djcafrica
-logo: static/images/djcafricalogo.png
+logo: /static/images/logo.svg
 relative_permalinks: false
 permalink: news/:title/ 
 
@@ -18,7 +18,7 @@ markdown: kramdown
 
 include:
 - _pages
-- static
+# - static/
 
 sass:
     style: compressed
