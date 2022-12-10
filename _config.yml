@@ -41,3 +41,14 @@ slack: ""
 opportunity_grant_application: ""
 sponsorship_prospectus: ""
 ticket_link: ""
+
+# DjangoCons
+djc_us: "https://djangocon.us"
+djc_eu: "https://djangocon.eu"
+djc_au: "https://djangocon.com.au"
+
+# DjangoCon Africa Social Links
+twitter: "https://twitter.com/djcafrica"
+facebook: "https://www.facebook.com/djcafrica/"
+instagram: "https://www.instagram.com/djcafrica/"
+github: "https://github.com/djangocon"
