@@ -212,6 +212,8 @@ footer .links {
 
 .link {
   cursor: pointer;
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
 .link:hover {
