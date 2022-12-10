@@ -58,7 +58,7 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rexml (3.2.5)
-    rouge (3.30.0)
+    rouge (4.0.0)
     safe_yaml (1.0.5)
     sassc (2.4.0)
       ffi (~> 1.9)
@@ -68,9 +68,7 @@ GEM
     webrick (1.7.0)
 
 PLATFORMS
-  arm64-darwin-21
   arm64-darwin-22
-  x86_64-linux
 
 DEPENDENCIES
   http_parser.rb (~> 0.6.0)

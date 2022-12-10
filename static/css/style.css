@@ -123,7 +123,7 @@ a:hover {
 
 header {
   background-color: #35ffce;
-  height: 574px;
+  height: 785px;
 }
 
 .mic {
@@ -132,7 +132,6 @@ header {
   height: 76px;
   left: 814px;
   top: 40px;
-  /* svg */
   background: url(/static/img/site/mic.svg);
 }
 
@@ -177,12 +176,10 @@ footer {
 footer .content {
   padding-top: 30px;
   padding-bottom: 5px;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
   border-bottom: 2px solid black;
 }
 
@@ -200,13 +197,11 @@ footer .content {
 footer .links {
   margin-top: 20px;
   margin-bottom: 20px;
-
   font-family: "Edmondsans";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -221,4 +216,7 @@ footer .links {
 .designer,
 .link:hover {
   text-decoration: underline;
+}
+.djc-events a{
+  text-decoration: none;
 }
