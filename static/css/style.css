@@ -159,7 +159,7 @@ header {
   line-height: 30px;
   color: #000000;
   overflow-wrap: break-word;
-}
+}appointment
 
 /* footer */
 footer {
@@ -220,3 +220,35 @@ footer .links {
 .djc-events a{
   text-decoration: none;
 }
+
+.djc-default {
+  font-family: "Edmondsans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.djc-default >.h1 {
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 73px;
+  color: black;
+  width: 388px;
+  height: 146px;
+  margin-left: -30%;
+}
+
+.djc-default > hr {
+  display: none;
+}
+
+.djc-default > ul {
+  list-style-type:' • ';
+}
+
+.djc-default > li { 
+  padding-left: 10px
+} 
