@@ -221,18 +221,17 @@ footer .links {
   text-decoration: none;
 }
 
-nav {
-  border-bottom: 2px solid black;
-  padding: 20px 0;
-  font-family: "Edmondsans";
-  margin-bottom: 100px;
-}
-
 .nav {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 2px solid black;
+  padding: 20px 0;
+  font-family: "Edmondsans";
+  margin-bottom: 100px;
+  z-index: 100;
 }
 
 nav .date {
@@ -255,7 +254,6 @@ nav button {
   display: flex;
   flex-direction: row;
   align-items: center;
-
   cursor: pointer;
   background: #fffae9;
   border: 2px solid #000000;
@@ -285,6 +283,16 @@ nav .menu {
   transform: translateY(-100%);
   transition: transform 0.2s;
   top: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  z-index: 99;
+  width: 100%;
+  background: #fffae9;
+  padding-top: 160px;
+  padding-bottom: 70px;
+  padding-right: 250px;
+  padding-left: 250px;
 }
 
 nav .showMenu {
