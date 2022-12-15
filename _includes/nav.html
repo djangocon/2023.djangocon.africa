@@ -39,11 +39,12 @@
     </div>
   </div>
   <ul class="menu">
-    <li><a class="menuItem" href="#">About</a></li>
-    <li><a class="menuItem" href="#">Talks</a></li>
-    <li><a class="menuItem" href="#">Grants</a></li>
-    <li><a class="menuItem" href="#">Sponsors</a></li>
-    <li><a class="menuItem" href="#">Conduct</a></li>
-    <li><a class="menuItem" href="#">News</a></li>
+    {% for item in site.data.nav %}
+    <li>
+      <a class="menuItem {% if item.link == page.url %} active {% endif %}" href="{{ item.link }}"
+        >{{ item.name }}</a
+      >
+    </li>
+    {% endfor %}
   </ul>
 </nav>

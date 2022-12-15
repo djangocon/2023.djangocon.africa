@@ -286,7 +286,6 @@ nav .menu {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  z-index: 99;
   width: 100%;
   background: #fffae9;
   padding-top: 160px;
@@ -311,6 +310,7 @@ nav .menu .menuItem {
   padding-bottom: 10px;
 }
 
-nav .menu .menuItem:hover {
+nav .menu .menuItem:hover,
+nav .active {
   border-bottom: 2px solid #000000;
 }
