@@ -298,3 +298,19 @@ nav .menu {
 nav .showMenu {
   transform: translateY(0);
 }
+
+nav .menu .menuItem {
+  font-family: "Edmondsans";
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+
+nav .menu .menuItem:hover {
+  border-bottom: 2px solid #000000;
+}
