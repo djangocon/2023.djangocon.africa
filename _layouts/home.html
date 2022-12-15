@@ -26,31 +26,32 @@
 
     <section>{% include info.html %}</section>
 
-    <div class="heading-title">
-      <h3 class="text">OUR ROADMAP</h3>
-    </div>
-    <div class="mic"></div>
-    <div class="heading-title">
-      <h3 class="text">SPEAKERS</h3>
-      <p class="sub-text">
-        We will soon announce call for abstracts. So if you’re planning to speak
-        at DjangoCon Africa, be on the lookout!<br />Learn more about speaking
-        at DjangoCon Africa by <strong><a href="#">clicking here</a></strong
-        >.
-      </p>
-    </div>
+    <section>{% include roadmap.html %}</section>
 
-    {% include sponsors.html %} {% include footer.html %}
-    <script
-      src="//code.tidio.co/ypalbp3puqa6ycruaz2ujgjuudsphjwz.js"
-      async
-    ></script>
+    <section class="mini-container">
+      <div class="mic"></div>
+      <div>
+        <h3 class="heading">SPEAKERS</h3>
+        <p class="sub-text">
+          We will soon announce call for abstracts. So if you’re planning to speak at DjangoCon
+          Africa, be on the lookout!<br />Learn more about speaking at DjangoCon Africa by
+          <strong><a href="#">clicking here</a></strong
+          >.
+        </p>
+      </div>
+    </section>
+
+    <section class="mini-container">{% include sponsors.html %}</section>
+
+    <footer>{% include footer.html %}</footer>
+
+    <script src="//code.tidio.co/ypalbp3puqa6ycruaz2ujgjuudsphjwz.js" async />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
-    ></script>
-    <script src="/static/js/main.js"></script>
+    />
+    <script src="static/js/main.js" />
     {% include analytics.html %}
   </body>
 </html>

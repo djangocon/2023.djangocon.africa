@@ -130,14 +130,7 @@ a:hover {
   background: url(/static/img/site/mic.svg);
 }
 
-.heading-title {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding-left: 243px;
-  padding-right: 243px;
-}
-
-.heading-title .text {
+.heading {
   line-height: 34px;
   font-family: "southAfrica";
   font-size: 30px;
@@ -422,5 +415,6 @@ ul {
   font-size: 40px;
   line-height: 64px;
   margin-top: 150px;
+  margin-bottom: 150px;
 }
 
