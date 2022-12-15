@@ -217,6 +217,55 @@ footer .links {
 .link:hover {
   text-decoration: underline;
 }
-.djc-events a{
+.djc-events a {
   text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+  padding: 20px 0;
+  font-family: "Edmondsans";
+
+  margin-bottom: 100px;
+}
+nav .date {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  text-align: left;
+
+  color: #000000;
+}
+
+nav .button {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  background: #fffae9;
+  border: 2px solid #000000;
+}
+
+nav .ticket {
+  font-family: "Edmondsans";
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  color: #000000;
+}
+
+nav .hamburger {
+  padding: 11px 8px;
 }
