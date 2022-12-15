@@ -279,7 +279,7 @@ nav .closeIcon {
 }
 
 nav .menu {
-  position: fixed;
+  position: absolute;
   transform: translateY(-100%);
   transition: transform 0.2s;
   top: 0;
