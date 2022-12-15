@@ -169,6 +169,13 @@ footer {
   padding: 0;
 }
 
+.mini-container {
+  width: 953px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+}
+
 footer .content {
   padding-top: 30px;
   padding-bottom: 5px;
@@ -357,6 +364,7 @@ nav .active {
   position: absolute;
   top: 570px;
 }
+
 .djc-default {
   font-family: "Edmondsans";
   font-style: normal;
@@ -399,3 +407,20 @@ ul {
   padding-top: 30px;
   width: 832px;
 } 
+
+
+.django-svg {
+  position: absolute;
+  left: 380px;
+  top: 1350px;
+}
+
+.info {
+  font-family: "Circular Std";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 64px;
+  margin-top: 150px;
+}
+
