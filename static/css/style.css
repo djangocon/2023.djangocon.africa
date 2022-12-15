@@ -316,6 +316,7 @@ nav .active {
 
 .hero {
   background-color: #35ffce;
+  padding-bottom: 150px;
 }
 
 .hero-text {
@@ -326,7 +327,7 @@ nav .active {
   font-size: 65px;
   line-height: 73px;
   padding-top: 100px;
-  width: 75%;
+  width: 80%;
   margin-bottom: 10px;
 }
 
@@ -346,9 +347,12 @@ nav .active {
   color: #000000;
 }
 
-.hero .header-img {
-  width: 100%;
-  margin-top: 60px;
-  margin-right: auto;
-  margin-left: auto;
+.hero-empty {
+  background: #fffae9;
+  height: 470px;
+}
+
+.header-img {
+  position: absolute;
+  top: 55%;
 }
