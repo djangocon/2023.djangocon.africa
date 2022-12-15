@@ -222,15 +222,19 @@ footer .links {
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   border-bottom: 2px solid black;
   padding: 20px 0;
   font-family: "Edmondsans";
-
   margin-bottom: 100px;
 }
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 nav .date {
   font-style: normal;
   font-weight: 400;
@@ -252,6 +256,7 @@ nav button {
   flex-direction: row;
   align-items: center;
 
+  cursor: pointer;
   background: #fffae9;
   border: 2px solid #000000;
 }
@@ -267,5 +272,21 @@ nav .ticket {
 }
 
 nav .hamburger {
-  padding: 11px 8px;
+  padding: 11px 9px;
+}
+
+nav .closeIcon {
+  display: none;
+  margin: 0 5px;
+}
+
+nav .menu {
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+}
+
+nav .showMenu {
+  transform: translateY(0);
 }
