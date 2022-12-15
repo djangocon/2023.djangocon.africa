@@ -163,7 +163,7 @@ footer {
 }
 
 .container {
-  max-width: 85%;
+  max-width: 1195px;
   margin-right: auto;
   margin-left: auto;
   padding: 0;
@@ -316,7 +316,6 @@ nav .active {
 
 .hero {
   background-color: #35ffce;
-  padding-bottom: 340px;
 }
 
 .hero-text {
@@ -345,4 +344,11 @@ nav .active {
   line-height: 33px;
   width: 500px;
   color: #000000;
+}
+
+.hero .header-img {
+  width: 100%;
+  margin-top: 60px;
+  margin-right: auto;
+  margin-left: auto;
 }
