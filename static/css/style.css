@@ -138,8 +138,6 @@ a:hover {
 }
 
 .sub-text {
-  width: 953px;
-  left: 244px;
   font-family: "Edmondsans";
   font-style: normal;
   font-weight: 400;
@@ -420,4 +418,28 @@ ul {
 
 .speaker {
   margin-bottom: 150px;
+}
+
+.sponsors .sub-heading {
+  font-family: "Edmondsans";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+  margin-bottom: 20px;
+}
+
+.sponsor-section {
+  margin-bottom: 60px;
+}
+
+.sponsor-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.sponsor {
+  background: #f9f1d6;
+  padding: 12px 19px;
+  width: auto;
 }
