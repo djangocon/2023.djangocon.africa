@@ -84,14 +84,9 @@ $ git push origin develop
 
 ## Contributors ✨
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
+ <a href="https://github.com/djangocon/2023.djangocon.africa/graphs/contributors">
+   <img src="https://contrib.rocks/image?repo=djangocon/2023.djangocon.africa"/>
+ </a>
 
 ## License
 
