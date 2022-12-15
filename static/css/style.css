@@ -121,11 +121,6 @@ a:hover {
   color: #010101;
 }
 
-header {
-  background-color: #35ffce;
-  height: 785px;
-}
-
 .mic {
   position: relative;
   width: 100px;
@@ -171,6 +166,7 @@ footer {
   max-width: 85%;
   margin-right: auto;
   margin-left: auto;
+  padding: 0;
 }
 
 footer .content {
@@ -221,6 +217,10 @@ footer .links {
   text-decoration: none;
 }
 
+nav {
+  background-color: #35ffce;
+}
+
 .nav {
   position: relative;
   display: flex;
@@ -230,7 +230,6 @@ footer .links {
   border-bottom: 2px solid black;
   padding: 20px 0;
   font-family: "Edmondsans";
-  margin-bottom: 100px;
   z-index: 100;
 }
 
@@ -313,4 +312,37 @@ nav .menu .menuItem {
 nav .menu .menuItem:hover,
 nav .active {
   border-bottom: 2px solid #000000;
+}
+
+.hero {
+  background-color: #35ffce;
+  padding-bottom: 340px;
+}
+
+.hero-text {
+  padding: 0;
+  font-family: "Circular Std";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 73px;
+  padding-top: 100px;
+  width: 75%;
+  margin-bottom: 10px;
+}
+
+.hero .description {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.hero .description .text {
+  font-family: "Edmondsans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  width: 500px;
+  color: #000000;
 }
