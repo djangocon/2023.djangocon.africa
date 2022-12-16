@@ -3,128 +3,26 @@
 
   <!-- Roadmaps -->
   <div class="roadmaps">
-    <!-- Month Roadmap -->
-
-    <!-- May -->
+    {% for month in site.data.roadmap %}
+    <!-- {{ month.month }} -->
     <div class="roadmap">
-      <div class="month sub-heading">May</div>
+      <div class="month sub-heading">{{ month.month }}</div>
       <div class="dates">
-        <div class="dateAndIcon" data-event-date="2023-05-16">
+        {% for date in month.dates %}
+        <div class="dateAndIcon" data-event-date="{{ date.date }}">
           <span class="checkIcon">
             <img id="check" src="/static/img/site/check.svg" />
             <img id="uncheck" src="/static/img/site/uncheck.svg" />
           </span>
-          <span class="date"> 16th - <a href="#">Super Early Bird Ticket sales</a> open </span>
-        </div>
-        <div class="dateAndIcon" data-event-date="2023-05-18">
-          <span class="checkIcon">
-            <img id="check" src="/static/img/site/check.svg" />
-            <img id="uncheck" src="/static/img/site/uncheck.svg" />
+          <span class="date">
+            {{ date.dateCardinal }} - {% if date.url %}
+            <a href="{{ date.url }}">{{ date.text }}</a>
+            {% else %} {{ date.text }} {% endif %}
           </span>
-          <span class="date"> 18th - <a href="#">Grant applications' form</a> open </span>
         </div>
-        <div class="dateAndIcon" data-event-date="2023-05-23">
-          <span class="checkIcon">
-            <img id="check" src="/static/img/site/check.svg" />
-            <img id="uncheck" src="/static/img/site/uncheck.svg" />
-          </span>
-          <span class="date"> 23rd - <a href="#">Call for Participation </a> opens</span>
-        </div>
+        {% endfor %}
       </div>
     </div>
-
-    <!-- June -->
-    <div class="roadmap">
-      <div class="month sub-heading">June</div>
-      <div class="dates">
-        <div class="dateAndIcon" data-event-date="2023-06-01">
-          <span class="checkIcon">
-            <img id="check" src="/static/img/site/check.svg" />
-            <img id="uncheck" src="/static/img/site/uncheck.svg" />
-          </span>
-          <span class="date"> 1st - Super Early Bird Ticket sales close </span>
-        </div>
-      </div>
-    </div>
-
-    <!-- July -->
-    <div class="roadmap">
-      <div class="month sub-heading">July</div>
-      <div class="dates">
-        <div class="dateAndIcon" data-event-date="2023-07-01">
-          <span class="checkIcon">
-            <img id="check" src="/static/img/site/check.svg" />
-            <img id="uncheck" src="/static/img/site/uncheck.svg" />
-          </span>
-          <span class="date"> 31st - Call for Participation deadline </span>
-        </div>
-      </div>
-    </div>
-
-    <!-- August -->
-    <div class="roadmap">
-      <div class="month sub-heading">August</div>
-      <div class="dates">
-        <div class="dateAndIcon" data-event-date="2023-08-01">
-          <span class="checkIcon">
-            <img id="check" src="/static/img/site/check.svg" />
-            <img id="uncheck" src="/static/img/site/uncheck.svg" />
-          </span>
-          <span class="date">1st - Early Bird Ticket sales close</span>
-        </div>
-        <div class="dateAndIcon" data-event-date="2023-08-15">
-          <span class="checkIcon">
-            <img id="check" src="/static/img/site/check.svg" />
-            <img id="uncheck" src="/static/img/site/uncheck.svg" />
-          </span>
-          <span class="date">15th - Grants application deadline</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- September -->
-    <div class="roadmap">
-      <div class="month sub-heading">September</div>
-      <div class="dates">
-        <div class="dateAndIcon" data-event-date="2023-09-01">
-          <span class="checkIcon">
-            <img id="check" src="/static/img/site/check.svg" />
-            <img id="uncheck" src="/static/img/site/uncheck.svg" />
-          </span>
-          <span class="date">1st - Early Bird Ticket sales close</span>
-        </div>
-        <div class="dateAndIcon" data-event-date="2023-09-15">
-          <span class="checkIcon">
-            <img id="check" src="/static/img/site/check.svg" />
-            <img id="uncheck" src="/static/img/site/uncheck.svg" />
-          </span>
-          <span class="date">15th - Grants application deadline</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- October -->
-    <div class="roadmap">
-      <div class="month sub-heading">October</div>
-      <div class="dates">
-        <div class="dateAndIcon" data-event-date="2023-10-25">
-          <span class="checkIcon">
-            <img id="check" src="/static/img/site/check.svg" />
-            <img id="uncheck" src="/static/img/site/uncheck.svg" />
-          </span>
-          <span class="date"
-            >23rd, 24th, 25th - <a href="#">Main Conference</a> @
-            <a href="#">Movenpick Hotel</a></span
-          >
-        </div>
-        <div class="dateAndIcon" data-event-date="2023-10-25">
-          <span class="checkIcon">
-            <img id="check" src="/static/img/site/check.svg" />
-            <img id="uncheck" src="/static/img/site/uncheck.svg" />
-          </span>
-          <span class="date">25th - Afterparty @ <a href="#">Hillbury Gardens</a></span>
-        </div>
-      </div>
-    </div>
+    {% endfor %}
   </div>
 </div>
