@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <title>{{ site.title }}</title>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="stylesheet" href="static/css/style.css" />
-  </head>
-  <body>
-    {% include nav.html %}
-    <section class="ftco-section services-section">
-      <div class="container">
-        <div class="d-flex justify-content-end">
-          <div class="col-lg-9 col-12 content">{{content}}</div>
+<head>
+ 	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+  {% include nav.html %}
+  <section class="ftco-section services-section">
+    <div class="container">
+      <div class="d-flex justify-content-end">
+        <div class="col-lg-9 col-12 content">
+          {{content}}
         </div>
       </div>
     </section>
