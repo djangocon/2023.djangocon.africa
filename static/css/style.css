@@ -421,11 +421,15 @@ ul {
   margin-bottom: 150px;
 }
 
-.sponsors .sub-heading {
+.sponsors .sub-heading,
+.roadmap .sub-heading {
   font-family: "Edmondsans";
   font-weight: 700;
   font-size: 30px;
   line-height: 39px;
+}
+
+.sponsors .sub-heading {
   margin-bottom: 20px;
 }
 
@@ -443,4 +447,42 @@ ul {
   background: #f9f1d6;
   padding: 12px 19px;
   width: auto;
+}
+
+.roadmap-section {
+  margin-bottom: 10px;
+}
+
+.roadmap {
+  display: flex;
+  width: 100%;
+}
+
+.roadmap .month {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 224px;
+  border: 2px solid #000000;
+  border-right: 2px solid #9f9f9f;
+}
+
+.roadmap .dates {
+  width: 100%;
+  border: 2px solid #000000;
+  border-left: none;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+}
+
+.roadmap .dates .date {
+  margin-left: 20px;
+
+  font-family: "Edmondsans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
 }
