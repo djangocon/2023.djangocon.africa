@@ -1,0 +1,23 @@
+- month: May
+  dates:
+    - date: 16-05-2023
+      textWithLink:
+        - link: astrosaurus.me
+          linkText: Super Early Bird Ticket
+          remainingText: sales open
+    - date: 18-05-2023
+      textWithLink:
+        - link: astrosaurus.me
+          linkText: Grant applications' form
+          remainingText: open
+    - date: 23-05-2023
+      textWithLink:
+        - link: astrosaurus.me
+          linkText: Grant applications' form
+          remainingText: open
+
+- month: June
+- month: July
+- month: August
+- month: September
+- month: October

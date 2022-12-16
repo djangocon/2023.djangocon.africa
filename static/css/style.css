@@ -417,7 +417,8 @@ ul {
 }
 
 .speaker,
-.sponsors {
+.sponsors,
+.roadmap-section {
   margin-bottom: 150px;
 }
 
@@ -449,20 +450,17 @@ ul {
   width: auto;
 }
 
-.roadmap-section {
-  margin-bottom: 10px;
-}
-
 .roadmap {
   display: flex;
   width: 100%;
+  margin-bottom: 30px;
 }
 
 .roadmap .month {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 224px;
+  width: 320px;
   border: 2px solid #000000;
   border-right: 2px solid #9f9f9f;
 }
@@ -475,6 +473,10 @@ ul {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
 }
 
 .roadmap .dates .date {
