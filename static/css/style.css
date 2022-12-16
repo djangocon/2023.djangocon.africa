@@ -488,3 +488,8 @@ ul {
   font-size: 20px;
   line-height: 30px;
 }
+
+.roadmap a {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+}
