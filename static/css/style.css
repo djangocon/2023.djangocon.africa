@@ -177,6 +177,7 @@ footer .content {
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid black;
+  margin-top: 150px;
 }
 
 .footer-logo {
@@ -356,3 +357,45 @@ nav .active {
   position: absolute;
   top: 570px;
 }
+.djc-default {
+  font-family: "Edmondsans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.djc-default .h1 {
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 73px;
+  color: black;
+  width: 388px !important;
+  margin-left: -30%;
+  padding-top: 100px !important;
+  display: block;
+}
+
+.djc-default hr {
+  display: none;
+}
+
+h2 {
+  font-family: 'southAfrica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+  padding-top: 30px;
+}
+
+ul {
+  list-style-type:' • ';
+}
+
+.djc-default p:nth-child(n+1){ 
+  padding-top: 30px;
+  width: 832px;
+} 

@@ -1,28 +1,26 @@
 title: DjangoCon Africa 2023
 email: hello@djangocon.africa
 # Add host country and also update the date for the conference in the config.yml file
-description: |  
+description: |
   DjangoCon Africa 2023 conference will take place in 
   from November 9-13, 2023!
 enforce_ssl: "2023.djangocon.africa"
-baseurl: "" 
-url: "https://2023.djangocon.africa" 
+baseurl: ""
+url: "https://2023.djangocon.africa"
 twitter_username: djcafrica
 logo: /static/images/logo.svg
 relative_permalinks: false
-permalink: news/:title/ 
-
+permalink: news/:title/
 
 # Build settings
 markdown: kramdown
 
 include:
-- _pages
-- _static
-
+  - _pages
+  - static
 
 sass:
-    style: compressed
+  style: compressed
 
 plugins:
   - jekyll-feed
