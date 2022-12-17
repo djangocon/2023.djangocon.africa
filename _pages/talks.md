@@ -21,6 +21,7 @@ Our Call for Proposals is not yet open. We will announce when we open our CFP.
 - Proposing to DjangoCon Africa
 - Selection process
 
+## Selection Process
 We’ll choose a selection of talks and tutorials that we feel add up to the most enjoyable and engaging program for our attendees. Volunteers from the Django community are invited to help us pick talks, and we rely heavily on them to help us select ones that are interesting and beneficial to our attendees. Community volunteers and conference organizers will review anonymized submissions and collectively decide which ones to accept.
 
 ## Talks (November 9th, 10th, & 11th)
