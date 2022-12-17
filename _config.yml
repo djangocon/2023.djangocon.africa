@@ -8,7 +8,7 @@ enforce_ssl: "2023.djangocon.africa"
 baseurl: ""
 url: "https://2023.djangocon.africa"
 twitter_username: djcafrica
-logo: /static/images/logo.svg
+logo: /static/img/site/logo.svg
 relative_permalinks: false
 permalink: news/:title/
 
@@ -25,6 +25,14 @@ sass:
 plugins:
   - jekyll-feed
 
+collections:  
+  organizers:
+    output: false
+    permalink: /:collection/
+  sponsors:
+    output: false
+    permalink: /:collection/
+  
 # Our DjangoCon Africa settings...
 conduct_email: "conduct@djangocon.africa"
 contact_us_email: "hello@djangocon.africa"

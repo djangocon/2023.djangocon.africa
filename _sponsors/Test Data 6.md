@@ -1,12 +1,11 @@
 ---
-layout: base
 hidden: false
-level: "Gold"
-name: "Kolo"
-logo: "/static/img/sponsors/logo.png"
+level: "Lanyard"
+name: "Test Sponsor"
+logo: "/static/img/site/facebook.svg"
 logo_orientation: "landscape"
 url_target: "url"
 url_friendly: "url"
-description: "dsdsds" | 
+description: "dsdsds"
 hiring: false
 ---

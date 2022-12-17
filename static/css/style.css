@@ -400,12 +400,6 @@ ul {
 } 
 
 
-.django-svg {
-  position: absolute;
-  left: 380px;
-  top: 1350px;
-}
-
 .info {
   font-family: "Circular Std";
   font-style: normal;
@@ -413,13 +407,13 @@ ul {
   font-size: 40px;
   line-height: 64px;
   margin-top: 150px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 
 .speaker,
 .sponsors,
 .roadmap-section {
-  margin-bottom: 150px;
+  margin-bottom: 90px;
 }
 
 .sponsors .sub-heading,
@@ -493,3 +487,11 @@ ul {
   text-decoration-line: underline;
   text-decoration-thickness: 1px;
 }
+
+.django{
+  position: absolute;
+  width: 84.64px;
+  height: 83.25px;
+  left: 160px;
+  top: 1328px;
+  }

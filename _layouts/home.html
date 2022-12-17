@@ -21,11 +21,62 @@
     <header>{% include nav.html %}</header>
     <section>{% include hero.html %}</section>
 
-    <section>{% include info.html %}</section>
+    <section>
+      <div>
+        <img class="django" src="/static/img/site/django.svg" alt="">
+        <div class="info mini-container">
+          DjangoCon Africa will be held in Accra, Ghana for the first time ever, made up of Django
+          practitioners from all levels. We welcome people from all over the world. Our conference seeks to
+          educate and develop new skills, best practices and ideas for the benefit of attendees, developers,
+          speakers and everyone in our global Django Community, not least those watching the talks online.
+        </div>    
+      </div>      
+    </section>
 
-    <section>{% include roadmap.html %}</section>
+    <section>
+      <div class="mini-container roadmap-section">
+        <h3 class="heading">Our Roadmap</h3>
+        <!-- Roadmaps -->
+        <div class="roadmaps">
+          {% for month in site.data.roadmap %}
+          <!-- {{ month.month }} -->
+          <div class="roadmap">
+            <div class="month sub-heading">{{ month.month }}</div>
+            <div class="dates">
+              {% for date in month.dates %}
+              <div class="dateAndIcon" data-event-date="{{ date.date }}">
+                <span class="checkIcon">
+                  <img id="check" src="/static/img/site/check.svg" />
+                  <img id="uncheck" src="/static/img/site/uncheck.svg" />
+                </span>
+                <span class="date">
+                  {{ date.dateCardinal }} - {% if date.url %}
+                  <a href="{{ date.url }}">{{ date.text }}</a>
+                  {% else %} {{ date.text }} {% endif %}
+                </span>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>  
+    </section>
 
-    <section>{% include speakers.html %}</section>
+    <section>
+      <div class="mini-container speaker">
+        <div class="mic"></div>
+        <div>
+          <h3 class="heading">Speakers</h3>
+          <p class="sub-text">
+            We will soon announce call for abstracts. So if you’re planning to speak at DjangoCon Africa,
+            be on the lookout!<br />Learn more about speaking at DjangoCon Africa by
+            <strong><a href="#">clicking here</a></strong
+            >.
+          </p>
+        </div>
+      </div>
+    </section>
 
     <section>{% include sponsors.html %}</section>
 
@@ -37,7 +88,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="static/js/main.js"></script>
+    <script src="/static/js/main.js"></script>
     {% include analytics.html %}
   </body>
 </html>
