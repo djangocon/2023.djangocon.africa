@@ -1,0 +1,50 @@
+- month: May
+  dates:
+    - date: "2022-12-16"
+      dateCardinal: "16th"
+      text: "Super Early Bird Ticket sales open"
+      url: "#"
+    - date: "2023-05-18"
+      dateCardinal: "18th"
+      text: "Grant applications' form open"
+      url: "#"
+    - date: "2023-05-23"
+      dateCardinal: "23rd"
+      text: "Call for Participation opens"
+      url: "#"
+- month: June
+  dates:
+    - date: "2023-06-01"
+      dateCardinal: "1st"
+      text: "Super Early Bird Ticket sales close"
+- month: July
+  dates:
+    - date: "2023-07-01"
+      dateCardinal: "1st"
+      text: "Call for Participation deadline"
+- month: August
+  dates:
+    - date: "2023-08-01"
+      dateCardinal: "1st"
+      text: "Early Bird Ticket sales close"
+    - date: "2023-08-15"
+      dateCardinal: "15th"
+      text: "Grants application deadline"
+- month: September
+  dates:
+    - date: "2023-09-01"
+      dateCardinal: "1st"
+      text: "Talks start being published"
+    - date: "2023-09-15"
+      dateCardinal: "15th"
+      text: "Schedule is published"
+- month: October
+  dates:
+    - date: "2023-10-25"
+      dateCardinal: "23rd, 24th, 25th"
+      text: "Main Conference @ Movenpick Hotel"
+      url: "#"
+    - date: "2023-10-55"
+      dateCardinal: "25th"
+      url: "#"
+      text: "Afterparty @ Hillbury Gardens"

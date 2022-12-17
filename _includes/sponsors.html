@@ -1,3 +1,33 @@
-<div class="heading-title">
-  <h3 class="text">SPONSORS</h3>
+<div class="mini-container sponsors">
+  <h3 class="heading">Sponsors</h3>
+  <p class="sub-text">
+    DjangoCon Africa is made possible by the generous sponsorships of various teams and
+    organisations around the world. If you’ll like to sponsor us, please
+    <strong><a href="#">click here.</a></strong
+    >.
+  </p>
+  {% assign sponsors_by_level = "Diamond|Platinum|Gold|Lanyard|Silver|Bronze|Opportunity Grant|Community" | split: "|" %}
+  {% for level in sponsors_by_level %}
+    {% assign sponsors_in_level = site.sponsors | where: 'level', level | where: 'hidden', false %}
+    {% assign sponsors_count = sponsors_in_level | size %}
+    {% if sponsors_count != 0 %}
+    <div class="sponsor-section">
+    <h4 class="sub-heading">{{ level }}</h4>
+    <div class="sponsor-images">
+      {% for sponsor in sponsors_in_level %}
+        {% unless sponsor.hidden %}
+        <div class="sponsor">
+          <a href="{{ sponsor.url_target }}" rel="sponsored">
+            <img
+              class="{{ sponsor.logo_orientation }}"
+              src="{{ sponsor.logo }}"
+              alt="{{ sponsor.name }} Logo" height="45px" />
+          </a>
+        </div>
+        {% endunless %}
+      {% endfor %}
+    </div>
+    </div>
+    {% endif %}
+  {% endfor %}
 </div>

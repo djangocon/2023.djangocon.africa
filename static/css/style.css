@@ -130,14 +130,7 @@ a:hover {
   background: url(/static/img/site/mic.svg);
 }
 
-.heading-title {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding-left: 243px;
-  padding-right: 243px;
-}
-
-.heading-title .text {
+.heading {
   line-height: 34px;
   font-family: "southAfrica";
   font-size: 30px;
@@ -145,8 +138,6 @@ a:hover {
 }
 
 .sub-text {
-  width: 953px;
-  left: 244px;
   font-family: "Edmondsans";
   font-style: normal;
   font-weight: 400;
@@ -164,6 +155,13 @@ footer {
 
 .container {
   max-width: 1195px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+}
+
+.mini-container {
+  width: 953px;
   margin-right: auto;
   margin-left: auto;
   padding: 0;
@@ -357,6 +355,7 @@ nav .active {
   position: absolute;
   top: 570px;
 }
+
 .djc-default {
   font-family: "Edmondsans";
   font-style: normal;
@@ -399,3 +398,100 @@ ul {
   padding-top: 30px;
   width: 832px;
 } 
+
+
+.info {
+  font-family: "Circular Std";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 64px;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+.speaker,
+.sponsors,
+.roadmap-section {
+  margin-bottom: 90px;
+}
+
+.sponsors .sub-heading,
+.roadmap .sub-heading {
+  font-family: "Edmondsans";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+}
+
+.sponsors .sub-heading {
+  margin-bottom: 20px;
+}
+
+.sponsor-section {
+  margin-bottom: 60px;
+}
+
+.sponsor-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.sponsor {
+  background: #f9f1d6;
+  padding: 12px 19px;
+  width: auto;
+}
+
+.roadmap {
+  display: flex;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.roadmap .month {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  border: 2px solid #000000;
+  border-right: 2px solid #9f9f9f;
+}
+
+.roadmap .dates {
+  width: 100%;
+  border: 2px solid #000000;
+  border-left: none;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.roadmap .dates .date {
+  margin-left: 20px;
+
+  font-family: "Edmondsans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.roadmap a {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+}
+
+.django{
+  position: absolute;
+  width: 84.64px;
+  height: 83.25px;
+  left: 160px;
+  top: 1328px;
+  }
