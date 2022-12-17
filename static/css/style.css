@@ -217,7 +217,7 @@ footer .links {
 }
 
 nav {
-  background-color: #35ffce;
+  background-color: transparent;
 }
 
 .nav {
@@ -495,3 +495,14 @@ ul {
   left: 160px;
   top: 1328px;
   }
+
+  .sub-head-text{
+    width: 446px;
+    height: 33px;
+    font-family: 'Edmondsans';
+    font-style: normal;
+    font-weight: 420;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+    }
