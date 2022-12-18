@@ -3,12 +3,12 @@ title: About
 layout: default
 permalink: /about/
 ---
-About
-{: .h1}
----
+<!-- About -->
+<!-- {: .h1}
+--- -->
 
 
-DjangoCon Africa will be held in Addis Ababa, Ethiopia for the first time ever and is expected to host over 300+ attendees from all over the world!
+<!-- DjangoCon Africa will be held in Addis Ababa, Ethiopia for the first time ever and is expected to host over 300+ attendees from all over the world! -->
 
 ## About the Conference
 DjangoCon Africa will include 3 days of single-track talks, 1 day of workshops and sprints, and another day for touring for international visitors. 

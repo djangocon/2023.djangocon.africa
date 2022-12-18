@@ -1,0 +1,9 @@
+- name: About Us
+  path: /about/
+  description: DjangoCon Africa will be held in Addis Ababa, Ethiopia for the first time ever and is expected to host over 300+ attendees from all over the world!
+  image: /static/img/site/about_img.png
+
+- name: Talks
+  path: /talks/
+  description: Our Call for Proposals is not yet open. We will announce when we open our CFP.
+  image: /static/img/site/about_img.png
