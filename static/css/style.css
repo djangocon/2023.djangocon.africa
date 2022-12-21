@@ -318,20 +318,6 @@ nav .active {
   padding-bottom: 150px;
 }
 
-.default-hero {
-  background-color: #E5E5E5;
-  padding-bottom: 150px;
-}
-
-.default-hero-container {
-  background-color: #E5E5E5;
-}
-
-.default-hero-description {
-  margin-top: 100px;
-  justify-content: space-between;
-}
-
 .hero-text {
   padding: 0;
   font-family: "Circular Std";
@@ -370,11 +356,6 @@ nav .active {
   top: 570px;
 }
 
-.default-img {
-  position: absolute;
-  top: 350px;
-  border: 5px solid #E87155;
-}
 
 .djc-default {
   font-family: "Edmondsans";
@@ -525,4 +506,58 @@ ul {
     font-size: 24px;
     line-height: 33px;
     color: #000000;
+    }
+
+   
+    
+    .default-hero {
+      padding-bottom: 550px;
+    }
+   
+    .default-img {
+      position: absolute;
+      margin-top: 65px;
+      border: 5px solid #E87155;
+    }
+    
+    .default-hero-description {
+      margin-top: 100px;
+      margin-bottom: 52px;
+      justify-content: space-between;
+    }
+    .default-heading{
+      width: 187px;
+      height: 73px;
+      font-family: 'Circular Std';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 60px;
+      line-height: 73px;    
+      color: #000000;
+    }
+    
+    .default .description {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+    
+    .default .description .text {
+      font-family: "Edmondsans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 33px;
+      width: 500px;
+      color: #000000;
+    }
+    
+    .talks, .about {
+      margin-top: 200px;
+    }
+
+    .table-talk{
+      width: 100%;
+      margin-top: 100px;
+      border: #000000 2px solid;
     }
