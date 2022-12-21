@@ -3,13 +3,7 @@ title: Talks
 layout: default
 permalink: /talks/
 ---
-Talks
-{: .h1}
-
----
-
-Our Call for Proposals is not yet open. We will announce when we open our CFP. 
-
+{: .talks}
 ## Why speak at DjangoCon Africa?
 - Presenters receive a free ticket to DjangoCon Africa! (Travel costs are not included, but potential speakers are encouraged to apply for financial aid. Financial aid decision notifications will be sent.)
 - Professionally produced video of your talk published to our YouTube channel. 
@@ -21,11 +15,13 @@ Our Call for Proposals is not yet open. We will announce when we open our CFP.
 - Proposing to DjangoCon Africa
 - Selection process
 
+
 ## Selection Process
 We’ll choose a selection of talks and tutorials that we feel add up to the most enjoyable and engaging program for our attendees. Volunteers from the Django community are invited to help us pick talks, and we rely heavily on them to help us select ones that are interesting and beneficial to our attendees. Community volunteers and conference organizers will review anonymized submissions and collectively decide which ones to accept.
 
+
 ## Talks (November 9th, 10th, & 11th)
-Length: 20-25 minutes or 40-45 minutes|
+Length: 20-25 minutes or 40-45 minutes
 {: .sub-head-text}
 
 We are looking for original and interesting talks that can benefit the diverse interests of our audience. Don’t feel boxed into Django-centric themes; we also love talks about community, web development, user experience, and more. If you’re a first timer - don’t fret! We would love to be remembered as the conference where you started your speaking career.

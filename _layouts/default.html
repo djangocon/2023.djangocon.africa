@@ -13,7 +13,37 @@
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
-  {% include nav.html %}
+  <section>
+    {% for item in site.data.pages %}
+      {% if page.url == item.path %}
+        {% assign page_exists = true %}
+      {% endif %}
+    {% endfor %}
+    {% if page_exists %}
+      {% for item in site.data.pages %}
+        {% if page.url == item.path %}
+        {% assign color = item.bg_color %}
+          <div class="default-hero" style="background-color: {{color}};" >
+            {% include nav.html %}
+            <div class="container default">
+              <div class="description default-hero-description">
+                <p class="default-heading">{{ item.name }}</p>
+                <div class="text" style="width: 705px;">
+                  {{ item.description }}
+                </div>
+              </div>
+              <div class="default-img">
+                <img src="{{ item.image }}" />
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    {% else %}
+      {% include nav.html %}
+    {% endif %}
+  </section>
+
   <section class="ftco-section services-section">
     <div class="container">
       <div class="d-flex justify-content-end">
