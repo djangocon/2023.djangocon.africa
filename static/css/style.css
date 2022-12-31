@@ -377,11 +377,6 @@ ul {
   list-style-type: " • ";
 }
 
-.djc-default p:nth-child(n + 1) {
-  padding-top: 30px;
-  width: 950px;
-}
-
 .info {
   font-family: "Circular Std";
   font-style: normal;
@@ -479,14 +474,15 @@ ul {
 }
 
 .sub-head-text {
-  width: 446px;
-  height: 33px;
   font-family: "Edmondsans";
   font-style: normal;
   font-weight: 420;
   font-size: 24px;
   line-height: 33px;
   color: #000000;
+
+  margin-bottom: 0;
+  padding-top: 0;
 }
 
 .default {
@@ -535,6 +531,22 @@ ul {
   color: #000000;
 }
 
+.talk-section {
+  border: 3px solid black;
+  padding: 30px 35px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  margin-top: 30px;
+}
+
+.talk-section p {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 .talks,
 .about {
   margin-top: 200px;
@@ -544,4 +556,23 @@ ul {
   width: 100%;
   margin-top: 100px;
   border: #000000 2px solid;
+}
+
+.talks {
+  margin-bottom: 20px;
+}
+
+.talks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.head-text {
+  padding: 0;
+}
+
+.djc-default p:nth-child(n + 1) {
+  padding-top: 30px;
+  width: 100%;
 }
