@@ -356,7 +356,6 @@ nav .active {
   top: 570px;
 }
 
-
 .djc-default {
   font-family: "Edmondsans";
   font-style: normal;
@@ -365,25 +364,8 @@ nav .active {
   line-height: 30px;
 }
 
-.djc-default .h1 {
-  font-family: 'Circular Std';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 65px;
-  line-height: 73px;
-  color: black;
-  width: 388px !important;
-  margin-left: -30%;
-  padding-top: 100px !important;
-  display: block;
-}
-
-.djc-default hr {
-  display: none;
-}
-
 h2 {
-  font-family: 'southAfrica';
+  font-family: "southAfrica";
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -392,14 +374,13 @@ h2 {
 }
 
 ul {
-  list-style-type:' • ';
+  list-style-type: " • ";
 }
 
-.djc-default p:nth-child(n+1){ 
+.djc-default p:nth-child(n + 1) {
   padding-top: 30px;
-  width: 832px;
-} 
-
+  width: 950px;
+}
 
 .info {
   font-family: "Circular Std";
@@ -489,75 +470,78 @@ ul {
   text-decoration-thickness: 1px;
 }
 
-.django{
+.django {
   position: absolute;
   width: 84.64px;
   height: 83.25px;
   left: 160px;
   top: 1328px;
-  }
+}
 
-  .sub-head-text{
-    width: 446px;
-    height: 33px;
-    font-family: 'Edmondsans';
-    font-style: normal;
-    font-weight: 420;
-    font-size: 24px;
-    line-height: 33px;
-    color: #000000;
-    }
+.sub-head-text {
+  width: 446px;
+  height: 33px;
+  font-family: "Edmondsans";
+  font-style: normal;
+  font-weight: 420;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000000;
+}
 
-   
-    
-    .default-hero {
-      padding-bottom: 550px;
-    }
-   
-    .default-img {
-      position: absolute;
-      margin-top: 65px;
-      border: 5px solid #E87155;
-    }
-    
-    .default-hero-description {
-      margin-top: 100px;
-      margin-bottom: 52px;
-      justify-content: space-between;
-    }
-    .default-heading{
-      width: 187px;
-      height: 73px;
-      font-family: 'Circular Std';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 60px;
-      line-height: 73px;    
-      color: #000000;
-    }
-    
-    .default .description {
-      display: flex;
-      align-items: center;
-      gap: 25px;
-    }
-    
-    .default .description .text {
-      font-family: "Edmondsans";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 24px;
-      line-height: 33px;
-      width: 500px;
-      color: #000000;
-    }
-    
-    .talks, .about {
-      margin-top: 200px;
-    }
+.default {
+  width: 1074px;
+}
 
-    .table-talk{
-      width: 100%;
-      margin-top: 100px;
-      border: #000000 2px solid;
-    }
+.default-hero {
+  padding-bottom: 550px;
+}
+
+.default-img {
+  position: absolute;
+  margin-top: 65px;
+  border: 5px solid #e87155;
+}
+
+.default-hero-description {
+  margin-top: 100px;
+  margin-bottom: 52px;
+  justify-content: space-between;
+}
+.default-heading {
+  width: 187px;
+  height: 73px;
+  font-family: "Circular Std";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 73px;
+  color: #000000;
+}
+
+.default .description {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.default .description .text {
+  font-family: "Edmondsans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  width: 500px;
+  color: #000000;
+}
+
+.talks,
+.about {
+  margin-top: 200px;
+}
+
+.table-talk {
+  width: 100%;
+  margin-top: 100px;
+  border: #000000 2px solid;
+}
