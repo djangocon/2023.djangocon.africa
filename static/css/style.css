@@ -576,3 +576,12 @@ ul {
   padding-top: 30px;
   width: 100%;
 }
+
+.code {
+  position: relative;
+  width: 77.72px;
+  height: 86.64px;
+  left: 750px;
+  top: 90px;
+  background: url(/static/img/site/code.svg);
+}
