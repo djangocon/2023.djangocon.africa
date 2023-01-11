@@ -374,6 +374,7 @@ nav .active {
   width: 388px !important;
   margin-left: -30%;
   padding-top: 100px !important;
+  padding-left: 98px;
   display: block;
 }
 
