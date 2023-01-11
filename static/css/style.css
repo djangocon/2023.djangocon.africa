@@ -364,6 +364,23 @@ nav .active {
   line-height: 30px;
 }
 
+.djc-default .h1 {
+  font-family: "Circular Std";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 73px;
+  color: black;
+  width: 388px !important;
+  margin-left: -30%;
+  padding-top: 100px !important;
+  display: block;
+}
+
+.djc-default hr {
+  display: none;
+}
+
 h2 {
   font-family: "southAfrica";
   font-style: normal;
