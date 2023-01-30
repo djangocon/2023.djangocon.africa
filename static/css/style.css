@@ -212,6 +212,7 @@ footer .links {
 .link:hover {
   text-decoration: underline;
 }
+
 .djc-events a {
   text-decoration: none;
 }
@@ -288,8 +289,8 @@ nav .menu {
   background: #fffae9;
   padding-top: 160px;
   padding-bottom: 70px;
-  padding-right: 250px;
-  padding-left: 250px;
+  padding-right: 450px;
+  padding-left: 450px;
 }
 
 nav .showMenu {
@@ -522,6 +523,7 @@ ul {
   margin-bottom: 52px;
   justify-content: space-between;
 }
+
 .default-heading {
   width: 187px;
   height: 73px;
