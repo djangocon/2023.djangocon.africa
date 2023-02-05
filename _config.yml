@@ -35,11 +35,18 @@ collections:
   
 # Our DjangoCon Africa settings...
 conduct_email: "conduct@djangocon.africa"
+conduct_phone: "+251951066483"
 contact_us_email: "hello@djangocon.africa"
 opportunity_grants_email: "grants@djangocon.africa"
 program_team_email: "program@djangocon.africa"
 sponsors_email: "sponsors@djangocon.africa"
 visa_email: "visas@djangocon.africa"
+
+coc_team:
+- Anna Makarudze
+- Daniele Procida
+- Jessica Upani
+- Helen Bire
 
 # Our DjangoCon Africa Links
 cfp: ""
