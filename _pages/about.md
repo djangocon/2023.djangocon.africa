@@ -18,7 +18,9 @@ The CFP, which is open to all, will also be announced as soon as key details are
 
 ## Schedule
 
-DjangoCon Africa will run from the 6th - the 11th of November 2023. The event will have three days of talks from the 7th - the 9th of November and two days of workshops from the 10th - the 11th of November 2023. The first day, the 6th of November will be an orientation and tour day for the participants to get to know one another while also exploring the city.
+- 6 November: Orientation and tour day - the participants can get to know one another while also exploring the city
+- 7 - 9 November: Talks 
+- 10 - 11 November: Workshops
 
 ## Django Girls at DjangoCon Africa
 
