@@ -34,12 +34,23 @@ collections:
     permalink: /:collection/
   
 # Our DjangoCon Africa settings...
+year: 2023 
+conference_duration_days: 6
+conference_dates:  6 - 11 of November 2023
+host_city_and_country: Zanzibar, Tanzania
 conduct_email: "conduct@djangocon.africa"
+conduct_phone: "+251951066483"
 contact_us_email: "hello@djangocon.africa"
 opportunity_grants_email: "grants@djangocon.africa"
 program_team_email: "program@djangocon.africa"
 sponsors_email: "sponsors@djangocon.africa"
 visa_email: "visas@djangocon.africa"
+
+coc_team:
+- Anna Makarudze
+- Daniele Procida
+- Jessica Upani
+- Helen Bire
 
 # Our DjangoCon Africa Links
 cfp: ""

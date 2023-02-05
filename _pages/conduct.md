@@ -4,7 +4,7 @@ layout: default
 permalink: /conduct/
 ---
 
-Conduct
+Code of Conduct
 {: .h1}
 
 Everybody who participates at DjangoCon Africa in one way or another is required to conform to this Code of Conduct (CoC). This includes attendees, speakers, sponsors, organisers and volunteers.
@@ -14,27 +14,21 @@ We will introduce a Code of Conduct team that will be primarily responsible for 
 ## Why do we have a Code of Conduct?
 
 Our goals with having this Code of Conduct are:
-Helping everyone feel safe and included. Many attendees are first timers, or have had poor experiences in other events. We want to set the expectation that harassment and other unpleasant behaviour are not acceptable. So that if people do have an unpleasant experience, they know that’s not neither the norm nor acceptable to us as a community.
 
-Helping to build trust that if an incident is reported, we will not respond with victim blaming, and that we will do a thorough investigation. Even, for example, if the incident concerns someone in a position of power.
-Informing everyone of the expected behaviour. We are a diverse community, and having a Code of Conduct makes the expectations of everybody’s behaviour explicit and transparent.
-
-Having a framework for report handling. The Code of Conduct is the basis for dealing with a report, assessing whether the CoC was violated, and what action should be taken.
+- Helping everyone feel safe and included. Many attendees are first timers, or have had poor experiences in other events. We want to set the expectation that harassment and other unpleasant behavior are not acceptable. So that if people do have an unpleasant experience, they know that’s not neither the norm nor acceptable to us as a community.
+- Helping to build trust that if an incident is reported, we will not respond with victim blaming, and that we will do a thorough investigation. Even, for example, if the incident concerns someone in a position of power.
+- Informing everyone of the expected behavior. We are a diverse community, and having a Code of Conduct makes the expectations of everybody’s behavior explicit and transparent.
+- Having a framework for report handling. The Code of Conduct is the basis for dealing with a report, assessing whether the CoC was violated, and what action should be taken.
 
 ## Our Code of Conduct
 
-Be kind and considerate to others. Do not insult or put down other attendees. Behave professionally.
-
-We are dedicated to providing a harassment-free conference experience for everyone, regardless of race, ethnicity, culture, national origin, colour, immigration status, social and economic class, educational level, sex, sexual orientation, gender identity and expression, age, size, family status, political belief, religion, and mental and physical ability.
-
+- Be kind and considerate to others. Do not insult or put down other attendees. Behave professionally.
+- We are dedicated to providing a harassment-free conference experience for everyone, regardless of race, ethnicity, culture, national origin, colour, immigration status, social and economic class, educational level, sex, sexual orientation, gender identity and expression, age, size, family status, political belief, religion, and mental and physical ability.
 - We do not tolerate harassment of conference participants in any form. This includes offensive comments related to the categories above, deliberate intimidation, stalking, following, harassing photography or recording, sustained disruption of talks or other events, violent threats or language, inappropriate physical contact, and unwelcome sexual attention.
-
-- Advocating for, or encouraging, any of the above behaviour is also not acceptable.
+- Advocating for, or encouraging, any of the above behavior is also not acceptable.
 - Sexual language and imagery are not appropriate for any venue to which the CoC applies.
 - Don’t publish individual photographs of people without their consent.
-
 - Be careful in the words that you choose. Remember that sexist, racist, and other exclusionary jokes can be offensive and unwelcoming to those around you.
-
 - Excessive swearing and offensive jokes are not appropriate for DjangoCon Africa.
 
 ## Where does the Code of Conduct apply?
@@ -51,26 +45,26 @@ The Code of Conduct does not exclusively apply to events on the conference agend
 ## What can happen if the CoC is violated?
 
 In case of a Code of Conduct violation, some of the most common actions organisers may take are:
-Demanding that a participant stops their behaviour.
-Demanding that a participant prevents further contact with certain other participants.
-Not publishing the video of a conference talk.
-Cancelling a conference talk.
-Removing a participant from the conference, without refund.
+
+- Demanding that a participant stops their behavior.
+- Demanding that a participant prevents further contact with certain other participants.
+- Not publishing the video of a conference talk.
+- Cancelling a conference talk.
+- Removing a participant from the conference, without refund.
 
 The action taken is at the discretion of the Code of Conduct team. Participants are expected to comply immediately, and further action may be taken in case a participant does not comply. A record will be kept of all incidents.
 
 ## Where to report incidents
 
-If a Code of Conduct incident happens to you, or witness it happening to someone else, please contact the CoC team immediately either in person, or by sending an email to [conduct@djangocon.africa](mailto:{{ site.conduct_email }}).
+If a Code of Conduct incident happens to you, or witness it happening to someone else, please contact the CoC team immediately either in person, or by sending an email to [{{ site.conduct_email }}](mailto:{{ site.conduct_email }}).
 
-In urgent cases, you can also phone us on [+251 951 066 483](tel:+251951066483).
+In urgent cases, you can also phone us on [{{ site.conduct_phone }}](tel:{{ site.conduct_phone }}). 
 
 Our Code of Conduct team consists of:
 
-- Anna Makarudze
-- Daniele Procida
-- Jessica Upani
-- Helen Bire
+{% for member in site.coc_team %}- {{ member }}
+{% endfor %}
+
 
 The team members will be introduced in person at the conference. You can approach any of them at any time to discuss an incident or concern. You can also ask any other staff to help you find them at the conference.
 
@@ -93,15 +87,6 @@ In your report please include, when possible:
 If you don’t have some of this information, or not at this time, please still make the report anyways.
 
 If you feel unsafe reporting in person, you may choose someone to represent you. In this case, we’d need their contact information, but we’d ask you to make clear that this person represents you.
-
-## Emergencies
-
-If you’re currently afraid of your physical safety or are in danger, contact local law enforcement in Ethiopia:
-
-    Fire: 998
-    Medical: 997
-    Police : 999
-    Emergency (mobile phones) : 112
 
 ## Other assistance
 

@@ -1,6 +1,6 @@
 - name: About
   path: /about/
-  description: DjangoCon Africa will be held in Addis Ababa, Ethiopia for the first time ever and is expected to host over 300+ attendees from all over the world!
+  description: DjangoCon Africa is a conference dedicated to the Django web framework. We welcome Django practitioners or all levels from across the globe
   image: /static/img/site/about_img.png
   bg_color: '#B6C5F9'
 
