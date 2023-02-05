@@ -2,17 +2,17 @@
   link: /about/
 - name: Talks
   link: /talks/
-- name: Information
-  link: /info/
-  sublink:
-    # - name: Accommodation
-    #   link: #
-    # - name: Venues
-    #   link: #
-    # - name: Accessibility
-    #   link: #
-    - name: Opportunity Grants
-      link: /opportunity-grant/
+# - name: Information
+#   link: /info/
+#   sublink:
+#     # - name: Accommodation
+#     #   link: #
+#     # - name: Venues
+#     #   link: #
+#     # - name: Accessibility
+#     #   link: #
+#     - name: Opportunity Grants
+#       link: /opportunity-grant/
 - name: Sponsors
   link: /sponsors/
   sublink:
