@@ -6,11 +6,14 @@
       </a>
     </div>
     <div class="date">
-      <div>23 - 26 October, 2023</div>
-      <div>Zanzibar, Tanzania</div>
+      <div>{{ site.conference_dates }}</div>
+      <div>{{ site.host_city_and_country }}</div>
     </div>
     <div class="button">
-      <button class="ticket">GET TICKETS</button>
+      {% comment %}
+      Uncomment when we are selling tickets
+       <button class="ticket">GET TICKETS</button>
+       {% endcomment %}
       <button class="hamburger">
         <svg
           width="28"
