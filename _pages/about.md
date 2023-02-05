@@ -3,11 +3,8 @@ title: About
 layout: default
 permalink: /about/
 ---
-
 {: .about}
-
 ## About the Conference
-
 DjangoCon Africa will include 3 days of single-track talks, 1 day of workshops and sprints, and another day for touring for international visitors. 
 
 The conference will feature talks about the Django Web Framework, related technologies and community. Whether you are an entry level, intermediate or advanced developer, DjangoCon Africa has something in stock for you.
