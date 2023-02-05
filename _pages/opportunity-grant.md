@@ -7,14 +7,14 @@ permalink: /opportunity-grant/
 Opportunity Grants
 {: .h1}
 
-DjangoCon Africa 2023 offers grants to attendees and speakers, so that those who might otherwise not be able to attend won’t hesitate to participate. Some expenses for the conference attendance (which can include travel, hotel, registration etc.) will be covered for opportunity grant recipients.
+DjangoCon Africa {{ site.year }} offers grants to attendees and speakers, so that those who might otherwise not be able to attend won’t hesitate to participate. Some expenses for the conference attendance (which can include travel, hotel, registration etc.) will be covered for opportunity grant recipients.
 
 We actively encourage people to apply for an opportunity grant. While we wish we could give grants to everyone who applies, we do not have the funds to do that. Our goal is to maximise the impact our grant program has, within the limited funds we have.
 
 We try to do this in a number of ways:
 
 - Conferences are a meeting place for developers from all around the globe. Therefore, the selection process is designed to benefit people that we believe make a difference, particularly speakers and tutorial presenters.
-- Additionally, the selection process attempts to promote a more diverse DjangoCon Africa. While encouraging diversity takes many forms, we’re happy to use the opportunity grant program as a very direct method of supporting diversity within the Django community. In particular, our grant program prioritises people part of an underrepresented or marginalised group in tech, as these people are more likely to experience hardships and difficulties in travelling to our events and being a part of our community.
+- Additionally, the selection process attempts to promote a more diverse DjangoCon Africa. While encouraging diversity takes many forms, we’re happy to use the opportunity grant program as a very direct method of supporting diversity within the Django community. In particular, our grant program prioritises people part of an underrepresented or marginalised group in tech, as these people are more likely to experience hardships and difficulties in traveling to our events and being a part of our community.
 - When prioritising grant applications, we try to get a feel for how much impact this grant will have on the applicant and the wider community and country, compared to others. In this, we consider things like involvement in a local community, social impact of the applicant’s activities, and how accessible other conferences are to them.
 
 Our program prioritises speakers first, and then anyone who is part of an underrepresented or marginalised group in tech. These groups include, but are not limited to:
