@@ -1,15 +1,46 @@
 ---
-layout: post
+layout: default_news
 title: Blog
 ---
-<ul>
-  {% for post in site.posts %}
 
-  <li class="list-inline-item">
-    <time class="headings">{{ post.date | date: "%b %-d, %Y" }}</time>
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    <!-- <p>{{ post.excerpt }}</p> -->
+
+<div class="container">
+<div class="hero-news">
+ <a href="{{site.posts.first.url}}"> <div class="news-card">
+    <h1 class="news-title">{{ site.posts.first.title }}</h1>
+    <p class="news-pub"> By {{ site.posts.first.author }}    •    {{ site.posts.first.date  | date: "%-d %b. %Y"}}</p>
+  </div>
+  <img
+    class="news-img"
+    src="{{site.posts.first.banner}}"
+    alt="news default background"
+  />
+</a>
+</div>
+
+
+<div class="all-news-list">
+  {% for post in site.posts offset:1 %}
+  <div class="row pb-5">
+    <div class="col-md-6">
+    <a class="news-heading-link" href="{{post.url}}"><h1 class="all-news-title">{{ post.title }}</h1></a>
     
-  </li>
+      <p class="news-excerpt">{{ post.excerpt }}</p>
+      <p class="all-news-pub"> By {{ post.author }}    •    {{ post.date  | date: "%-d %b. %Y"}}</p>
+    </div>
+    {% assign banner = site.default_banner %}
+    {% if post.banner != "" %}
+    <div class="col-md-5">
+      <img class="rounded news-list-img"src="{{post.banner}}" alt="web development image">
+    </div>
+  </div>
+    {% else %}
+    <div class="col-md-5">
+      <img class="rounded news-list-img"src="{{banner}}" alt="web development image">
+    </div>
+  </div>
+  {% endif %}
   {% endfor %}
-</ul>
+</div>
+
+</div>

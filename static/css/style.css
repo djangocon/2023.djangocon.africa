@@ -605,3 +605,152 @@ ul {
   top: 90px;
   background: url(/static/img/site/code.svg);
 }
+
+/* center image */
+.djc-default .default-img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.hero-news {
+  margin-top: -100px;
+  margin-bottom: 97px;
+}
+
+.news-img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 995px;
+  height: 548px;
+}
+
+.news-card {
+  position: relative;
+  top: 600px;
+  width: 571px;
+  height: 157px;
+  left: 150px;
+  background: #000000;
+}
+
+.news-title {
+  padding-top: 30px;
+  margin-left: 36px;
+  font-family: "Circular Std";
+  font-style: normal;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.news-pub {
+  margin-top: 20px;
+  margin-left: 36px;
+  font-family: "Circular Std";
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.all-news-title {
+  margin-top: 60px;
+  font-family: "Circular Std";
+  font-style: normal;
+  font-size: 30px;
+  color: #000000;
+}
+
+.all-news-pub {
+  margin-top: 20px;
+  font-family: "Circular Std";
+  font-size: 15px;
+  color: #000000;
+}
+
+.news-excerpt {
+  font-family: "Circular Std";
+  font-style: normal;
+  font-size: 16px;
+  color: #6f6f6f;
+}
+
+.all-news-list {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.news-heading-link {
+  text-decoration: none;
+}
+
+.news-banner {
+  width: 100%;
+  height: 643px;
+  scale: fill;
+  object-fit: cover;
+}
+
+.news-banner-text {
+  position: absolute;
+  top: 457px;
+ 
+}
+
+.news-banner-title{
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 73px;
+  color: #FFFFFF;
+}
+.news-banner-pub{
+  height: 20px;
+  left: 327px;
+  top: 627px;
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF
+}
+
+.post-content{
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.post-image{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 834px;
+  height: auto;
+}
+
+.post-paragraph{
+  width: 832px;
+  height: 90px;
+  font-family: 'Edmondsans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.post-break{
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.news-list-img{
+  width:488px; 
+  height: 314px;
+  object-fit: cover;
+}

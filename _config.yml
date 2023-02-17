@@ -11,6 +11,7 @@ twitter_username: djcafrica
 logo: /static/img/site/logo.svg
 relative_permalinks: false
 permalink: news/:title/
+default_banner: /static/img/site/about_img.png
 
 # Build settings
 markdown: kramdown
