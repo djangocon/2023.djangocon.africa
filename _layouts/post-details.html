@@ -1,0 +1,40 @@
+---
+layout: default_news
+---
+
+
+<div class="container">
+    <div class="news-banner-text">
+        <h1 class="news-banner-title">{{ page.title }}</h1>
+        <p class="news-banner-pub"> By {{ page.author }}    •    {{ page.date  | date: "%-d %b. %Y"}}</p>
+      </div>
+</div>
+
+<div class="banner">
+  {% assign banner = site.default_banner %}
+  {% if page.banner != "" %}
+    <img
+    class="news-banner"
+    src="{{page.banner}}"
+    alt="news default background"
+  />
+  {% else %}
+    <img
+    class="news-banner"
+    src="{{banner}}"
+    alt="news default background"
+  />
+  {% endif %}
+</div>
+
+  <div class="container d-flex justify-content-center">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="post-content">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+    </div>
+
+
