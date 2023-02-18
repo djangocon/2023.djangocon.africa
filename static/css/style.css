@@ -693,36 +693,35 @@ ul {
 .news-banner-text {
   position: absolute;
   top: 457px;
- 
 }
 
-.news-banner-title{
-  font-family: 'Circular Std';
+.news-banner-title {
+  font-family: "Circular Std";
   font-style: normal;
   font-weight: 700;
   font-size: 65px;
   line-height: 73px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.news-banner-pub{
+.news-banner-pub {
   height: 20px;
   left: 327px;
   top: 627px;
-  font-family: 'Circular Std';
+  font-family: "Circular Std";
   font-style: normal;
   font-weight: 450;
   font-size: 16px;
   line-height: 20px;
-  color: #FFFFFF
+  color: #ffffff;
 }
 
-.post-content{
+.post-content {
   margin-top: 50px;
   margin-left: 50px;
   margin-right: 50px;
 }
 
-.post-image{
+.post-image {
   margin-top: 30px;
   margin-bottom: 30px;
   width: 100%;
@@ -730,10 +729,10 @@ ul {
   height: auto;
 }
 
-.post-paragraph{
+.post-paragraph {
   width: 832px;
   height: 90px;
-  font-family: 'Edmondsans';
+  font-family: "Edmondsans";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -744,13 +743,75 @@ ul {
   flex-grow: 0;
 }
 
-.post-break{
+.post-break {
   margin-top: 50px;
   margin-bottom: 30px;
 }
 
-.news-list-img{
-  width:488px; 
+.news-list-img {
+  width: 488px;
   height: 314px;
   object-fit: cover;
+}
+
+.four_zero {
+  padding-top: 24px;
+  width: 132px;
+  height: 69px;
+  left: 654px;
+  top: 446px;
+  font-family: "southAfrica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 69px;
+  text-align: center;
+  color: #000000;
+  align-content: center;
+}
+
+.btn-four {
+  margin: 0 auto;
+  padding: 10px 0;
+  width: 193px;
+  height: 54px;
+  display: inline-block;
+  background: #fffae9;
+  border: 2px solid #e0e0e0;
+}
+
+.btn-four a{
+font-family: 'Edmondsans';
+font-style: normal;
+font-weight: 420;
+font-size: 20px;
+line-height: 26px;
+text-align: center;
+text-transform: uppercase;
+color: #000000;
+text-decoration: none;
+}
+
+.four_zero_zero * {
+  margin: auto;
+}
+.four_zero_title_1 {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  font-family: "Edmondsans";
+  font-style: normal;
+  font-weight: 420;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000000;
+}
+.four_zero_title_2{
+font-family: 'Edmondsans';
+margin-bottom: 24px;
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 21px;
+text-align: center;
+color: #000000;
 }
