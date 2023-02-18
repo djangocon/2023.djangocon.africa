@@ -1,5 +1,5 @@
 ---
-github: "ephraim"
+github: "ephraim_atta"
 layout: default
 name: "Ephraim Atta-Duncan"
 photo_url: /static/img/organizers/<name_of_file>.jpg
