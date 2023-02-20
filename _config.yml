@@ -3,7 +3,7 @@ email: hello@djangocon.africa
 # Add host country and also update the date for the conference in the config.yml file
 description: |
   DjangoCon Africa 2023 conference will take place in 
-  from November 9-13, 2023!
+  from November 6-11, 2023!
 enforce_ssl: "2023.djangocon.africa"
 baseurl: ""
 url: "https://2023.djangocon.africa"
@@ -40,7 +40,7 @@ conference_duration_days: 6
 conference_dates:  6 - 11 of November 2023
 host_city_and_country: Zanzibar, Tanzania
 conduct_email: "conduct@djangocon.africa"
-conduct_phone: "+251951066483"
+conduct_phone: ""
 contact_us_email: "hello@djangocon.africa"
 opportunity_grants_email: "grants@djangocon.africa"
 program_team_email: "program@djangocon.africa"
@@ -51,6 +51,8 @@ coc_team:
 - Anna Makarudze
 - Daniele Procida
 - Jessica Upani
+- Humphrey Butau
+- Abigail Dogbe
 - Helen Bire
 
 # Our DjangoCon Africa Links
