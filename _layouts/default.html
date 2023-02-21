@@ -10,6 +10,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <link rel="stylesheet" href="/static/css/style.css" />
   </head>
   <body>
@@ -32,7 +33,7 @@
       {% endif %} {% endfor %} {% else %} {% include nav.html %} {% endif %}
     </section>
 
-    <section class="ftco-section services-section">
+    <section>
       <div class="container">
         <div class="d-flex justify-content-end">
           <div class="col-lg-10 col-12 content djc-default">{{content}}</div>
@@ -48,6 +49,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="/static/js/main.js"></script>
+    <script src="/static/js/invitation.js"></script>
     {% include analytics.html %}
   </body>
 </html>

@@ -815,3 +815,68 @@ line-height: 21px;
 text-align: center;
 color: #000000;
 }
+
+.myDiv,
+#inprogress,
+#ready {
+  display: none;
+}
+
+::placeholder {
+  color: #585858;
+}
+
+#loading {
+  width: 2rem;
+  height: 2rem;
+  border: 5px solid #f3f3f3;
+  border-top: 6px solid #000000;
+  border-radius: 100%;
+  margin: auto;
+  visibility: hidden;
+  animation: spin 1s infinite linear;
+}
+
+#loading.display {
+  visibility: visible;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.invite {
+  font-family: "Edmondsans";
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  padding-top: 5px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  color: #000000;
+}
+
+.invite:hover {
+  background-color: #35ffce;
+}
+
+.notice{
+  font-family: "Edmondsans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  padding-top: 10x;
+  padding-bottom: 10px;
+  color: #a40404;
+}

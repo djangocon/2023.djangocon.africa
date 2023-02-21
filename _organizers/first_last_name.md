@@ -1,9 +1,10 @@
 ---
-github: "username"
+github: "ephraim_atta"
 layout: default
-name: "Name Here"
+name: "Ephraim Atta-Duncan"
 photo_url: /static/img/organizers/<name_of_file>.jpg
-role: "Role Here"
+role: "Developer"
 twitter: "@djcafrica"
-website: ""
+website: "link to website"
+linkedin: "Ephraim Atta-Duncan"
 ---

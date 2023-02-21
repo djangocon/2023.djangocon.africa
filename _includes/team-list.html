@@ -1,0 +1,15 @@
+<div class="container">
+<p>The dream of having the first ever DjangoCon in Africa was made possible by the awesome people who spent a lot of time putting things together. Thank you to all our volunteers who make DjangoCon Africa happen!</p>
+
+<h1>Conference Team</h1>
+{% for team in site.organizers %}
+<div class="row">
+  <div class="col-md-10">
+    <h2>{{team.name}}</h2>
+    <p>{{team.role}}</p>
+    <p>{{team.github}}</p>
+    <p>{{team.twitter}}</p>
+    <p>{{team.linkedin}}</p>
+  </div>
+</div>
+{% endfor %}
