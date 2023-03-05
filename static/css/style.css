@@ -898,7 +898,6 @@ ul {
 
 .container .team-member {
   border: 10px solid black;
-
   width: 300px;
 }
 
@@ -921,10 +920,28 @@ ul {
   margin-top: 5px;
 }
 
-.container .icon {
-  color: #fff;
+.container .organizers .icon {
   filter: invert(94%) sepia(100%) saturate(0%) hue-rotate(260deg) brightness(106%) contrast(108%);
   margin: 0;
   margin-right: 5px;
   margin-top: 15px;
+}
+
+/* Codepen */
+.card {
+  overflow: hidden;
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(45%);
+  transition: transform 0.4s;
+}
+
+.slide:hover .caption {
+  transform: translateY(0px);
+  transition: transform 0.4s;
 }
