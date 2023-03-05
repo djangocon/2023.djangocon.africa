@@ -914,10 +914,11 @@ ul {
 
 .container .progress {
   color: white;
-  width: 100%;
+  width: 0%;
   height: 2px;
   border: none;
   margin-top: 5px;
+  transition: width 0.4s ease-in-out;
 }
 
 .container .organizers .icon {
@@ -927,9 +928,9 @@ ul {
   margin-top: 15px;
 }
 
-/* Codepen */
 .card {
   overflow: hidden;
+  cursor: pointer;
 }
 
 .caption {
@@ -944,4 +945,8 @@ ul {
 .slide:hover .caption {
   transform: translateY(0px);
   transition: transform 0.4s;
+}
+
+.slide:hover .progress {
+  width: 100%;
 }
