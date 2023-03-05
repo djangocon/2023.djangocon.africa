@@ -20,6 +20,29 @@
           <a class="btn btn-secondary" href="{{ link.url }}" role="button">{{ link.name }}</a>
           {% endfor %}
         </p>
+
+        <!-- Line -->
+
+        <div class="progress"></div>
+
+        <!-- Social Icons -->
+        <div className="icons">
+          <a href="{{ site.github }}" target="_blank">
+            <img class="icon" src="/static/img/site/github.svg" alt="Github" />
+          </a>
+
+          <a href="{{ site.twitter }}" target="_blank">
+            <img class="icon" src="/static/img/site/twitter.svg" alt="Twitter" />
+          </a>
+
+          <a href="{{ site.facebook }}" target="_blank">
+            <img class="icon" src="/static/img/site/facebook.svg" alt="Facebook" />
+          </a>
+
+          <a href="mailto:{{ site.contact_us_email }}">
+            <img class="icon" src="/static/img/site/email.svg" alt="Email" />
+          </a>
+        </div>
       </div>
     </div>
     {% endfor %}
