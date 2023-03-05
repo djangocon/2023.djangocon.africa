@@ -1,15 +1,55 @@
 <div class="container">
-<p>The dream of having the first ever DjangoCon in Africa was made possible by the awesome people who spent a lot of time putting things together. Thank you to all our volunteers who make DjangoCon Africa happen!</p>
+  <p>
+    The dream of having the first ever DjangoCon in Africa was made possible by the awesome people
+    who spent a lot of time putting things together. Thank you to all our volunteers who make
+    DjangoCon Africa happen!
+  </p>
 
-<h1>Conference Team</h1>
-{% for team in site.organizers %}
-<div class="row">
-  <div class="col-md-10">
-    <h2>{{team.name}}</h2>
-    <p>{{team.role}}</p>
-    <p>{{team.github}}</p>
-    <p>{{team.twitter}}</p>
-    <p>{{team.linkedin}}</p>
+  <h2>Conference Team</h2>
+
+  <div class="organizers">
+    {% for team in site.organizers %}
+    <div class="team-member col-sm-4 card slide">
+      <img src="{{ team.image }}" alt="{{ team.name }}" width="280px" height="280px" />
+
+      <div class="caption">
+        <div class="name">
+          <h5>{{ team.name }}</h5>
+          <p class="role">{{ team.role }}</p>
+          <p>
+            {% for link in team.links %}
+            <a class="btn btn-secondary" href="{{ link.url }}" role="button">{{ link.name }}</a>
+            {% endfor %}
+          </p>
+
+          <!-- Line -->
+
+          <div class="left"></div>
+          <div class="right"></div>
+
+          <div class="progress"></div>
+
+          <!-- Social Icons -->
+          <div className="icons">
+            <a href="{{ site.github }}" target="_blank">
+              <img class="icon" src="/static/img/site/github.svg" alt="Github" />
+            </a>
+
+            <a href="{{ site.twitter }}" target="_blank">
+              <img class="icon" src="/static/img/site/twitter.svg" alt="Twitter" />
+            </a>
+
+            <a href="{{ site.facebook }}" target="_blank">
+              <img class="icon" src="/static/img/site/facebook.svg" alt="Facebook" />
+            </a>
+
+            <a href="mailto:{{ site.contact_us_email }}">
+              <img class="icon" src="/static/img/site/email.svg" alt="Email" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
   </div>
 </div>
-{% endfor %}

@@ -1,9 +1,9 @@
 ---
 github: "noahalorwu"
 layout: default
-name: "Noah Alorwu"
+name: "Noah Alorwu 🇬🇭"
 photo_url: /static/img/organizers/<name_of_file>.jpg
-role: "Role Here"
+role: "Organizer"
 twitter: "@djcafrica"
 website: "noahalorwu.com"
 linkedin: "noahalorwu"
