@@ -372,7 +372,7 @@ nav .active {
   font-size: 65px;
   line-height: 73px;
   color: black;
-  width: 388px !important;
+  width: 600px !important; /* 388px */
   margin-left: -30%;
   padding-top: 100px !important;
   padding-left: 98px;
@@ -780,21 +780,22 @@ ul {
   border: 2px solid #e0e0e0;
 }
 
-.btn-four a{
-font-family: 'Edmondsans';
-font-style: normal;
-font-weight: 420;
-font-size: 20px;
-line-height: 26px;
-text-align: center;
-text-transform: uppercase;
-color: #000000;
-text-decoration: none;
+.btn-four a {
+  font-family: "Edmondsans";
+  font-style: normal;
+  font-weight: 420;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
 }
 
 .four_zero_zero * {
   margin: auto;
 }
+
 .four_zero_title_1 {
   margin-top: 24px;
   margin-bottom: 12px;
@@ -805,15 +806,16 @@ text-decoration: none;
   line-height: 33px;
   color: #000000;
 }
-.four_zero_title_2{
-font-family: 'Edmondsans';
-margin-bottom: 24px;
-font-style: normal;
-font-weight: 400;
-font-size: 17px;
-line-height: 21px;
-text-align: center;
-color: #000000;
+
+.four_zero_title_2 {
+  font-family: "Edmondsans";
+  margin-bottom: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
 }
 
 .myDiv,
@@ -851,7 +853,6 @@ color: #000000;
   }
 }
 
-
 .invite {
   font-family: "Edmondsans";
   font-style: normal;
@@ -870,7 +871,7 @@ color: #000000;
   background-color: #35ffce;
 }
 
-.notice{
+.notice {
   font-family: "Edmondsans";
   font-style: normal;
   font-weight: 700;
@@ -879,4 +880,31 @@ color: #000000;
   padding-top: 10x;
   padding-bottom: 10px;
   color: #a40404;
+}
+
+/* Organizer */
+.container p {
+  padding: 0px !important;
+  margin: 0px;
+}
+
+.container .organizers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 20px;
+}
+
+.container .team-member {
+  border: 10px solid black;
+
+  width: 300px;
+}
+
+.container .name {
+  background-color: #000000;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: #fff;
 }
