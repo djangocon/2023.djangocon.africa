@@ -5,7 +5,7 @@
     DjangoCon Africa happen!
   </p>
 
-  <h2>Conference Team</h2>
+  <h2>Conference Team</h2> <br>
   <div class="content-wrapper slide">
     {% for team in site.organizers %}
     <div class="main-card">
@@ -26,25 +26,31 @@
 
 
         <div className="icons">
-          <a href="{{ site.github }}" target="_blank">
+          <!-- github -->
+          {% if team.github != blank %}
+          <a href="{{ site.g }}/{{ team.github }}" target="_blank">
             <img class="social-icon" src="/static/img/site/github.svg" alt="Github" />
           </a>
-
-          <a href="{{ site.twitter }}" target="_blank">
+          {% endif %}
+          <!-- twitter -->
+          {% if team.twitter != blank %}
+          <a href="{{ site.t }}/{{ team.twitter }}" target="_blank">
             <img class="social-icon" src="/static/img/site/twitter.svg" alt="Twitter" />
           </a>
-
-          <a href="{{ site.facebook }}" target="_blank">
+          {% endif %}
+          <!-- linkedin -->
+          {% if team.linkedin != blank %}
+          <a href="{{ site.l }}/{{ team.linkedin }}" target="_blank">
             <img class="social-icon" src="/static/img/site/facebook.svg" alt="Facebook" />
           </a>
-
-          <a href="mailto:{{ site.contact_us_email }}">
+          {% endif %}
+          <!-- website -->
+          {% if team.website != blank %}
+          <a href="{{ team.website }}">
             <img class="social-icon" src="/static/img/site/email.svg" alt="Email" />
           </a>
+          {% endif %}
         </div>
-
-
-
       </div>
     </div>
     {% endfor %}

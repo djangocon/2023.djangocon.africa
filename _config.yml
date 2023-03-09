@@ -72,3 +72,9 @@ twitter: "https://twitter.com/djcafrica"
 facebook: "https://www.facebook.com/djcafrica/"
 instagram: "https://www.instagram.com/djcafrica/"
 github: "https://github.com/djangocon"
+
+
+# social links
+t: "https://twitter.com"
+g: "https://github.com"
+l: "https://linkedin.com/in"
