@@ -888,25 +888,6 @@ ul {
   margin: 0px;
 }
 
-.container .organizers {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  margin-top: 20px;
-}
-
-.container .team-member {
-  border: 10px solid black;
-  width: 300px;
-}
-
-.container .name {
-  background-color: #000000;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  color: #fff;
-}
 
 .container a {
   text-decoration: none;
@@ -922,7 +903,7 @@ ul {
 }
 
  .social-icon {
-  filter: invert(94%) sepia(100%) saturate(0%) hue-rotate(260deg) brightness(106%) contrast(108%);
+  /* filter: invert(94%) sepia(100%) saturate(0%) hue-rotate(260deg) brightness(106%) contrast(108%); */
   margin: 0;
   margin-right: 5px;
   margin-top: 15px;
@@ -933,19 +914,6 @@ ul {
   cursor: pointer;
 }
 
-.caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  transform: translateY(45%);
-  transition: transform 0.4s;
-}
-
-.slide:hover .caption {
-  transform: translateY(0px);
-  transition: transform 0.4s;
-}
 
 .slide:hover .progress {
   width: 100%;
@@ -990,4 +958,23 @@ ul {
   background-color: #000;
   color: white;
   overflow-y: hidden;
+}
+
+
+.role{
+font-family: 'Circular Std';
+font-style: normal;
+font-weight: 450;
+font-size: 16px;
+line-height: 20px;
+color: #FFFFFF;
+}
+
+.team-name{
+font-family: 'Circular Std';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 25px;
+color: #FFFFFF;
 }

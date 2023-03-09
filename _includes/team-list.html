@@ -15,39 +15,37 @@
       </div>
 
       <div class="card-txt-bg">
-        <h5>{{ team.name }}</h5>
-        <p class="role">{{ team.role }}</p>
-
-        <div class="left"></div>
-        <div class="right"></div>
-
+        
+        <h5 class="team-name">{{ team.name }}</h5>
+         <h1 class="role">{{ team.role }}</h1>
+        
+         <div class="left"></div>
+          <div class="right"></div>
         <div class="progress"></div>
-
-
 
         <div className="icons">
           <!-- github -->
           {% if team.github != blank %}
           <a href="{{ site.g }}/{{ team.github }}" target="_blank">
-            <img class="social-icon" src="/static/img/site/github.svg" alt="Github" />
+            <img class="social-icon" src="/static/img/site/pgithub.svg" alt="Github" />
           </a>
           {% endif %}
           <!-- twitter -->
           {% if team.twitter != blank %}
           <a href="{{ site.t }}/{{ team.twitter }}" target="_blank">
-            <img class="social-icon" src="/static/img/site/twitter.svg" alt="Twitter" />
+            <img class="social-icon" src="/static/img/site/ptwitter.svg" alt="Twitter" />
           </a>
           {% endif %}
           <!-- linkedin -->
           {% if team.linkedin != blank %}
           <a href="{{ site.l }}/{{ team.linkedin }}" target="_blank">
-            <img class="social-icon" src="/static/img/site/facebook.svg" alt="Facebook" />
+            <img class="social-icon" src="/static/img/site/plinkedin.svg" alt="Facebook" />
           </a>
           {% endif %}
           <!-- website -->
           {% if team.website != blank %}
-          <a href="{{ team.website }}">
-            <img class="social-icon" src="/static/img/site/email.svg" alt="Email" />
+          <a href="https://{{ team.website }}" target="_blank">
+            <img class="social-icon" src="/static/img/site/pwebsite.svg" alt="Email" />
           </a>
           {% endif %}
         </div>
