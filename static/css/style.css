@@ -921,7 +921,7 @@ ul {
   transition: width 0.4s ease-in-out;
 }
 
-.container .organizers .icon {
+ .social-icon {
   filter: invert(94%) sepia(100%) saturate(0%) hue-rotate(260deg) brightness(106%) contrast(108%);
   margin: 0;
   margin-right: 5px;
@@ -949,4 +949,45 @@ ul {
 
 .slide:hover .progress {
   width: 100%;
+}
+
+.main-card {
+  display: grid;
+  height:337px;
+  width: 280px;
+  grid-template-rows: 75% 25%;
+  outline: 10px solid #000;
+  background-color: #000;
+  gap: 10px;
+  overflow: hidden;
+  transition: width 2s;
+}
+
+.main-card:hover {
+  display: grid;
+  height:337px;
+  width: 280px;
+  grid-template-rows: 50% 50%;
+  outline: 10px solid #000;
+  background-color: beige;
+  overflow: hidden;
+}
+
+
+.content-wrapper{
+  height: 100%;
+  width: calc(100%);
+  display: flex;
+  margin-left: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4vmax;
+ 
+}
+
+.card-txt-bg{
+  padding-top: 10px;
+  background-color: #000;
+  color: white;
+  overflow-y: hidden;
 }
