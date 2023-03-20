@@ -16,7 +16,7 @@ That depends on what country issued your passport; see the [foreign affairs](#) 
 
 ### I need a letter to obtain a visa. Can you help me with that ?
 
-We sure can! Click on <a  style="font-weight: 700;" href="" data-bs-toggle="modal" data-bs-target="#inviteModal">Get Invitation Letter</a> to request your letter of invitation for your visa application at the {{site.host_city_and_country}} Consulate.<br>
+We sure can! Click on <a class="notice" style="font-weight: 700;" href="" data-bs-toggle="modal" data-bs-target="#inviteModal">Get Invitation Letter</a> to request your letter of invitation for your visa application at the {{site.host_city_and_country}} Consulate.<br>
 
 You will be required to provide:
 

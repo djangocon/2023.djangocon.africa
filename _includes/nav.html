@@ -2,7 +2,7 @@
   <div class="nav container">
     <div class="logo">
       <a class="navbar-brand" href="/">
-        <img src="{{site.logo}}" alt="Logo" height="45px" />
+        <img class="header-logo" src="{{site.logo}}" alt="Logo" height="45px" />
       </a>
     </div>
     <div class="date">
@@ -39,6 +39,20 @@
           <path d="M1 20.7991L20.799 1.00008" stroke="black" stroke-width="2" />
         </svg>
       </button>
+    </div>
+      <div class="mobile-menu ml-auto" onclick="openNav()">
+        <img src="/static/img/site/africa.svg" style="height: 30px; width: 30px;" alt="menu"><br>
+        <span><strong>Menu</strong></span>
+    </div>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+      <div class="overlay-content">
+        {% for item in site.data.nav %}
+        <a class="{% if item.link == page.url %} active {% endif %}" href="{{ item.link }}"
+      >{{ item.name }}</a>
+      {% endfor %}
+    </div>
     </div>
   </div>
   <ul class="menu">

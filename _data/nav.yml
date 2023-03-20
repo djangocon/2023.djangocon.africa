@@ -11,8 +11,8 @@
 #     #   link: #
 #     # - name: Accessibility
 #     #   link: #
-#     - name: Opportunity Grants
-#       link: /opportunity-grant/
+- name: Opportunity Grants
+  link: /grant/
 - name: Sponsors
   link: /sponsors/
   sublink:

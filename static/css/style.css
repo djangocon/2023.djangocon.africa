@@ -319,6 +319,10 @@ nav .active {
   padding-bottom: 150px;
 }
 
+.hero-date {
+  display: none;
+}
+
 .hero-text {
   padding: 0;
   font-family: "Circular Std";
@@ -617,6 +621,9 @@ ul {
   margin-top: -100px;
   margin-bottom: 97px;
 }
+.speaker-img{
+  display: none;
+}
 
 .news-img {
   margin-left: auto;
@@ -888,7 +895,6 @@ ul {
   margin: 0px;
 }
 
-
 .container a {
   text-decoration: none;
 }
@@ -902,7 +908,7 @@ ul {
   transition: width 0.4s ease-in-out;
 }
 
- .social-icon {
+.social-icon {
   /* filter: invert(94%) sepia(100%) saturate(0%) hue-rotate(260deg) brightness(106%) contrast(108%); */
   margin: 0;
   margin-right: 5px;
@@ -914,14 +920,13 @@ ul {
   cursor: pointer;
 }
 
-
 .slide:hover .progress {
   width: 100%;
 }
 
 .main-card {
   display: grid;
-  height:337px;
+  height: 337px;
   width: 280px;
   grid-template-rows: 75% 25%;
   outline: 10px solid #000;
@@ -933,7 +938,7 @@ ul {
 
 .main-card:hover {
   display: grid;
-  height:337px;
+  height: 337px;
   width: 280px;
   grid-template-rows: 50% 50%;
   outline: 10px solid #000;
@@ -941,8 +946,7 @@ ul {
   overflow: hidden;
 }
 
-
-.content-wrapper{
+.content-wrapper {
   height: 100%;
   width: calc(100%);
   display: flex;
@@ -950,31 +954,331 @@ ul {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 4vmax;
- 
 }
 
-.card-txt-bg{
+.card-txt-bg {
   padding-top: 10px;
   background-color: #000;
   color: white;
   overflow-y: hidden;
 }
 
-
-.role{
-font-family: 'Circular Std';
-font-style: normal;
-font-weight: 450;
-font-size: 16px;
-line-height: 20px;
-color: #FFFFFF;
+.role {
+  font-family: "Circular Std";
+  font-style: normal;
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
 }
 
-.team-name{
-font-family: 'Circular Std';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 25px;
-color: #FFFFFF;
+.team-name {
+  font-family: "Circular Std";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: #35ffce; /* Black fallback color */
+  background-color: #85fddf; /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: bolder;
+  display: block;
+  color: #000000;
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus,
+.active {
+  border-bottom: 2px solid #000000;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 599px) {
+  .header-img img {
+    width: 100%;
+    height: 100%;
+    padding-right: 30px;
+    object-fit: cover;
+    margin-top: 30px;
+  }
+
+  .hero {
+    padding-bottom: 65px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+  .date {
+    display: none;
+  }
+
+  .nav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding: 20px 0;
+    font-family: "Edmondsans";
+    z-index: 100;
+  }
+
+  .mobile-menu {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 0;
+    cursor: pointer;
+    right: 0;
+  }
+
+  .header-logo {
+    margin-left: 20px;
+  }
+
+  .mic {
+   display: none;
+  }
+
+  .heading {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .sub-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  footer {
+    height: auto;
+  }
+
+  .container {
+    max-width: 85%;
+  }
+
+  .mini-container {
+    width: 85%;
+  }
+
+  footer .content {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .footer-logo {
+    margin-bottom: 10px;
+  }
+
+  .icon {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 24px;
+  }
+
+  footer .links {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .djc-events {
+    padding-bottom: 50px;
+  }
+
+  .nav {
+    padding: 10px 0;
+  }
+
+  nav .date {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .hero-empty {
+    height: 24px;
+  }
+
+  .hero-date {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #e87155;
+  }
+  .hero-text {
+    font-size: 40px;
+    line-height: 50px;
+    padding-top: 29px;
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  /* hide arrow on mobile */
+  .description img {
+    display: none;
+  }
+
+  .hero .description {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .hero .description .text {
+    font-size: 18px;
+    line-height: 26px;
+    width: 90%;
+  }
+
+  .django {
+    position: absolute;
+    width: 58.64px;
+    height: 83.25px;
+    margin-top: 30px;
+    left: 166px;
+    top: 760px;
+}
+
+.speaker-img{
+  display: block;
+}
+
+  .djc-default .h1 {
+    font-size: 50px;
+    line-height: 50px;
+    margin: 0;
+    width: 300px !important;
+    padding-top: 45px !important;
+    padding-bottom: 31px !important;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .content-wrapper {
+    margin-bottom: 50px;
+  }
+
+  .default .description {
+    display: block;
+    align-items: center;
+  }
+
+  .default-heading {
+    font-family: "Circular Std";
+    font-style: normal;
+    font-weight: 700;
+    color: black;
+    width: 600px !important; /* 388px */
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+    margin: 0;
+    width: 300px !important;
+    margin-top: -45px !important;
+    padding-bottom: 31px !important;
+  }
+
+  .default-img img {
+    position: relative;
+    margin-top: 65px;
+    width: 100%;
+  }
+
+  .default-img {
+    margin-top: -47px !important;
+    position: absolute;
+    margin-right: 7%;
+    border: 5px solid #e87155;
+  }
+
+  .default-hero {
+    padding-bottom: 130px;
+  }
+  .text {
+    width: 100% !important;
+  }
+
+  .talks,
+  .about {
+    margin-top: 100px;
+  }
+
+  .info{
+    text-align: justify;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+   
+  }
+
+  
 }
