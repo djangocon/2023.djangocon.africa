@@ -1,7 +1,7 @@
 ---
 title: Opportunity Grants
 layout: default
-permalink: /opportunity-grant/
+permalink: /grant/
 ---
 
 Opportunity Grants

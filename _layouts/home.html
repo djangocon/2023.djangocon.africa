@@ -15,9 +15,7 @@
   </head>
 
   <body>
-    <!-- <header>{% include nav.html %}</header> -->
     <section>{% include hero.html %}</section>
-
     <section>
       <div>
         <img class="django" src="/static/img/site/django.svg" alt="" />
@@ -61,10 +59,12 @@
     </section>
     {% endcomment %}
 
-    {% comment %}
+   
     <section>
       <div class="mini-container speaker">
         <div class="mic"></div>
+        <div class="speaker-img">
+          <img src="/static/img/site/mic.svg" alt="sdas" />
         <div>
           <h3 class="heading">Speakers</h3>
           <p class="sub-text">
@@ -76,11 +76,10 @@
         </div>
       </div>
     </section>
-    {% endcomment %}
+   
     {% comment %}
     <section>{% include sponsors.html %}</section>
     {% endcomment %}
-
 
     {% include footer.html %}
 
