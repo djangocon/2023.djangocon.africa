@@ -1282,3 +1282,81 @@ ul {
 
   
 }
+
+
+@media only screen and (min-width: 669px) and (max-width:769px){
+  body{
+    overflow-x: hidden;
+  }
+
+  .header-img img {
+    width: 100%;
+    height: 100%;
+    padding-right: 30px;
+    object-fit: cover;
+    margin-top: 5px;
+  }
+
+  .hero {
+    padding-bottom: 130px;
+  
+  }
+
+  .hero-empty {
+  height: 250px;
+}
+
+  nav .hamburger {
+    padding: 11px 9px;
+  }
+
+
+  nav .menu{
+    padding-left: 288px;
+  }
+
+.container {
+  width: 90%;
+
+
+}
+
+.hero-text {
+  font-weight: 800;
+  font-size: 55px;
+  line-height: 73px;
+  padding-top: 44px;
+  margin-bottom: 10px;
+}
+
+/* show arrow on Tablet */
+.description img {
+  display:block;
+  width: 50%;
+}
+
+.django {
+  top: 971px;
+  left: 55px;
+}
+
+.mini-container {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  /* padding: 0; */
+}
+.info{
+  text-align: justify;
+  margin-bottom: 25px;
+  font-size: 30px;
+  margin-top: 50px;
+
+ 
+}
+.mic{
+  left: 513px;
+  top: 40px;
+}
+
+}
