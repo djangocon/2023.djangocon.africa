@@ -1280,29 +1280,43 @@ ul {
    
   }
 
-  
 }
 
-@media only screen and (min-width: 669px) and (max-width:769px){
-  body{
-    overflow-x: hidden;
-  }
+
+@media only screen and (min-width: 768px)  {
 
   .header-img img {
-    width: 100%;
+    width: 100% !important;
     height: 100%;
     padding-right: 30px;
     object-fit: cover;
     margin-top: 5px;
   }
+  .header-img {
+    position: absolute;
+    top: 700px;
+  }
+
+  .header-logo {
+    margin-left: 20px;
+  }
+  
 
   .hero {
-    padding-bottom: 130px;
+    padding-bottom: 150px;
+ 
   
   }
 
   .hero-empty {
   height: 250px;
+}
+
+.hero-date {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #e87155;
 }
 
   nav .hamburger {
@@ -1315,7 +1329,7 @@ ul {
   }
 
 .container {
-  width: 90%;
+  width: 90% !important;
 
 
 }
@@ -1328,14 +1342,13 @@ ul {
   margin-bottom: 10px;
 }
 
-/* show arrow on Tablet */
+/* Do not show arrow on Tablet */
 .description img {
-  display:block;
-  width: 50%;
+  display:none;
 }
 
 .django {
-  top: 971px;
+  top: 1100px;
   left: 55px;
 }
 
@@ -1357,5 +1370,35 @@ ul {
   left: 513px;
   top: 40px;
 }
+
+
+
+.hamburger {
+  display: none;
+}
+.date {
+  display: none;
+}
+
+.nav {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+  padding: 20px 0;
+  font-family: "Edmondsans";
+  z-index: 100;
+}
+
+.mobile-menu {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 0;
+  cursor: pointer;
+  right: 0;
+}
+
 
 }
