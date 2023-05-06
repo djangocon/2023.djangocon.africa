@@ -376,7 +376,8 @@ nav .active {
   font-size: 65px;
   line-height: 73px;
   color: black;
-  width: 600px !important; /* 388px */
+  width: 600px !important;
+  /* 388px */
   margin-left: -30%;
   padding-top: 100px !important;
   padding-left: 98px;
@@ -621,7 +622,8 @@ ul {
   margin-top: -100px;
   margin-bottom: 97px;
 }
-.speaker-img{
+
+.speaker-img {
   display: none;
 }
 
@@ -710,6 +712,7 @@ ul {
   line-height: 73px;
   color: #ffffff;
 }
+
 .news-banner-pub {
   height: 20px;
   left: 327px;
@@ -990,23 +993,33 @@ ul {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */
   height: 100%;
   width: 0;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
   left: 0;
   top: 0;
-  background-color: #35ffce; /* Black fallback color */
-  background-color: #85fddf; /* Black w/opacity */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  background-color: #35ffce;
+  /* Black fallback color */
+  background-color: #85fddf;
+  /* Black w/opacity */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
 /* Position the content inside the overlay */
 .overlay-content {
   position: relative;
-  top: 25%; /* 25% from the top */
-  width: 100%; /* 100% width */
-  text-align: center; /* Centered text/links */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  top: 25%;
+  /* 25% from the top */
+  width: 100%;
+  /* 100% width */
+  text-align: center;
+  /* Centered text/links */
+  margin-top: 30px;
+  /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
 /* The navigation links inside the overlay */
@@ -1021,7 +1034,8 @@ ul {
   font-weight: bolder;
   display: block;
   color: #000000;
-  transition: 0.3s; /* Transition effects on hover (color) */
+  transition: 0.3s;
+  /* Transition effects on hover (color) */
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -1044,6 +1058,7 @@ ul {
   .overlay a {
     font-size: 20px;
   }
+
   .overlay .closebtn {
     font-size: 40px;
     top: 15px;
@@ -1051,8 +1066,11 @@ ul {
   }
 }
 
+
 /* Mobile */
 @media only screen and (max-width: 599px) {
+
+
   .header-img img {
     width: 100%;
     height: 100%;
@@ -1068,6 +1086,7 @@ ul {
   .hamburger {
     display: none;
   }
+
   .date {
     display: none;
   }
@@ -1097,7 +1116,7 @@ ul {
   }
 
   .mic {
-   display: none;
+    display: none;
   }
 
   .heading {
@@ -1170,6 +1189,7 @@ ul {
     padding-bottom: 10px;
     color: #e87155;
   }
+
   .hero-text {
     font-size: 40px;
     line-height: 50px;
@@ -1202,11 +1222,11 @@ ul {
     margin-top: 30px;
     left: 166px;
     top: 760px;
-}
+  }
 
-.speaker-img{
-  display: block;
-}
+  .speaker-img {
+    display: block;
+  }
 
   .djc-default .h1 {
     font-size: 50px;
@@ -1236,7 +1256,8 @@ ul {
     font-style: normal;
     font-weight: 700;
     color: black;
-    width: 600px !important; /* 388px */
+    width: 600px !important;
+    /* 388px */
     display: block;
     font-size: 50px;
     line-height: 50px;
@@ -1262,6 +1283,7 @@ ul {
   .default-hero {
     padding-bottom: 130px;
   }
+
   .text {
     width: 100% !important;
   }
@@ -1271,14 +1293,14 @@ ul {
     margin-top: 100px;
   }
 
-  .info{
+  .info {
     text-align: justify;
     margin-bottom: 25px;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
-   
+
   }
 
-  
+
 }
