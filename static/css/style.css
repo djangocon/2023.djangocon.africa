@@ -1121,6 +1121,7 @@ ul {
 /* Mobile */
 @media only screen and (max-width: 767px) {
 .space-mobile{
+  display: block;
   text-align: center;
   padding-top: 50px;
 }
@@ -1129,14 +1130,6 @@ ul {
     height: auto;
     margin-bottom: 30px;
   }
-
-  /* .news-card {
-    position: relative;
-    top: 600px;
-    width: 571px;
-    height: 157px;
-    left: 150px;
-  } */
 
   .news-card {
     position: relative;
