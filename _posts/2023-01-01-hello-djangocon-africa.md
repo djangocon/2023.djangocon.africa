@@ -1,6 +1,6 @@
 ---
 author: Anna , Daniele, Helen and Noah
-title: "Hello DjangoCon Africa 2023"
+title: "Hello 🌍 DjangoCon Africa 2023 Announcement"
 banner: "/static/img/site/news_bg.png"
 date: 2023-02-17
 excerpt_separator: <!--more-->

@@ -10,16 +10,51 @@ title: Blog
     <h1 class="news-title">{{ site.posts.first.title }}</h1>
     <p class="news-pub"> By {{ site.posts.first.author }}    •    {{ site.posts.first.date  | date: "%-d %b. %Y"}}</p>
   </div>
+  {% assign banner = site.default_banner %}
+  {% if site.posts.first.banner != "" %}
   <img
     class="news-img"
     src="{{site.posts.first.banner}}"
     alt="news default background"
   />
+  {% else %}
+  <img
+    class="news-img"
+    src="{{banner}}"
+    alt="news default background"
+  />
+  {% endif %}
 </a>
 </div>
+<div class="space-mobile">
+  • • •
+</div>
+<div class="post-list">
+  {% for post in site.posts offset:1 %}
+  <div class="post">
+    <div class="post-list-content">
+      <a class="news-heading-link" href="{{post.url}}">
+        <h1 class="all-news-title post-title">{{ post.title }}</h1>
+      </a>
+      <p class="all-news-pub">{{ post.date | date: "%-d %b. %Y"}} • By {{ post.author }}</p>
+      <!-- <h2 class=" all-news-title post-title">{{ post.title }}</h2> -->
+      <p class="post-excerpt">{{ post.excerpt }}</p>
+    </div>
+    {% assign banner = site.default_banner %}
+    {% if post.banner != "" %}
+    <div class="post-image">
+      <img class="rounded news-list-img" src="{{ post.banner }}" alt="{{ post.title }}">
+    </div>
+    {% else %}
+    <div class="post-image">
+      <img class="rounded news-list-img" src="{{ banner }}" alt="{{ post.title }}">
+    </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>
 
-
-<div class="all-news-list">
+<!-- <div class="all-news-list">
   {% for post in site.posts offset:1 %}
   <div class="row pb-5">
     <div class="col-md-6">
@@ -41,6 +76,6 @@ title: Blog
   </div>
   {% endif %}
   {% endfor %}
-</div>
+</div> -->
 
 </div>

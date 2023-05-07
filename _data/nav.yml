@@ -14,13 +14,13 @@
 - name: Opportunity Grants
   link: /grant/
 - name: Sponsors
-  link: /sponsors/
+  link: /sponsor-us/
   sublink:
     - name: Sponsor us
-      link: /sponsors/
+      link: /sponsor-us
     - name: Our sponsors
       link: #
 - name: Conduct
   link: /conduct/
-# - name: News
-#   link: /news/
+- name: News
+  link: /news/
