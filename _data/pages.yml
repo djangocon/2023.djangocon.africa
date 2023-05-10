@@ -1,7 +1,7 @@
 - name: About
   path: /about/
   description: DjangoCon Africa is a conference dedicated to the Django web framework. We welcome Django practitioners or all levels from across the globe
-  image: /static/img/site/about_img.png
+  image: /static/img/site/anna.png
   bg_color: '#B6C5F9'
 
 - name: Talks

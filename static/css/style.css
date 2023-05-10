@@ -254,7 +254,7 @@ nav button {
   flex-direction: row;
   align-items: center;
   cursor: pointer;
-  background: #fffae9;
+  background: #37ffce00;
   border: 2px solid #000000;
 }
 
@@ -269,6 +269,10 @@ nav .ticket {
 }
 
 nav .hamburger {
+  padding: 11px 9px;
+}
+
+nav .hamburger-mb {
   padding: 11px 9px;
 }
 
@@ -522,7 +526,7 @@ ul {
 .default-img {
   position: absolute;
   margin-top: 65px;
-  border: 5px solid #e87155;
+  /* border: 5px solid #e87155; */
 }
 
 .default-hero-description {
@@ -1254,7 +1258,7 @@ ul {
   }
 
   .header-logo {
-    margin-left: 20px;
+    margin-left: 0px;
   }
 
   .mic {
@@ -1358,12 +1362,7 @@ ul {
   }
 
   .django {
-    position: absolute;
-    width: 58.64px;
-    height: 83.25px;
-    margin-top: 30px;
-    left: 166px;
-    top: 760px;
+    display: none;
   }
 
   .speaker-img {
@@ -1416,10 +1415,10 @@ ul {
   }
 
   .default-img {
-    margin-top: -47px !important;
+    margin-top: -77px !important;
     position: absolute;
     margin-right: 7%;
-    border: 5px solid #e87155;
+    /* border: 5px solid #e87155; */
   }
 
   .default-hero {
@@ -1436,7 +1435,7 @@ ul {
   }
 
   .info {
-    text-align: justify;
+    margin-top: 122px;
     margin-bottom: 25px;
     font-size: 20px;
     font-weight: 400;
@@ -1445,5 +1444,21 @@ ul {
 
   }
 
+  .info-news {
+    font-family: "Circular Std";
+    font-weight: 200;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+    .post-content {
+      font-family: "Edmondsans";
+      font-size: 18px;
+      line-height: 26px;
+      margin-top: 50px;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
 
 }

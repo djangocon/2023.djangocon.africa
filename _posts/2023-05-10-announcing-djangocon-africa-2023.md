@@ -4,6 +4,7 @@ title: "Introducing DjangoCon Africa 🌍 2023 🎉"
 banner: "/static/img/site/news_bg.png"
 date: 2023-05-10
 excerpt_separator: <!--more-->
+meta: We are excited to announce the first DjangoCon Africa event, taking place this year in Zanzibar, Tanzania, from 6th - 11th November 2023!
 layout: post-details
 ---
 
