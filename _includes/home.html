@@ -80,6 +80,7 @@
   </section>
 {% endcomment %}
 
+{% comment %}
   <section>
     <div class="mini-container speaker">
       <!-- <div class="mic"></div> -->
@@ -90,15 +91,24 @@
           <p class="sub-text">
             We will soon announce call for abstracts. So if you’re planning to speak at DjangoCon
             Africa, be on the lookout!<br />Learn more about speaking at DjangoCon Africa by
-            <strong><a href="#">clicking here</a></strong>.
+            <strong><a href="">clicking here</a></strong>.
           </p>
         </div>
       </div>
   </section>
-
-{% comment %}
-  <section>{% include sponsors.html %}</section>
 {% endcomment %}
+
+  <section>{% include sponsors.html %}</section>
+
+  <section>
+    <div class="mini-container">
+      <h3 class="heading">Latest News</h3>
+      <a class="latest" href="{{site.posts.first.url}}">
+ 
+          <h1>{{ site.posts.first.title }}</h1>
+          <p class="latest-pub"> By {{ site.posts.first.author }} • {{ site.posts.first.date | date: "%-d %b. %Y"}}</p></a>
+    </div>
+  </section>
 
   {% include footer.html %}
 

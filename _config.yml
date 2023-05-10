@@ -16,8 +16,8 @@ default_banner: /static/img/site/about_img.png
 
 # Build settings
 markdown: kramdown
- 
-future: false
+
+future: true
 
 include:
   - _pages
@@ -57,7 +57,7 @@ coc_team:
 - Jessica Upani
 - Humphrey Butau
 - Abigail Dogbe
-- Helen Bire
+
 
 # Our DjangoCon Africa Links
 cfp: ""

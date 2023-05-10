@@ -401,14 +401,16 @@ ul {
   list-style-type: " • ";
 }
 
+
+
 .info {
   font-family: "Circular Std";
-  font-style: normal;
-  font-weight: 400;
+  font-weight: 200;
   font-size: 40px;
   line-height: 64px;
   margin-top: 150px;
   margin-bottom: 100px;
+  word-wrap: break-word;
 }
 
 .speaker,
@@ -1099,7 +1101,7 @@ ul {
 }
 
 .post-img {
-  margin-top: 30px;
+  margin-top: 5px;
   margin-bottom: 30px;
   width: 100%;
   max-width: 834px;
@@ -1118,13 +1120,40 @@ ul {
   display: none;
 }
 
+.latest {
+  text-decoration: none;
+  font-family: "Circular Std";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 30px;
+  color: #E87155;
+  overflow-wrap: break-word;
+}
+
+/* .latest{
+      text-decoration: none;
+        margin-left: 36px;
+        font-family: "Circular Std";
+        font-style: normal;
+        font-size: 30px;
+        color: #E87155;
+} */
+.latest-pub {
+  margin-top: 5px;
+  font-family: "Circular Std";
+  font-size: 15px;
+  color: #000000;
+}
+
 /* Mobile */
 @media only screen and (max-width: 767px) {
-.space-mobile{
-  display: block;
-  text-align: center;
-  padding-top: 100px;
-}
+  .space-mobile {
+    display: block;
+    text-align: center;
+    padding-top: 100px;
+  }
+
   .news-img {
     width: 100%;
     margin-top: -100px;
@@ -1139,7 +1168,7 @@ ul {
     max-width: 100%;
     padding-bottom: 30px;
     height: 100%;
-    left: 0px; 
+    left: 0px;
     right: 0px;
     background: #000000;
   }
@@ -1344,7 +1373,7 @@ ul {
   .djc-default .h1 {
     font-size: 50px;
     line-height: 50px;
-    margin: 0;
+    margin-left: -30% !important;
     width: 300px !important;
     padding-top: 45px !important;
     padding-bottom: 31px !important;
@@ -1412,6 +1441,7 @@ ul {
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
+    word-wrap: break-word;
 
   }
 

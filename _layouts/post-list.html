@@ -5,27 +5,21 @@ title: Blog
 
 
 <div class="container">
-<div class="hero-news">
- <a href="{{site.posts.first.url}}"> <div class="news-card">
-    <h1 class="news-title">{{ site.posts.first.title }}</h1>
-    <p class="news-pub"> By {{ site.posts.first.author }}    •    {{ site.posts.first.date  | date: "%-d %b. %Y"}}</p>
-  </div>
-  {% assign banner = site.default_banner %}
-  {% if site.posts.first.banner != "" %}
-  <img
-    class="news-img"
-    src="{{site.posts.first.banner}}"
-    alt="news default background"
-  />
-  {% else %}
-  <img
-    class="news-img"
-    src="{{banner}}"
-    alt="news default background"
-  />
-  {% endif %}
-</a>
-</div>
+  <a href="{{site.posts.first.url}}">
+  <div class="hero-news">
+      <div class="news-card">
+        <h1 class="news-title">{{ site.posts.first.title }}</h1>
+        <p class="news-pub"> By {{ site.posts.first.author }} • {{ site.posts.first.date | date: "%-d %b. %Y"}}</p>
+      </div> 
+    </div>
+    {% assign banner = site.default_banner %}
+    {% if site.posts.first.banner != "" %}
+    <img class="news-img" src="{{site.posts.first.banner}}" alt="news default background" />
+    {% else %}
+    <img class="news-img" src="{{banner}}" alt="news default background" />
+    {% endif %}
+  </a>
+ 
 <div class="space-mobile">
   • • •
 </div>
