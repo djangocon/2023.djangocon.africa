@@ -46,10 +46,9 @@
     </div>
   </section>
 
-  {% comment %}
   <section>
     <div class="mini-container roadmap-section">
-      <div class="code"></div>
+      <img class="code-image" alt="code image" src="/static/img/site/code.png" />
 
       <h3 class="heading">Our Roadmap</h3>
       <!-- Roadmaps -->
@@ -62,8 +61,8 @@
             {% for date in month.dates %}
             <div class="dateAndIcon" data-event-date="{{ date.date }}">
               <span class="checkIcon">
-                <img id="check" src="/static/img/site/check.svg" />
-                <img id="uncheck" src="/static/img/site/uncheck.svg" />
+                <img id="check" src="/static/img/site/check.svg" alt="checked icon" />
+                <img id="uncheck" src="/static/img/site/uncheck.svg" alt="unchecked icon" />
               </span>
               <span class="date">
                 {{ date.dateCardinal }} - {% if date.url %}
@@ -78,9 +77,8 @@
       </div>
     </div>
   </section>
-{% endcomment %}
 
-{% comment %}
+  {% comment %}
   <section>
     <div class="mini-container speaker">
       <!-- <div class="mic"></div> -->
@@ -96,7 +94,7 @@
         </div>
       </div>
   </section>
-{% endcomment %}
+  {% endcomment %}
 
   <section>{% include sponsors.html %}</section>
 
@@ -104,9 +102,10 @@
     <div class="mini-container">
       <h3 class="heading">Latest News</h3>
       <a class="latest" href="{{site.posts.first.url}}">
- 
-          <h1 class="info-news">{{ site.posts.first.title }} &#10138;</h1>
-          <p class="latest-pub">Published {{ site.posts.first.date | date: "%-d %b. %Y"}}</p></a>
+
+        <h1 class="info-news">{{ site.posts.first.title }} &#10138;</h1>
+        <p class="latest-pub">Published {{ site.posts.first.date | date: "%-d %b. %Y"}}</p>
+      </a>
     </div>
   </section>
 
