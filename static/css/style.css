@@ -405,8 +405,6 @@ ul {
   list-style-type: " • ";
 }
 
-
-
 .info {
   font-family: "Circular Std";
   font-weight: 200;
@@ -420,6 +418,7 @@ ul {
 .speaker,
 .sponsors,
 .roadmap-section {
+  position: relative;
   margin-bottom: 90px;
 }
 
@@ -493,6 +492,11 @@ ul {
 .roadmap a {
   text-decoration-line: underline;
   text-decoration-thickness: 1px;
+}
+
+.dateAndIcon {
+  display: flex;
+  align-items: center;
 }
 
 .django {
@@ -611,13 +615,11 @@ ul {
   width: 100%;
 }
 
-.code {
-  position: relative;
-  width: 77.72px;
-  height: 86.64px;
-  left: 750px;
-  top: 90px;
-  background: url(/static/img/site/code.svg);
+.code-image {
+  position: absolute;
+  height: 86px;
+  top: 0;
+  right: 0;
 }
 
 /* center image */
@@ -678,13 +680,12 @@ ul {
   color: #000000;
 }
 
-
 .all-news-pub {
   margin-top: 20px;
   margin-bottom: 20px !important;
   font-family: "Circular Std";
   font-size: 15px;
-  color: #E87155;
+  color: #e87155;
 }
 
 .news-excerpt {
@@ -743,8 +744,6 @@ ul {
   margin-left: 40px;
   margin-right: 40px;
 }
-
-
 
 .post-paragraph {
   width: 832px;
@@ -1067,13 +1066,11 @@ ul {
   font-size: 60px;
 }
 
-
 .icon-hero {
   display: inline-block;
   vertical-align: middle;
   margin-right: 10px;
 }
-
 
 /* delete */
 .post-list {
@@ -1104,7 +1101,6 @@ ul {
 
 .post-excerpt {
   margin-bottom: 20px;
-
 }
 
 .post-img {
@@ -1134,7 +1130,7 @@ ul {
   font-weight: 400;
   font-size: 10px;
   line-height: 30px;
-  color: #E87155;
+  color: #e87155;
   overflow-wrap: break-word;
 }
 
@@ -1179,8 +1175,6 @@ ul {
     right: 0px;
     background: #000000;
   }
-
-
 
   .news-list-img {
     width: 100%px;
@@ -1444,7 +1438,6 @@ ul {
     font-weight: 400;
     line-height: 30px;
     word-wrap: break-word;
-
   }
 
   .info-news {
@@ -1455,13 +1448,47 @@ ul {
     margin-bottom: 10px;
   }
 
-    .post-content {
-      font-family: "Edmondsans";
-      font-size: 18px;
-      line-height: 26px;
-      margin-top: 50px;
-      margin-left: 0px;
-      margin-right: 0px;
-    }
+  .post-content {
+    font-family: "Edmondsans";
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 
+  .roadmap {
+    flex-direction: column;
+    border-left: 2px solid #000000;
+  }
+
+  .roadmap .month {
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: 20px;
+    border: 2px solid #000000;
+    border-bottom: none;
+    border-left: none;
+    font-size: 26px;
+  }
+
+  .code-image {
+    top: 10px;
+    right: 0;
+    height: 50px;
+  }
+
+  .roadmap .dates .date {
+    display: block;
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  .roadmap .dates {
+    padding-left: 20px;
+  }
+
+  .roadmap-section {
+    margin-top: 50px;
+  }
 }
