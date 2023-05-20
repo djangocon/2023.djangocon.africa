@@ -1151,6 +1151,10 @@ ul {
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  .dropdown-menu {
+      left: 50% !important;
+      transform: translateX(-50%) !important;
+    }
   .space-mobile {
     display: block;
     text-align: center;

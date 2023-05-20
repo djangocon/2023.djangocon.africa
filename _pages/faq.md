@@ -7,7 +7,7 @@ permalink: /faq/
 FAQ
 {: .h1}
 
-## The answer to every question below is Yes!
+# The answer to every question below is Yes!
 
 ## Tickets
 Tickets are  on sale. More information is on our **[Ticket Page](/ticket)**
@@ -24,7 +24,6 @@ More information is on our Speaker Resources page **[Speaker Resource page](/tal
 
 ## Opportunity Grants
 More information is on our  **[Opportunity Grants page](/grant)**.
-
 - Do I need to provide receipts in order to be reimbursed for my opportunity grant?
 - Will I be reimbursed promptly at or shortly after the conference?
 

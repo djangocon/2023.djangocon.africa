@@ -60,19 +60,45 @@
       
       <div class="overlay-content">
         {% for item in site.data.nav %}
+        {% if item.sublink %}
+        <li class="nav-item dropdown">
+          <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            {{ item.name }}
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            {% for subitem in item.sublink %}
+            <a class="dropdown-item" href="{{subitem.link}}">{{subitem.name}}</a>
+            {% endfor %}
+          </div>
+        </li>
+        {% else %}
         <a class="{% if item.link == page.url %} active {% endif %}" href="{{ item.link }}"
       >{{ item.name }}</a>
+        {% endif %}
       {% endfor %}
     </div>
     </div>
   </div>
   <ul class="menu">
     {% for item in site.data.nav %}
-    <li>
-      <a class="menuItem {% if item.link == page.url %} active {% endif %}" href="{{ item.link }}"
-        >{{ item.name }}</a
-      >
+    {% if item.sublink %}
+    <li class="nav-item dropdown">
+      <a class="menuItem dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        {{ item.name }}
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        {% for subitem in item.sublink %}
+        <a class="dropdown-item" href="{{subitem.link}}">{{subitem.name}}</a>
+        {% endfor %}
+      </div>
     </li>
+    {% else %}
+    <li>
+      <a class="menuItem {% if item.link == page.url %} active {% endif %}" href="{{ item.link }}">{{ item.name }}</a>
+    </li>
+    {% endif %}
     {% endfor %}
   </ul>
 </nav>

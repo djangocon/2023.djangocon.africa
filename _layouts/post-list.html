@@ -47,29 +47,4 @@ title: Blog
   </div>
   {% endfor %}
 </div>
-
-<!-- <div class="all-news-list">
-  {% for post in site.posts offset:1 %}
-  <div class="row pb-5">
-    <div class="col-md-6">
-    <a class="news-heading-link" href="{{post.url}}"><h1 class="all-news-title">{{ post.title }}</h1></a>
-    
-      <p class="news-excerpt">{{ post.excerpt }}</p>
-      <p class="all-news-pub"> By {{ post.author }}    •    {{ post.date  | date: "%-d %b. %Y"}}</p>
-    </div>
-    {% assign banner = site.default_banner %}
-    {% if post.banner != "" %}
-    <div class="col-md-5">
-      <img class="rounded news-list-img"src="{{post.banner}}" alt="web development image">
-    </div>
-  </div>
-    {% else %}
-    <div class="col-md-5">
-      <img class="rounded news-list-img"src="{{banner}}" alt="web development image">
-    </div>
-  </div>
-  {% endif %}
-  {% endfor %}
-</div> -->
-
 </div>
