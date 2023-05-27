@@ -268,6 +268,10 @@ nav .ticket {
   color: #000000;
 }
 
+.ticket-mb{
+  display: none;
+}
+
 nav .hamburger {
   padding: 11px 9px;
 }
@@ -337,7 +341,7 @@ nav .active {
   grid-template-rows: 1fr;
 }
 
-.menu__sublinks > div {
+.menu__sublinks>div {
   overflow: hidden;
 }
 
@@ -363,6 +367,7 @@ nav .active {
 }
 
 @media only screen and (max-width: 767px) {
+
   nav .menu {
     flex-direction: column;
     width: 100%;
@@ -379,7 +384,7 @@ nav .active {
     padding-bottom: 0;
   }
 
-  .menu__sublinks-container > :first-child {
+  .menu__sublinks-container> :first-child {
     padding-top: 10px;
   }
 }
@@ -646,6 +651,7 @@ ul {
 
   margin-top: 30px;
 }
+
 #frequently-asked-questions {
   text-align: center;
 }
@@ -1221,10 +1227,34 @@ ul {
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  
+.ticket{
+  display: none;
+}
+
+.ticket-mb{
+  display: block;
+}
+.ticket-mb {
+  font-family: "Edmondsans";
+  font-style: normal;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  color: #000000;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  margin: 30px 30px;
+}
+
   .dropdown-menu {
     left: 50% !important;
     transform: translateX(-50%) !important;
   }
+
   .space-mobile {
     display: block;
     text-align: center;

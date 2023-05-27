@@ -10,10 +10,9 @@
       <div>{{ site.host_city_and_country }}</div>
     </div>
     <div class="button">
-      {% comment %}
-      Uncomment when we are selling tickets
-      <button class="ticket">GET TICKETS</button>
-      {% endcomment %}
+    
+      <button class="ticket" onclick="window.location.href='#'">GET TICKETS</button>
+     
       <button class="hamburger">
         <svg width="28" height="18" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="menuIcon">
           <path d="M0 1H28" stroke="black" stroke-width="2" />
@@ -55,5 +54,6 @@
     </li>
     {% endif %}
     {% endfor %}
+    <button class="ticket-mb" onclick="window.location.href='#'">GET TICKETS</button>
   </ul>
 </nav>
