@@ -44,7 +44,14 @@
         <div class="container default">
           <div class="description default-hero-description">
             <p class="default-heading">{{ item.name }}</p>
-            <div class="text" style="width: 705px">{{ item.description }}</div>
+            <div>
+              <div class="text" style="width: 705px">{{ item.description }}</div>
+              {% if item.button_text == "Submit a proposal" %}
+              <button class="proposal-button" onclick="window.location.href='{{item.button_link}}'">{{
+                item.button_text }}</button>
+              {% endif %}
+            </div>
+           
           </div>
           <div class="default-img">
             <img src="{{ item.image }}" />

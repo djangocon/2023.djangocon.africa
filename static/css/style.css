@@ -268,7 +268,20 @@ nav .ticket {
   color: #000000;
 }
 
-.ticket-mb{
+.proposal-button {
+  font-family: "Edmondsans";
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  color: #000000;
+  border: 2px solid #000000;
+  background-color: transparent;
+  margin-top: 40px;
+}
+
+.ticket-mb {
   display: none;
 }
 
@@ -299,6 +312,7 @@ nav .menu {
   padding-bottom: 70px;
   padding-right: 300px;
   padding-left: 300px;
+  z-index: 2;
 }
 
 nav .showMenu {
@@ -341,7 +355,7 @@ nav .active {
   grid-template-rows: 1fr;
 }
 
-.menu__sublinks>div {
+.menu__sublinks > div {
   overflow: hidden;
 }
 
@@ -363,11 +377,11 @@ nav .active {
 }
 
 .menu__dropdown-icon {
+  margin-left: 10px;
   transition: rotate 0.3s ease;
 }
 
 @media only screen and (max-width: 767px) {
-
   nav .menu {
     flex-direction: column;
     width: 100%;
@@ -384,7 +398,7 @@ nav .active {
     padding-bottom: 0;
   }
 
-  .menu__sublinks-container> :first-child {
+  .menu__sublinks-container > :first-child {
     padding-top: 10px;
   }
 }
@@ -615,8 +629,6 @@ ul {
 }
 
 .default-heading {
-  width: 187px;
-  height: 73px;
   font-family: "Circular Std";
   font-style: normal;
   font-weight: 500;
@@ -1227,28 +1239,27 @@ ul {
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
-  
-.ticket{
-  display: none;
-}
+  .ticket {
+    display: none;
+  }
 
-.ticket-mb{
-  display: block;
-}
-.ticket-mb {
-  font-family: "Edmondsans";
-  font-style: normal;
-  font-weight: bolder;
-  text-align: center;
-  font-size: 20px;
-  text-transform: uppercase;
-  padding: 5px 20px;
-  color: #000000;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-  margin: 30px 30px;
-}
+  .ticket-mb {
+    display: block;
+  }
+  .ticket-mb {
+    font-family: "Edmondsans";
+    font-style: normal;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    color: #000000;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    margin: 30px 30px;
+  }
 
   .dropdown-menu {
     left: 50% !important;
@@ -1329,7 +1340,6 @@ ul {
   .hero {
     padding-bottom: 65px;
   }
-
 
   .date {
     display: none;
