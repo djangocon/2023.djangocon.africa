@@ -6,6 +6,9 @@
 
 - name: Talks
   path: /talks/
-  description: Our Call for Proposals is not yet open. We will announce when we open our CFP.
+  description: Our Call for Proposals is now open! Submit your talk or tutorial proposal from Thursday 31 May to Wednesday 12 July anywhere in the world, and encourage your friends and colleagues to do the same.<br><br> <p>Need help with your proposal? We’ve got mentors and helpful tips on our Speaker Resources page!</p>
+  proposal_button: true
+  proposal_button_link: #
+  proposal_button_text: Submit a proposal
   image: /static/img/site/kojo_speak.png
   bg_color: '#C7B6F9'
