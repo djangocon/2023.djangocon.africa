@@ -1,5 +1,4 @@
 const menu = document.querySelector(".menu");
-const menuItems = document.querySelectorAll(".menuItem");
 const hamburger = document.querySelector(".hamburger");
 const closeIcon = document.querySelector(".closeIcon");
 const menuIcon = document.querySelector(".menuIcon");
@@ -42,7 +41,6 @@ function toggleMenu() {
 
 hamburger.addEventListener("click", toggleMenu);
 
-
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
 }
@@ -50,4 +48,44 @@ function openNav() {
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
+}
+
+menu.addEventListener("click", (e) => {
+  const activeMenuItem = e.target.closest(".menu__item--has-sublinks");
+  if (!activeMenuItem) return;
+  toggleMenuItem(activeMenuItem);
+});
+
+function toggleMenuItem(menuItem) {
+  const menuDropdownIcon = document.querySelector(".menu__dropdown-icon");
+  const activeMenuLink = menuItem.querySelector(".menu__link--expandable");
+  const activeMenuLinkIsOpened = activeMenuLink.getAttribute("aria-expanded");
+
+  if (activeMenuLinkIsOpened === "true") {
+    menuDropdownIcon.style.rotate = "0deg";
+
+    menuItem
+      .querySelector(".menu__item-container")
+      .setAttribute("aria-expanded", false);
+
+    menuItem
+      .querySelector(".menu__link--expandable")
+      .setAttribute("aria-expanded", false);
+
+    menuItem.querySelector(".menu__sublinks").setAttribute("aria-hidden", true);
+  } else {
+    menuDropdownIcon.style.rotate = "90deg";
+
+    menuItem
+      .querySelector(".menu__item-container")
+      .setAttribute("aria-expanded", true);
+
+    menuItem
+      .querySelector(".menu__link--expandable")
+      .setAttribute("aria-expanded", true);
+
+    menuItem
+      .querySelector(".menu__sublinks")
+      .setAttribute("aria-hidden", false);
+  }
 }

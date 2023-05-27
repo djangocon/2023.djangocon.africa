@@ -301,7 +301,7 @@ nav .showMenu {
   transform: translateY(0);
 }
 
-nav .menu .menuItem {
+nav .menu .menu__link {
   font-family: "Edmondsans";
   font-style: normal;
   font-weight: bolder;
@@ -313,9 +313,75 @@ nav .menu .menuItem {
   padding-bottom: 10px;
 }
 
-nav .menu .menuItem:hover,
+nav .menu .menu__link:hover,
 nav .active {
   border-bottom: 2px solid #000000;
+}
+
+.menu__item-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__item--has-sublinks {
+  padding-bottom: 0;
+}
+
+.menu__sublinks {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 500ms;
+}
+
+.menu__sublinks[aria-hidden="false"] {
+  grid-template-rows: 1fr;
+}
+
+.menu__sublinks > div {
+  overflow: hidden;
+}
+
+.menu__sublinks-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu__sublink {
+  font-family: "Edmondsans";
+  color: #676767;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0;
+}
+
+.menu__dropdown-icon {
+  transition: rotate 0.3s ease;
+}
+
+@media only screen and (max-width: 767px) {
+  nav .menu {
+    flex-direction: column;
+    width: 100%;
+    padding: 70px 30px 0 30px;
+  }
+
+  .menu__item {
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.05);
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  a.menu__link.menu__link--expandable {
+    padding-bottom: 0;
+  }
+
+  .menu__sublinks-container > :first-child {
+    padding-top: 10px;
+  }
 }
 
 .hero {
@@ -519,6 +585,10 @@ ul {
   padding-top: 0;
 }
 
+.conference-information {
+  padding-top: 40px;
+}
+
 .default {
   width: 1074px;
 }
@@ -576,7 +646,7 @@ ul {
 
   margin-top: 30px;
 }
-#frequently-asked-questions{
+#frequently-asked-questions {
   text-align: center;
 }
 
@@ -1152,9 +1222,9 @@ ul {
 /* Mobile */
 @media only screen and (max-width: 767px) {
   .dropdown-menu {
-      left: 50% !important;
-      transform: translateX(-50%) !important;
-    }
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
   .space-mobile {
     display: block;
     text-align: center;
@@ -1230,9 +1300,6 @@ ul {
     padding-bottom: 65px;
   }
 
-  .hamburger {
-    display: none;
-  }
 
   .date {
     display: none;

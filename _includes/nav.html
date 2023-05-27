@@ -12,91 +12,46 @@
     <div class="button">
       {% comment %}
       Uncomment when we are selling tickets
-       <button class="ticket">GET TICKETS</button>
-       {% endcomment %}
+      <button class="ticket">GET TICKETS</button>
+      {% endcomment %}
       <button class="hamburger">
-        <svg
-          width="28"
-          height="18"
-          viewBox="0 0 28 18"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          class="menuIcon"
-        >
+        <svg width="28" height="18" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="menuIcon">
           <path d="M0 1H28" stroke="black" stroke-width="2" />
           <path d="M0 9H28" stroke="black" stroke-width="2" />
           <path d="M0 17H28" stroke="black" stroke-width="2" />
         </svg>
-        <svg
-          width="18"
-          height="18"
-          viewBox="0 0 22 22"
-          fill="none"
-          class="closeIcon"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+        <svg width="18" height="18" viewBox="0 0 22 22" fill="none" class="closeIcon"
+          xmlns="http://www.w3.org/2000/svg">
           <path d="M1.10059 1.10059L20.8996 20.8996" stroke="black" stroke-width="2" />
           <path d="M1 20.7991L20.799 1.00008" stroke="black" stroke-width="2" />
         </svg>
       </button>
     </div>
-      <div class="mobile-menu ml-auto" onclick="openNav()">
-        <!-- <img src="/static/img/site/africa.svg" style="height: 30px; width: 30px;" alt="menu"><br>
-        <span><strong>Menu</strong></span> -->
-          <button class="hamburger-mb">
-            <svg width="28" height="18" viewBox="0 0 28 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="menuIcon">
-              <path d="M0 1H28" stroke="black" stroke-width="2" />
-              <path d="M0 9H28" stroke="black" stroke-width="2" />
-              <path d="M0 17H28" stroke="black" stroke-width="2" />
-            </svg>
-            <svg width="18" height="18" viewBox="0 0 22 22" fill="none" class="closeIcon" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1.10059 1.10059L20.8996 20.8996" stroke="black" stroke-width="2" />
-              <path d="M1 20.7991L20.799 1.00008" stroke="black" stroke-width="2" />
-            </svg>
-          </button>
-    </div>
-    <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      
-      <div class="overlay-content">
-        {% for item in site.data.nav %}
-        {% if item.sublink %}
-        <li class="nav-item dropdown">
-          <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            {{ item.name }}
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            {% for subitem in item.sublink %}
-            <a class="dropdown-item" href="{{subitem.link}}">{{subitem.name}}</a>
-            {% endfor %}
-          </div>
-        </li>
-        {% else %}
-        <a class="{% if item.link == page.url %} active {% endif %}" href="{{ item.link }}"
-      >{{ item.name }}</a>
-        {% endif %}
-      {% endfor %}
-    </div>
-    </div>
   </div>
   <ul class="menu">
     {% for item in site.data.nav %}
     {% if item.sublink %}
-    <li class="nav-item dropdown">
-      <a class="menuItem dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        {{ item.name }}
-      </a>
-      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        {% for subitem in item.sublink %}
-        <a class="dropdown-item" href="{{subitem.link}}">{{subitem.name}}</a>
-        {% endfor %}
+    <li class="menu__item menu__item--has-sublinks">
+      <div class="menu__item-container">
+        <a class="menu__link menu__link--expandable" aria-expanded="false">{{ item.name }}</a>
+        <div class="menu__dropdown-icon">
+          <svg width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L9 8.5L1 16" stroke="black" stroke-width="1.5" />
+          </svg>
+        </div>
+      </div>
+      <div class="menu__sublinks" aria-hidden="true">
+        <div class="menu__sublinks-container">
+          {% for subitem in item.sublink %}
+          <a class="menu__sublink" href="{{subitem.link}}">{{subitem.name}}</a>
+          {% endfor %}
+        </div>
       </div>
     </li>
     {% else %}
-    <li>
-      <a class="menuItem {% if item.link == page.url %} active {% endif %}" href="{{ item.link }}">{{ item.name }}</a>
+    <li class="menu__item">
+      <a class="menu__link {% if item.link == page.url %} active {% endif %}" href="{{ item.link }}">{{
+        item.name }}</a>
     </li>
     {% endif %}
     {% endfor %}
