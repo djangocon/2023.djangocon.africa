@@ -24,7 +24,7 @@ Please see our COVID-19 Policy for more information.
 At this stage, we are planning for all presenters to be in Zanzibar to present their talks in person. Things can always change depending on how the pandemic progresses throughout the year. 
 
 ## Proposing for DjangoCon Africa
-# Selection process
+## Selection process
 We’ll choose a selection of talks and tutorials that we think will make for the most enjoyable and engaging programme for our attendees. Volunteers from the Django community will be invited to help us select talks that will be interesting and useful to our attendees. Community volunteers and conference organizers will review anonymized submissions and together decide which talks to accept.
 
 

@@ -46,7 +46,7 @@
             <p class="default-heading">{{ item.name }}</p>
             <div>
               <div class="text" style="width: 705px">{{ item.description }}</div>
-              {% if item.button_text == "Submit a proposal" %}
+              {% if item.button_enabled == true %}
               <button class="proposal-button" onclick="window.location.href='{{item.button_link}}'">{{
                 item.button_text }}</button>
               {% endif %}
