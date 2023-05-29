@@ -23,5 +23,6 @@ with thanks to the following people for their contributions to the website:
 
 Volunteers who helped with the conference:
 {: .h2}
-
+{% comment %}
 - [](){:target="_blank"}
+{% endcomment %}
