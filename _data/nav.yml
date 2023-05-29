@@ -18,8 +18,8 @@
   sublink:
     - name: Sponsor us
       link: /sponsor-us
-    # - name: Our sponsors
-    #   link:  /our-sponsors
+    - name: Our sponsors
+      link:  /our-sponsors
 - name: Conduct
   link: /conduct/
 - name: News

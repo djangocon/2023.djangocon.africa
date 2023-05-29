@@ -1,6 +1,6 @@
 <div class="mini-container sponsors">
  
-  <div class="talk-section">
+  <!-- <div class="talk-section">
     <h1 class="heading">Become A Sponsor</h1>
     <p class="sub-head-text">
       DjangoCon Africa is not possible without your support. The spirit of the event focuses on providing a platform for new
@@ -9,17 +9,17 @@
       <strong><a href="/sponsor-us">click here</a></strong>.
     </p>
 
-  </div>
+  </div> -->
 
-  <!-- uncomment this when we have a sponsor -->
-  <!-- <h3 class="heading">Sponsors</h3>
+
+  <h3 class="heading">Sponsors</h3>
   <p class="sub-text">
     DjangoCon Africa is made possible by the generous sponsorships of various teams and
     organisations around the world. If you’ll like to sponsor us, please
     <strong><a href="/sponsor-us">click here.</a></strong
     >.
-  </p> -->
-  {% comment %}
+  </p>
+ 
   {% assign sponsors_by_level = "Diamond|Platinum|Gold|Lanyard|Silver|Bronze|Opportunity
   Grant|Community" | split: "|" %} {% for level in sponsors_by_level %} {% assign sponsors_in_level
   = site.sponsors | where: 'level', level | where: 'hidden', false %} {% assign sponsors_count =
@@ -42,5 +42,5 @@
     </div>
   </div>
   {% endif %} {% endfor %}
-  {% endcomment %}
+ 
 </div>

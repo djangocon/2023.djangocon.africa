@@ -1,5 +1,5 @@
 ---
-hidden: false
+hidden: true
 level: "Community"
 name: "Test Sponsor"
 logo: "/static/img/site/facebook.png"

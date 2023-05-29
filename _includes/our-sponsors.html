@@ -1,0 +1,34 @@
+<div class="container">
+    
+      <p class="h1">Our Sponsors</p>
+      <p>
+        DjangoCon Africa is made possible by the generous support of our sponsors. We are grateful for their support and encourage you to learn more about them.
+      </p>
+  <br><br>
+   {% assign sponsors_by_level = "Diamond|Platinum|Gold|Lanyard|Silver|Bronze|Opportunity
+  Grant|Community" | split: "|" %} {% for level in sponsors_by_level %} {% assign sponsors_in_level
+  = site.sponsors | where: 'level', level | where: 'hidden', false %} {% assign sponsors_count =
+  sponsors_in_level | size %} {% if sponsors_count != 0 %}
+  <div class="sponsor-section">
+    <h4 class="sponsor-heading">{{ level }}</h4>
+    <div class="sponsor-images">
+      {% for sponsor in sponsors_in_level %}
+       {% unless sponsor.hidden %}
+<div class="post-list">
+<div class="post">
+    <div class="post-image">
+      <img class="sponsor-img" src="{{  sponsor.logo }}" alt="{{  sponsor.title }}">
+    </div>
+    <div class="post-list-content">
+        <h1 class="post-title">{{ sponsor.name }}</h1>
+      <p class="post-excerpt">{{ sponsor.description }}</p>
+      {% if sponsor.hiring == true %}
+       <button class="proposal-button" onclick="window.location.href='{{sponsor.hire_url}}'">We're hiring</button>
+        {% endif %}
+    </div>
+</div>     
+</div>
+    {% endunless %}  {% endfor %}
+</div>
+ {% endif %} {% endfor %}
+</div>

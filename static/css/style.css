@@ -530,10 +530,25 @@ ul {
 }
 
 .sponsor {
-  background: #f9f1d6;
   padding: 12px 19px;
   width: auto;
 }
+
+
+.sponsor-heading{
+  margin-top: 50px;
+  font-family: "southAfrica";
+  font-weight: 700;
+  color:#e87155;
+  font-size: 30px;
+  line-height: 39px;
+}
+
+.sponsor-img {
+  width: 50%;
+  object-fit: cover;
+}
+
 
 .roadmap {
   display: flex;
@@ -1235,6 +1250,10 @@ ul {
   font-family: "Circular Std";
   font-size: 15px;
   color: #000000;
+}
+
+.team-img{
+  object-fit: cover;
 }
 
 /* Mobile */
