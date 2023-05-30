@@ -534,12 +534,11 @@ ul {
   width: auto;
 }
 
-
-.sponsor-heading{
+.sponsor-heading {
   margin-top: 50px;
   font-family: "southAfrica";
   font-weight: 700;
-  color:#e87155;
+  color: #e87155;
   font-size: 30px;
   line-height: 39px;
 }
@@ -548,7 +547,6 @@ ul {
   width: 50%;
   object-fit: cover;
 }
-
 
 .roadmap {
   display: flex;
@@ -1045,38 +1043,29 @@ ul {
 
 .main-card {
   display: grid;
-  height: 337px;
-  width: 280px;
-  grid-template-rows: 75% 25%;
-  outline: 10px solid #000;
+  height: 350px;
+  width: 30%;
+  grid-template-rows: 73% 30%;
   background-color: #000;
-  gap: 10px;
   overflow: hidden;
   transition: width 2s;
+  padding: 10px;
+  padding-bottom: 30px;
 }
 
 .main-card:hover {
-  display: grid;
-  height: 337px;
-  width: 280px;
   grid-template-rows: 50% 50%;
-  outline: 10px solid #000;
-  background-color: beige;
-  overflow: hidden;
 }
 
 .content-wrapper {
   height: 100%;
-  width: calc(100%);
   display: flex;
-  margin-left: 10px;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 4vmax;
+  justify-content: space-between;
 }
 
 .card-txt-bg {
-  padding-top: 10px;
   background-color: #000;
   color: white;
   overflow-y: hidden;
@@ -1089,6 +1078,7 @@ ul {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  height: 40px;
 }
 
 .team-name {
@@ -1098,6 +1088,7 @@ ul {
   font-size: 20px;
   line-height: 25px;
   color: #ffffff;
+  margin-top: 20px;
 }
 
 .mobile-menu {
@@ -1252,8 +1243,10 @@ ul {
   color: #000000;
 }
 
-.team-img{
+.team-img {
   object-fit: cover;
+  width: 100%;
+  height: 250px;
 }
 
 /* Mobile */
@@ -1289,6 +1282,11 @@ ul {
     display: block;
     text-align: center;
     padding-top: 100px;
+  }
+
+  .main-card {
+    width: 100%;
+    margin-bottom: 30px;
   }
 
   .news-img {

@@ -10,17 +10,15 @@
     {% for team in site.organizers %}
     <div class="main-card">
 
-      <div class="card-img">
-        <img class="team-img" src="{{ team.photo_url }}" alt="{{ team.name }}" width="280px" height="280px" />
-      </div>
+      <img class="team-img" src="{{ team.photo_url }}" alt="{{ team.name }}" width="280px" height="280px" />
 
       <div class="card-txt-bg">
-        
+
         <h5 class="team-name">{{ team.name }}</h5>
-         <h1 class="role">{{ team.role }}</h1>
-        
-         <div class="left"></div>
-          <div class="right"></div>
+        <h1 class="role">{{ team.role }}</h1>
+
+        <div class="left"></div>
+        <div class="right"></div>
         <div class="progress"></div>
 
         <div className="icons">
