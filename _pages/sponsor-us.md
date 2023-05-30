@@ -9,9 +9,8 @@ Sponsor DjangoCon Africa
 
 Join us as we make history with the first-ever DjangoCon Africa! Be a part of a thriving community of developers and position your brand at the forefront of the rapidly growing technology sector in Africa. With an expected 300 attendees from both the local and international community, sponsoring this landmark event is a unique opportunity to connect with and reach a highly engaged audience.
 
-- [Download Sponsorship Brochure](/static/documents/djcafrica23prospectus.pdf)
-- Contact us at [sponsors@djangocon.africa](mailto:{{site.sponsors_email}})
-- Look who's [sponsoring us](#)
+- [**Download Sponsorship Brochure**](/static/documents/djcafrica23prospectus.pdf)
+- Look who's [**sponsoring us**](/our-sponsors/)
 
 If you are interested in becoming a sponsor or if you have any questions, then please email us at [sponsors@djangocon.africa](mailto:{{ site.sponsors_email }}).
 
