@@ -1,10 +1,10 @@
 ---
 title: Sponsors
 layout: default
-permalink: /sponsors/
+permalink: /sponsor-us/
 ---
 
-Sponsors
+Sponsor DjangoCon Africa
 {: .h1}
 
 Join us as we make history with the first-ever DjangoCon Africa! Be a part of a thriving community of developers and position your brand at the forefront of the rapidly growing technology sector in Africa. With an expected 300 attendees from both the local and international community, sponsoring this landmark event is a unique opportunity to connect with and reach a highly engaged audience.

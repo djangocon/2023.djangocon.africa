@@ -3,24 +3,26 @@
 - name: Talks
   link: /talks/
 # - name: Information
-#   link: /info/
+#   link: #
 #   sublink:
-#     # - name: Accommodation
-#     #   link: #
-#     # - name: Venues
-#     #   link: #
-#     # - name: Accessibility
-#     #   link: #
-- name: Opportunity Grants
-  link: /grant/
+#     - name: Accommodation
+#       link: #
+#     - name: Venues
+#       link: #
+#     - name: Accessibility
+#       link: #
+# - name: Opportunity Grants
+#   link: /grant/
 - name: Sponsors
-  link: /sponsors/
+  link: #
   sublink:
     - name: Sponsor us
-      link: /sponsors/
+      link: /sponsor-us
     - name: Our sponsors
-      link: #
+      link:  /our-sponsors
 - name: Conduct
   link: /conduct/
-# - name: News
-#   link: /news/
+- name: News
+  link: /news/
+# - name: Teams
+#   link: /teams/

@@ -4,12 +4,33 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description"
+      content="{{page.meta}}">
+    
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="{{site.url}}{{page.url}}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{page.title}}">
+    <meta property="og:description"
+      content="{{page.meta}}">
+    <meta property="og:image" content="{{page.banner}}">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="https://djangocon.africa">
+    <meta property="twitter:url" content="{{site.url}}{{page.url}}">
+    <meta name="twitter:title" content="{{page.title}}">
+    <meta name="twitter:description"
+      content="{{page.meta}}">
+    <meta name="twitter:image" content="{{page.banner}}">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+      <link rel="shortcut icon" href="/static/img/site/icon.png" type="image/x-icon">
+      <link rel="icon" href="/static/img/site/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="/static/css/style.css" />
   </head>
   <body>
@@ -22,7 +43,7 @@
     </section>
 
     {% include footer.html %}
-    <script src="//code.tidio.co/ypalbp3puqa6ycruaz2ujgjuudsphjwz.js" async></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
