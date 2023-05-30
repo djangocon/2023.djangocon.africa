@@ -1051,6 +1051,7 @@ ul {
   transition: width 2s;
   padding: 10px;
   padding-bottom: 30px;
+  margin-bottom: 44px;
 }
 
 .main-card:hover {

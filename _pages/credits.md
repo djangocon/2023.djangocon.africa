@@ -20,9 +20,11 @@ with thanks to the following people for their contributions to the website:
 - [Anna Makarudze]({{site.g}}/amakarudze)
 - [Sheena O'Connell]({{site.g}}/sheenarbw)
 - [Derek Duafa]({{site.g}}/dduafa)
+- [Gloria Boakye]({{site.g}}/Globak143)
 
+{% comment %}
 Volunteers who helped with the conference:
 {: .h2}
-{% comment %}
+
 - [](){:target="_blank"}
 {% endcomment %}
