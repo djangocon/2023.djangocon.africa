@@ -29,7 +29,7 @@ Please read both these pages carefully before submitting your talk:
 - [**Speaking**](/talks)
 - [**Speaker Resources**](/speaker-resources)
 
-<!-- <button class="proposal-post-button text-center" onclick="window.location.href='/talks'">SUBMIT A PROPOSAL</button> -->
+<button class="proposal-post-button text-center" onclick="window.location.href='https://cfp-2023.djangocon.africa/'">SUBMIT A PROPOSAL HERE</button>
 
 
 Submissions from anywhere in the world are welcome until 12th July 2023.
