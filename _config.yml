@@ -29,6 +29,7 @@ sass:
 plugins:
   - jekyll-feed
 
+
 collections:  
   organizers:
     output: false
@@ -82,3 +83,11 @@ github: "https://github.com/djangocon"
 t: "https://twitter.com"
 g: "https://github.com"
 l: "https://linkedin.com/in"
+
+
+# Polyglot settings
+languages: ["en", "sw","fr"]
+default_lang: "en"
+exclude_from_localization: ["javascript", "images", "css", "public"]
+parallel_localization: true
+

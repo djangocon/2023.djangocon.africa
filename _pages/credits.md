@@ -11,6 +11,7 @@ with thanks to the following people for their contributions to the website:
 {: .h2}
 
 - [Noah Alorwu]({{site.g}}/noahalorwu)
+- [Hope Adoli]({{site.g}}/hopeadoli)
 - [Ephraim Atta-Duncan]({{site.g}}/dephraiim)
 - [Datsomor Gerhardt Kwame]({{site.g}}/datgerhardt)
 - [Nancy H. Addo]({{site.g}}/codegem99)
