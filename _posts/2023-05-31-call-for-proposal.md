@@ -20,7 +20,7 @@ When in doubt, submit your talk 😉!
 - Improving Django and Python developers' lives.
 - Pushing Django to its limits
 - The Django and Python community, culture, history, past, present & future, the why, the who and the what of it all.
-Security
+- Security
 - Whatever you deem appropriate – it's your conference after all!
 
 If you would like to ask a question, you are always welcome to write to the Content Committee: [content@djangocon.africa](mailto:content@djangocon.africa)
