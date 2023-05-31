@@ -281,6 +281,21 @@ nav .ticket {
   margin-top: 40px;
 }
 
+.proposal-post-button {
+  font-family: "Edmondsans";
+  justify-items: center;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  color: #000000;
+  border: 2px solid #000000;
+  background-color: transparent;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
 .ticket-mb {
   display: none;
 }
