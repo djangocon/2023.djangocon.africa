@@ -9,5 +9,5 @@ linkedin: ""
 photo_url: "/static/img/organizers/muheue.jpg"
 layout: default
 ---
-{% end comment %}
+<!-- {% end comment %} -->
 
