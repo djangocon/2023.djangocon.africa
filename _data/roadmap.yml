@@ -8,15 +8,17 @@
     - date: "2023-05-31"
       dateCardinal: "31st"
       text: "Call For Proposals Open"
-      url: "#"
+      url: "/talks"
 
-    - date: "2023-05-31"
-      dateCardinal: "31st"
+- month: June
+  dates:
+    - date: "2023-06-13"
+      dateCardinal: "13th"
       text: "Opportunity Grant Open"
-      url: "#"
+      url: "https://forms.gle/UTcQXNh5KqXBigSK7"
 
-    - date: "2023-05-31"
-      dateCardinal: "31st"
+    - date: "2023-06-20"
+      dateCardinal: "20th"
       text: "Open ticket sales"
       url: "#"
 

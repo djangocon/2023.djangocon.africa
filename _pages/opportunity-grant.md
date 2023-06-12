@@ -19,7 +19,7 @@ We try to do this in a number of ways:
 
 Our program prioritises speakers first, and then anyone who is part of an underrepresented or marginalised group in tech. These groups include, but are not limited to:
 
-- women and other gender minorities of all expressions and identities; e.g. trans, agender and non-binary people
+- women and other gender minorities of all expressions and identities; e.g. transgender and non-binary people
 - people of color
 - sexuality minorities, including asexual people
 - people with disabilities, both visible and invisible
@@ -47,3 +47,6 @@ That’s why we want to stress:
 - Don’t feel like you deserve this? That’s also ok: you do.
 
 With our limited funds, we can’t promise you will receive a grant, but if you’re not sure, we encourage you to apply. If you’re uncomfortable with other people knowing you received a grant, you don’t have to tell them - our policy is to never publicly identify grant applicants or recipients unless we have your explicit permission.
+
+
+<button class="proposal-post-button text-center" onclick="window.location.href='https://forms.gle/UTcQXNh5KqXBigSK7'">Apply for Grant</button>

@@ -1,4 +1,3 @@
-{%- comment -%}
 ---
 github: "Ngazetungue"
 name: "Ngazetungue Muheue 🇳🇦" 
@@ -9,5 +8,4 @@ linkedin: ""
 photo_url: "/static/img/organizers/muheue.jpg"
 layout: default
 ---
-<!-- {% end comment %} -->
 
