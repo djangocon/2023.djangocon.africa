@@ -42,6 +42,7 @@ This includes:
 
 Anything left over will be used for supporting future non-profit events.
 
+<!-- 
 ## Sponsorship packages
 
-We are still busy designing our sponsorship packages. That said, if you are interested in sponsoring or have any questions our sponsorship team will be happy to talk.  Please feel free to email us at [sponsors@djangocon.africa](mailto:{{ site.sponsors_email }}).
+We are still busy designing our sponsorship packages. That said, if you are interested in sponsoring or have any questions our sponsorship team will be happy to talk.  Please feel free to email us at [sponsors@djangocon.africa](mailto:{{ site.sponsors_email }}). -->
