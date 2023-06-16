@@ -6,7 +6,7 @@
 
 - name: Speaking at DjangoCon Africa 
   path: /talks/
-  description: Our Call for Proposals is now open! Submit your talk or tutorial proposal from Wednesday 31st May to Wednesday 12th July anywhere in the world, and encourage your friends and colleagues to do the same.<br><br> <p>Need help with your proposal? We’ve got mentors and helpful tips on our Speaker Resources page!</p>
+  description: Our Call for Proposals is now open! Submit your talk or tutorial proposal from Wednesday 31st May to Wednesday 12th July anywhere in the world, and encourage your friends and colleagues to do the same.<br><br> <p>Need help with your proposal? We’ve got mentors and helpful tips on our <a href="/speaker-resources/"><strong>Speaker Resources page!</strong></a></p>
   button_enabled: true
   button_text: Submit a proposal
   button_link: https://cfp-2023.djangocon.africa
