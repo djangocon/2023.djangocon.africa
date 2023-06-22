@@ -7,7 +7,7 @@ permalink: /about/
 ## About the Conference
 DjangoCon Africa will include 3 days of single-track talks, 1 day of workshops and sprints, and another day for touring for international visitors. 
 
-The conference will feature talks about the Django Web Framework, related technologies and community. Whether you are an entry level, intermediate or advanced developer, DjangoCon Africa has something in stock for you.
+The conference will feature talks about the Django Web Framework, related technologies and community. Whether you are an entry level, intermediate or advanced developer, DjangoCon Africa has something in store for you.
 
 To make the conference as inclusive as possible, the event will offer financial aid to members of under-represented communities in software to ensure they can also attend. 
 
