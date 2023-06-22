@@ -396,13 +396,15 @@ nav .active {
   transition: rotate 0.3s ease;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1200px) {
   nav .menu {
     flex-direction: column;
     width: 100%;
     padding: 70px 30px 0 30px;
   }
+}
 
+@media only screen and (max-width: 767px) {
   .menu__item {
     border-bottom: 1.5px solid rgba(0, 0, 0, 0.05);
     padding-top: 20px;
