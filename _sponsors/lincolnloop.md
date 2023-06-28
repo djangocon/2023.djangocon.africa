@@ -1,6 +1,6 @@
 ---
-hidden: true
-level: "Gold"
+hidden: false
+level: "Bronze"
 name: "Lincoln Loop"
 logo: "/static/img/sponsors/ll_logo.svg"
 

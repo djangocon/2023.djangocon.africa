@@ -16,11 +16,11 @@
        {% unless sponsor.hidden %}
 <div class="post-list">
 <div class="post">
-    <div class="post-image">
+    <a href="{{sponsor.url_target}}"> <div class="post-image">
       <img class="sponsor-img" src="{{  sponsor.logo }}" alt="{{  sponsor.title }}">
-    </div>
+    </div></a>
     <div class="post-list-content">
-        <h1 class="post-title">{{ sponsor.name }}</h1>
+       <a href="{{sponsor.url_target}}"><h1 class="post-title">{{ sponsor.name }}</h1></a>
       <p class="post-excerpt">{{ sponsor.description }}</p>
       {% if sponsor.hiring == true %}
        <button class="proposal-button" onclick="window.location.href='{{sponsor.hire_url}}'">We're hiring</button>
