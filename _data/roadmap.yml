@@ -17,10 +17,10 @@
       text: "Opportunity Grant Open"
       url: "/grant/"
 
-    - date: "2023-06-20"
-      dateCardinal: "20th"
-      text: "Open ticket sales"
-      url: "#"
+    # - date: "2023-06-20"
+    #   dateCardinal: "20th"
+    #   text: "Open ticket sales"
+    #   url: "#"
 
 - month: July
   dates:
@@ -46,11 +46,11 @@
       dateCardinal: "2nd"
       text: "Speakers Announcement"
 
-- month: October
-  dates:
-    - date: "2023-10-01"
-      dateCardinal: "1st"
-      text: "Close ticket sales"
+# - month: October
+#   dates:
+#     - date: "2023-10-01"
+#       dateCardinal: "1st"
+#       text: "Close ticket sales"
 
 - month: November
   dates:
@@ -60,9 +60,13 @@
       url: "https://djangogirls.org/en/zanzibar/"
 
     - date: "2023-11-06"
-      dateCardinal: "6th, 7th, 8th, 9th, 10th"
-      text: "Conference @ State University of Zanzibar"
+      dateCardinal: "6th"
+      text: "Orientation and Tour day"
+   
+    - date: "2023-11-07"
+      dateCardinal: "7 - 9th"
+      text: "Talks"
 
     - date: "2023-11-11"
-      dateCardinal: "11th"
-      text: "Conference ends"
+      dateCardinal: "10 - 11th"
+      text: "Workshops"
