@@ -4,13 +4,14 @@ layout: default
 permalink: /travellers/
 ---
 
-## Information for visitors
+# Information for visitors
 {: .h1}
 
 One of the reasons for choosing Zanzibar as our location is that it is a very accessible part of the continent for international travel.
 
+
 ## The basics
-Zanzibar, a province of Tanzania, is a cluster of islands in the Indian Ocean. DjangoCon Africa is being held on Unguja, Zanzibar's main island, about 25km off the coast. The island is often informally referred to as Zanzibar.
+Zanzibar, a province of Tanzania, is a cluster of islands in the Indian Ocean. DjangoCon Africa is being held on Zanzibar's main island, about 25km off the coast, known as Zanzibar Island or Unguja, and sometimes simply referred to as Zanzibar.
 
 Zanzibar is a very popular tourist destination, receiving about 400 thousand visitors each year.
 

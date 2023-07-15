@@ -39,3 +39,7 @@
   link: /teams
 - name: Travellers
   link: /travellers
+  sublink:
+    - name: A letter from Africa
+      link: /letter-from-africa
+
