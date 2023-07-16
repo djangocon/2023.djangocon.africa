@@ -1233,8 +1233,7 @@ ul {
 .post-image {
   margin-top: 30px;
   margin-bottom: 30px;
-  width: 100%;
-  max-width: 834px;
+  width: 300px;
   height: auto;
 }
 
