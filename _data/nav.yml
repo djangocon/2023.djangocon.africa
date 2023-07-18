@@ -41,7 +41,7 @@
 - name: Travellers
   link: #
   sublink:
-    - name: Travellers
+    - name: Info
       link: /travellers
     - name: A letter from Africa
       link: /letter-from-africa
