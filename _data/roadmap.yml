@@ -27,6 +27,11 @@
     - date: "2023-07-17"
       dateCardinal: "17th"
       text: "Opportunity Grant Close"
+    
+    - date: "2023-07-18"
+      dateCardinal: "18th"
+      text: "Open ticket sales"
+      url: "/get-ticket"
 
 
 - month: August
