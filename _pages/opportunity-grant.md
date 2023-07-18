@@ -7,6 +7,12 @@ permalink: /grant/
 Opportunity Grants
 {: .h1}
 
+> #### Our opportunity grant application window is now closed. All decision notifications will be sent by August 10th, 2023.
+>
+> #### If you have any questions, feel free to reach out to the opportunity grants team at [{{ site.opportunity_grants_email}}](mailto:{{ site.opportunity_grants_email}})
+
+
+
 DjangoCon Africa {{ site.year }} offers grants to attendees and speakers, so that those who might otherwise not be able to attend won’t hesitate to participate. Some expenses for the conference attendance (which can include travel, hotel, registration etc.) will be covered for opportunity grant recipients.
 
 We actively encourage people to apply for an opportunity grant. While we wish we could give grants to everyone who applies, we do not have the funds to do that. Our goal is to maximise the impact our grant program has, within the limited funds we have.
