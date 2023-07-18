@@ -49,4 +49,4 @@ That’s why we want to stress:
 With our limited funds, we can’t promise you will receive a grant, but if you’re not sure, we encourage you to apply. If you’re uncomfortable with other people knowing you received a grant, you don’t have to tell them - our policy is to never publicly identify grant applicants or recipients unless we have your explicit permission.
 
 
-<button class="proposal-post-button text-center" onclick="window.location.href='https://forms.gle/UTcQXNh5KqXBigSK7'">Apply for Grant</button>
+<button class="proposal-post-button text-center">Closed</button>

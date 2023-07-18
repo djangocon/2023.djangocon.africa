@@ -24,30 +24,31 @@
 
 - month: July
   dates:
-    - date: "2023-07-12"
-      dateCardinal: "12th"
-      text: "Call For Proposals Close"
-
     - date: "2023-07-17"
       dateCardinal: "17th"
       text: "Opportunity Grant Close"
 
-    - date: "2023-07-24"
-      dateCardinal: "24th"
-      text: "Opportunity Grant Notification"
-
-    - date: "2023-07-26"
-      dateCardinal: "26th"
-      text: "Speakers Selection Notification"
 
 - month: August
   dates:
-    - date: "2023-08-02"
-      dateCardinal: "2nd"
-      text: "Speakers Announcement"
+    - date: "2023-08-04"
+      dateCardinal: "4th"
+      text: "Call For Proposals Close"
+    
+    - date: "2023-08-10"
+      dateCardinal: "10th"
+      text: "Opportunity Grant Notification"
+
+    - date: "2023-08-20"
+      dateCardinal: "20th"
+      text: "Speakers Selection Notification"
+
 
 # - month: October
 #   dates:
+      # - date: "2023-08-"
+      #   dateCardinal: "2nd"
+      #   text: "Speakers Announcement"
 #     - date: "2023-10-01"
 #       dateCardinal: "1st"
 #       text: "Close ticket sales"

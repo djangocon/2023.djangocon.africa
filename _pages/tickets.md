@@ -21,11 +21,6 @@ Tickets 🎟️
   </thead>
    <tbody>
     <tr>
-      <th scope="row">Special Ticket</th>
-      <td>$10.00</td>
-      <td>N/A</td>
-    </tr>
-    <tr>
       <th scope="row">Student</th>
       <td>$50.00</td>
       <td>$70.00</td>
@@ -62,8 +57,6 @@ Tickets 🎟️
 **Individual**: Individuals who are paying for their own ticket, or who are being sponsored by their employer.
 
 **Business**: Companies with more than 5 employees. State or government institutions and non-profit organizations should use the corporate rate if they are able.
-
-**Special**: If you’re unemployed, on a lower income, or would benefit from a lower-priced ticket for another reason. If your company is paying for your ticket, you are not eligible for this ticket type.
 
 
 ## What is the refund policy?
