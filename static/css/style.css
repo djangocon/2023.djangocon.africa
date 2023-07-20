@@ -362,7 +362,7 @@ nav .active {
   grid-template-rows: 1fr;
 }
 
-.menu__sublinks > div {
+.menu__sublinks>div {
   overflow: hidden;
 }
 
@@ -418,7 +418,7 @@ nav .active {
     padding-bottom: 0;
   }
 
-  .menu__sublinks-container > :first-child {
+  .menu__sublinks-container> :first-child {
     padding-top: 10px;
   }
 }
@@ -568,7 +568,8 @@ ul {
   object-fit: cover;
 }
 
-.sponsor img {
+.sponsor
+img {
   width: 100%;
 }
 
@@ -1282,6 +1283,7 @@ ul {
   .ticket-mb {
     display: block;
   }
+
   .ticket-mb {
     font-family: "Edmondsans";
     font-style: normal;

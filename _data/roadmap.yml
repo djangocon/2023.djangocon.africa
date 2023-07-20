@@ -47,6 +47,10 @@
     - date: "2023-08-20"
       dateCardinal: "20th"
       text: "Speakers Selection Notification"
+    
+    - date: "2023-08-31"
+      dateCardinal: "31st"
+      text: "Early Bird Ticket Sales Close"
 
 
 # - month: October
