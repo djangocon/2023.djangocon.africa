@@ -57,7 +57,7 @@ menu.addEventListener("click", (e) => {
 });
 
 function toggleMenuItem(menuItem) {
-  const menuDropdownIcon = document.querySelector(".menu__dropdown-icon");
+  const menuDropdownIcon = menuItem.querySelector(".menu__dropdown-icon");
   const activeMenuLink = menuItem.querySelector(".menu__link--expandable");
   const activeMenuLinkIsOpened = activeMenuLink.getAttribute("aria-expanded");
 
