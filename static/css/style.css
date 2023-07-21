@@ -321,9 +321,10 @@ nav .menu {
   justify-content: space-between;
   width: 100%;
   padding-top: 60px;
-  padding-right: 300px;
-  padding-left: 300px;
   z-index: 2;
+  max-width: 1195px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 nav .menu .menu__link {
@@ -345,7 +346,6 @@ nav .active {
 
 .menu__item-container {
   display: flex;
-  justify-content: space-between;
 }
 
 .menu__item--has-sublinks {
@@ -385,6 +385,7 @@ nav .active {
 
 .menu__dropdown-icon {
   margin-left: 10px;
+  margin-bottom: 10px;
   transition: rotate 0.3s ease;
 }
 
