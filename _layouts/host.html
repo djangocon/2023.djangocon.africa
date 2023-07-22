@@ -1,0 +1,7 @@
+{% assign current_date = 'now' | date: '%s' %}
+{% assign due_date = '2023-05-10'| date: '%s' %}
+{% if current_date > due_date %}
+{% include home.html %}
+{% else %}
+{% include landing.html %}
+{% endif %}

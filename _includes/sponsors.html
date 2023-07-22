@@ -1,13 +1,27 @@
 <div class="mini-container sponsors">
+ 
+  <!-- <div class="talk-section">
+    <h1 class="heading">Become A Sponsor</h1>
+    <p class="sub-head-text">
+      DjangoCon Africa is not possible without your support. The spirit of the event focuses on providing a platform for new
+      and
+      experiences speakers to share their stories and knowledge. If you’ll like to sponsor us, please
+      <strong><a href="/sponsor-us">click here</a></strong>.
+    </p>
+
+  </div> -->
+
+
   <h3 class="heading">Sponsors</h3>
   <p class="sub-text">
     DjangoCon Africa is made possible by the generous sponsorships of various teams and
     organisations around the world. If you’ll like to sponsor us, please
-    <strong><a href="#">click here.</a></strong
+    <strong><a href="/sponsor-us">click here.</a></strong
     >.
   </p>
+ 
   {% assign sponsors_by_level = "Diamond|Platinum|Gold|Lanyard|Silver|Bronze|Opportunity
-  Grant|Community" | split: "|" %} {% for level in sponsors_by_level %} {% assign sponsors_in_level
+  Grant|Community|Partners" | split: "|" %} {% for level in sponsors_by_level %} {% assign sponsors_in_level
   = site.sponsors | where: 'level', level | where: 'hidden', false %} {% assign sponsors_count =
   sponsors_in_level | size %} {% if sponsors_count != 0 %}
   <div class="sponsor-section">
@@ -20,7 +34,8 @@
             class="{{ sponsor.logo_orientation }}"
             src="{{ sponsor.logo }}"
             alt="{{ sponsor.name }} Logo"
-            height="45px"
+            height="80px"
+            width="100%"
           />
         </a>
       </div>
@@ -28,4 +43,5 @@
     </div>
   </div>
   {% endif %} {% endfor %}
+ 
 </div>

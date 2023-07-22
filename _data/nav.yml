@@ -1,26 +1,48 @@
-- name: About
-  link: /about/
+- name: Info
+  link: #
+  sublink:  
+  - name: About 
+    link: /about/
+  
+  # - name: FAQ
+  #   link: /faq/
+
+
 - name: Talks
   link: /talks/
 # - name: Information
-#   link: /info/
+#   link: #
 #   sublink:
-#     # - name: Accommodation
-#     #   link: #
-#     # - name: Venues
-#     #   link: #
-#     # - name: Accessibility
-#     #   link: #
-- name: Opportunity Grants
-  link: /grant/
+#     - name: Accommodation
+#       link: #
+#     - name: Venues
+#       link: #
+#     - name: Accessibility
+#       link: #
+
+
 - name: Sponsors
-  link: /sponsors/
+  link: #
   sublink:
     - name: Sponsor us
-      link: /sponsors/
+      link: /sponsor-us
     - name: Our sponsors
-      link: #
+      link:  /our-sponsors
+
+- name: Grant 
+  link: /grant/
 - name: Conduct
   link: /conduct/
-# - name: News
-#   link: /news/
+- name: News
+  link: /news/
+- name: Teams
+  link: /teams
+
+- name: Travellers
+  link: #
+  sublink:
+    - name: Info
+      link: /travellers
+    - name: A letter from Africa
+      link: /letter-from-africa
+

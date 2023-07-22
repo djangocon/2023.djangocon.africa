@@ -2,8 +2,8 @@
 github: "hopeadoli"
 layout: default
 name: "Hope Adoli 🇬🇭"
-photo_url: "/static/img/site/news_bg.png"
-role: "UX Designer"
+photo_url: "/static/img/organizers/hope.jpg"
+role: "Design, Communications & Website Team"
 twitter: "@uxkafui"
 website: ""
 linkedin: "hopeadoli"

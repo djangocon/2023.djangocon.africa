@@ -1,5 +1,5 @@
 ---
-hidden: false
+hidden: true
 level: "Silver"
 name: "Test Sponsor"
 logo: "/static/img/site/google.png"

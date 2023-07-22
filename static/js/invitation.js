@@ -70,7 +70,7 @@ async function start(ev) {
 
   displayLoading()
   $("#form").hide();
-  await fetch('https://djc-invitation-letter-api-noahalorwu.vercel.app', {
+  await fetch('https://djc-africa-api.vercel.app/invitation', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

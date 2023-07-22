@@ -1,50 +1,82 @@
 - month: May
   dates:
-    - date: "2023-05-16"
-      dateCardinal: "16th"
-      text: "Super Early Bird Ticket sales open"
-      url: "#"
-    - date: "2023-05-18"
-      dateCardinal: "18th"
-      text: "Grant applications' form open"
-      url: "#"
-    - date: "2023-05-23"
-      dateCardinal: "23rd"
-      text: "Call for Participation opens"
-      url: "#"
+    - date: "2023-05-10"
+      dateCardinal: "10th"
+      text: "Conference Announcement"
+      url: "/news/announcing-djangocon-africa-2023"
+
+    - date: "2023-05-31"
+      dateCardinal: "31st"
+      text: "Call For Proposals Open"
+      url: "/talks"
+
 - month: June
   dates:
-    - date: "2023-06-01"
-      dateCardinal: "1st"
-      text: "Super Early Bird Ticket sales close"
+    - date: "2023-06-13"
+      dateCardinal: "13th"
+      text: "Opportunity Grant Open"
+      url: "/grant/"
+
+    # - date: "2023-06-20"
+    #   dateCardinal: "20th"
+    #   text: "Open ticket sales"
+    #   url: "#"
+
 - month: July
   dates:
-    - date: "2023-07-01"
-      dateCardinal: "1st"
-      text: "Call for Participation deadline"
+    - date: "2023-07-17"
+      dateCardinal: "17th"
+      text: "Opportunity Grant Close"
+    
+    - date: "2023-07-18"
+      dateCardinal: "18th"
+      text: "Open ticket sales"
+      url: "/get-ticket"
+
+
 - month: August
   dates:
-    - date: "2023-08-01"
-      dateCardinal: "1st"
-      text: "Early Bird Ticket sales close"
-    - date: "2023-08-15"
-      dateCardinal: "15th"
-      text: "Grants application deadline"
-- month: September
+    - date: "2023-08-04"
+      dateCardinal: "4th"
+      text: "Call For Proposals Close"
+    
+    - date: "2023-08-10"
+      dateCardinal: "10th"
+      text: "Opportunity Grant Notification"
+
+    - date: "2023-08-20"
+      dateCardinal: "20th"
+      text: "Speakers Selection Notification"
+    
+    - date: "2023-08-31"
+      dateCardinal: "31st"
+      text: "Early Bird Ticket Sales Close"
+
+
+# - month: October
+#   dates:
+      # - date: "2023-08-"
+      #   dateCardinal: "2nd"
+      #   text: "Speakers Announcement"
+#     - date: "2023-10-01"
+#       dateCardinal: "1st"
+#       text: "Close ticket sales"
+
+- month: November
   dates:
-    - date: "2023-09-01"
-      dateCardinal: "1st"
-      text: "Talks start being published"
-    - date: "2023-09-15"
-      dateCardinal: "15th"
-      text: "Schedule is published"
-- month: October
-  dates:
-    - date: "2023-10-25"
-      dateCardinal: "23rd, 24th, 25th"
-      text: "Main Conference @ Movenpick Hotel"
-      url: "#"
-    - date: "2023-10-55"
-      dateCardinal: "25th"
-      url: "#"
-      text: "Afterparty @ Hillbury Gardens"
+    - date: "2023-11-04"
+      dateCardinal: "4th"
+      text: "Django Girls Event"
+      url: "https://djangogirls.org/en/zanzibar/"
+
+    - date: "2023-11-06"
+      dateCardinal: "6th"
+      text: "Orientation and Tour day"
+   
+    - date: "2023-11-07"
+      dateCardinal: "7 - 9th"
+      text: "Talks"
+
+    - date: "2023-11-11"
+      dateCardinal: "10 - 11th"
+      text: "Workshops"

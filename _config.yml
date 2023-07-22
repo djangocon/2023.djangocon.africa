@@ -9,12 +9,15 @@ baseurl: ""
 url: "https://2023.djangocon.africa"
 twitter_username: djcafrica
 logo: /static/img/site/logo.svg
+footer_logo: /static/img/site/footer-logo.svg
 relative_permalinks: false
 permalink: news/:title/
 default_banner: /static/img/site/about_img.png
 
 # Build settings
 markdown: kramdown
+
+future: true
 
 include:
   - _pages
@@ -25,6 +28,7 @@ sass:
 
 plugins:
   - jekyll-feed
+
 
 collections:  
   organizers:
@@ -39,6 +43,7 @@ year: 2023
 conference_duration_days: 6
 conference_dates:  6 - 11 of November 2023
 host_city_and_country: Zanzibar, Tanzania
+location: State University of Zanzibar
 conduct_email: "conduct@djangocon.africa"
 conduct_phone: ""
 contact_us_email: "hello@djangocon.africa"
@@ -53,7 +58,7 @@ coc_team:
 - Jessica Upani
 - Humphrey Butau
 - Abigail Dogbe
-- Helen Bire
+
 
 # Our DjangoCon Africa Links
 cfp: ""
@@ -78,3 +83,4 @@ github: "https://github.com/djangocon"
 t: "https://twitter.com"
 g: "https://github.com"
 l: "https://linkedin.com/in"
+

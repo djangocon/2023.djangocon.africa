@@ -254,7 +254,7 @@ nav button {
   flex-direction: row;
   align-items: center;
   cursor: pointer;
-  background: #fffae9;
+  background: #37ffce00;
   border: 2px solid #000000;
 }
 
@@ -268,7 +268,43 @@ nav .ticket {
   color: #000000;
 }
 
+.proposal-button {
+  font-family: "Edmondsans";
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  color: #000000;
+  border: 2px solid #000000;
+  background-color: transparent;
+  margin-top: 40px;
+}
+
+.proposal-post-button {
+  font-family: "Edmondsans";
+  justify-items: center;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  color: #000000;
+  border: 2px solid #000000;
+  background-color: transparent;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.ticket-mb {
+  display: none;
+}
+
 nav .hamburger {
+  display: none;
+}
+
+nav .hamburger-mb {
   padding: 11px 9px;
 }
 
@@ -278,26 +314,20 @@ nav .closeIcon {
 }
 
 nav .menu {
-  position: absolute;
-  transform: translateY(-100%);
   transition: transform 0.2s;
   top: 0;
   list-style: none;
   display: flex;
   justify-content: space-between;
   width: 100%;
-  background: #fffae9;
-  padding-top: 160px;
-  padding-bottom: 70px;
-  padding-right: 500px;
-  padding-left: 500px;
+  padding-top: 60px;
+  z-index: 2;
+  max-width: 1195px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-nav .showMenu {
-  transform: translateY(0);
-}
-
-nav .menu .menuItem {
+nav .menu .menu__link {
   font-family: "Edmondsans";
   font-style: normal;
   font-weight: bolder;
@@ -309,9 +339,89 @@ nav .menu .menuItem {
   padding-bottom: 10px;
 }
 
-nav .menu .menuItem:hover,
+nav .menu .menu__link:hover,
 nav .active {
   border-bottom: 2px solid #000000;
+}
+
+.menu__item-container {
+  display: flex;
+}
+
+.menu__item--has-sublinks {
+  padding-bottom: 0;
+}
+
+.menu__sublinks {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 500ms;
+}
+
+.menu__sublinks[aria-hidden="false"] {
+  grid-template-rows: 1fr;
+}
+
+.menu__sublinks>div {
+  overflow: hidden;
+}
+
+.menu__sublinks-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menu__sublink {
+  font-family: "Edmondsans";
+  color: #676767;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0;
+}
+
+.menu__dropdown-icon {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  transition: rotate 0.3s ease;
+}
+
+@media only screen and (max-width: 1200px) {
+  nav .hamburger {
+    display: flex;
+    padding: 11px 9px;
+  }
+
+  nav .menu {
+    flex-direction: column;
+    width: 100%;
+    padding: 70px 30px 0 30px;
+    position: absolute;
+    transform: translateY(-100%);
+    padding-bottom: 70px;
+    background: #fffae9;
+  }
+
+  nav .showMenu {
+    transform: translateY(0);
+  }
+
+  .menu__item {
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.05);
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  a.menu__link.menu__link--expandable {
+    padding-bottom: 0;
+  }
+
+  .menu__sublinks-container> :first-child {
+    padding-top: 10px;
+  }
 }
 
 .hero {
@@ -376,7 +486,8 @@ nav .active {
   font-size: 65px;
   line-height: 73px;
   color: black;
-  width: 600px !important; /* 388px */
+  width: 600px !important;
+  /* 388px */
   margin-left: -30%;
   padding-top: 100px !important;
   padding-left: 98px;
@@ -402,17 +513,18 @@ ul {
 
 .info {
   font-family: "Circular Std";
-  font-style: normal;
-  font-weight: 400;
+  font-weight: 200;
   font-size: 40px;
   line-height: 64px;
   margin-top: 150px;
   margin-bottom: 100px;
+  word-wrap: break-word;
 }
 
 .speaker,
 .sponsors,
 .roadmap-section {
+  position: relative;
   margin-bottom: 90px;
 }
 
@@ -439,9 +551,27 @@ ul {
 }
 
 .sponsor {
-  background: #f9f1d6;
   padding: 12px 19px;
   width: auto;
+}
+
+.sponsor-heading {
+  margin-top: 50px;
+  font-family: "southAfrica";
+  font-weight: 700;
+  color: #e87155;
+  font-size: 30px;
+  line-height: 39px;
+}
+
+.sponsor-img {
+  width: 50%;
+  object-fit: cover;
+}
+
+.sponsor
+img {
+  width: 100%;
 }
 
 .roadmap {
@@ -488,6 +618,11 @@ ul {
   text-decoration-thickness: 1px;
 }
 
+.dateAndIcon {
+  display: flex;
+  align-items: center;
+}
+
 .django {
   position: absolute;
   width: 84.64px;
@@ -508,6 +643,10 @@ ul {
   padding-top: 0;
 }
 
+.conference-information {
+  padding-top: 40px;
+}
+
 .default {
   width: 1074px;
 }
@@ -519,7 +658,7 @@ ul {
 .default-img {
   position: absolute;
   margin-top: 65px;
-  border: 5px solid #e87155;
+  /* border: 5px solid #e87155; */
 }
 
 .default-hero-description {
@@ -529,8 +668,6 @@ ul {
 }
 
 .default-heading {
-  width: 187px;
-  height: 73px;
   font-family: "Circular Std";
   font-style: normal;
   font-weight: 500;
@@ -564,6 +701,10 @@ ul {
   gap: 20px;
 
   margin-top: 30px;
+}
+
+#frequently-asked-questions {
+  text-align: center;
 }
 
 .talk-section p {
@@ -601,13 +742,11 @@ ul {
   width: 100%;
 }
 
-.code {
-  position: relative;
-  width: 77.72px;
-  height: 86.64px;
-  left: 750px;
-  top: 90px;
-  background: url(/static/img/site/code.svg);
+.code-image {
+  position: absolute;
+  height: 86px;
+  top: 0;
+  right: 0;
 }
 
 /* center image */
@@ -621,9 +760,10 @@ ul {
   margin-top: -100px;
   margin-bottom: 97px;
 }
-.speaker-img{
+
+/* .speaker-img {
   display: none;
-}
+} */
 
 .news-img {
   margin-left: auto;
@@ -653,7 +793,7 @@ ul {
 
 .news-pub {
   margin-top: 20px;
-  margin-left: 36px;
+  margin-left: 36px !important;
   font-family: "Circular Std";
   font-size: 15px;
   color: #ffffff;
@@ -669,9 +809,10 @@ ul {
 
 .all-news-pub {
   margin-top: 20px;
+  margin-bottom: 20px !important;
   font-family: "Circular Std";
   font-size: 15px;
-  color: #000000;
+  color: #e87155;
 }
 
 .news-excerpt {
@@ -710,6 +851,7 @@ ul {
   line-height: 73px;
   color: #ffffff;
 }
+
 .news-banner-pub {
   height: 20px;
   left: 327px;
@@ -723,17 +865,11 @@ ul {
 }
 
 .post-content {
+  font-family: "Edmondsans";
+  font-size: 20px;
   margin-top: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-.post-image {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 100%;
-  max-width: 834px;
-  height: auto;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .post-paragraph {
@@ -757,9 +893,16 @@ ul {
 
 .news-list-img {
   width: 488px;
+  max-width: 100%;
   height: 314px;
   object-fit: cover;
 }
+
+/* .news-list-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+} */
 
 .four_zero {
   padding-top: 24px;
@@ -891,7 +1034,7 @@ ul {
 
 /* Organizer */
 .container p {
-  padding: 0px !important;
+  padding: 0px;
   margin: 0px;
 }
 
@@ -926,38 +1069,30 @@ ul {
 
 .main-card {
   display: grid;
-  height: 337px;
-  width: 280px;
-  grid-template-rows: 75% 25%;
-  outline: 10px solid #000;
+  height: 350px;
+  width: 30%;
+  grid-template-rows: 73% 30%;
   background-color: #000;
-  gap: 10px;
   overflow: hidden;
   transition: width 2s;
+  padding: 10px;
+  padding-bottom: 30px;
+  margin-bottom: 44px;
 }
 
 .main-card:hover {
-  display: grid;
-  height: 337px;
-  width: 280px;
   grid-template-rows: 50% 50%;
-  outline: 10px solid #000;
-  background-color: beige;
-  overflow: hidden;
 }
 
 .content-wrapper {
   height: 100%;
-  width: calc(100%);
   display: flex;
-  margin-left: 10px;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 4vmax;
+  justify-content: space-between;
 }
 
 .card-txt-bg {
-  padding-top: 10px;
   background-color: #000;
   color: white;
   overflow-y: hidden;
@@ -970,6 +1105,7 @@ ul {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  height: 40px;
 }
 
 .team-name {
@@ -979,6 +1115,7 @@ ul {
   font-size: 20px;
   line-height: 25px;
   color: #ffffff;
+  margin-top: 20px;
 }
 
 .mobile-menu {
@@ -990,23 +1127,33 @@ ul {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */
   height: 100%;
   width: 0;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
   left: 0;
   top: 0;
-  background-color: #35ffce; /* Black fallback color */
-  background-color: #85fddf; /* Black w/opacity */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  background-color: #35ffce;
+  /* Black fallback color */
+  background-color: #85fddf;
+  /* Black w/opacity */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
 /* Position the content inside the overlay */
 .overlay-content {
   position: relative;
-  top: 25%; /* 25% from the top */
-  width: 100%; /* 100% width */
-  text-align: center; /* Centered text/links */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  top: 25%;
+  /* 25% from the top */
+  width: 100%;
+  /* 100% width */
+  text-align: center;
+  /* Centered text/links */
+  margin-top: 30px;
+  /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
 /* The navigation links inside the overlay */
@@ -1021,7 +1168,8 @@ ul {
   font-weight: bolder;
   display: block;
   color: #000000;
-  transition: 0.3s; /* Transition effects on hover (color) */
+  transition: 0.3s;
+  /* Transition effects on hover (color) */
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -1039,20 +1187,192 @@ ul {
   font-size: 60px;
 }
 
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
+.icon-hero {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* delete */
+.post-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.post {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.post-list-content {
+  width: 100%;
+  max-width: 400px;
+  margin-right: 20px;
+}
+
+.post-title {
+  margin-top: 0;
+}
+
+.post-excerpt {
+  margin-bottom: 20px;
+}
+
+.post-img {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 834px;
+  height: auto;
+}
+
+.post-image {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 300px;
+  height: auto;
+}
+
+.space-mobile {
+  display: none;
+}
+
+.latest {
+  text-decoration: none;
+  font-family: "Circular Std";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 30px;
+  color: #e87155;
+  overflow-wrap: break-word;
+}
+
+/* .latest{
+      text-decoration: none;
+        margin-left: 36px;
+        font-family: "Circular Std";
+        font-style: normal;
+        font-size: 30px;
+        color: #E87155;
+} */
+.latest-pub {
+  margin-top: 5px;
+  font-family: "Circular Std";
+  font-size: 15px;
+  color: #000000;
+}
+
+.team-img {
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  .ticket {
+    display: none;
+  }
+
+  .ticket-mb {
+    display: block;
+  }
+
+  .ticket-mb {
+    font-family: "Edmondsans";
+    font-style: normal;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    color: #000000;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    margin: 30px 30px;
+  }
+
+  .dropdown-menu {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+
+  .space-mobile {
+    display: block;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  .main-card {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .news-img {
+    width: 100%;
+    margin-top: -100px;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .news-card {
+    position: relative;
+    top: 300px;
+    width: 100%;
+    max-width: 100%;
+    padding-bottom: 30px;
+    height: 100%;
+    left: 0px;
+    right: 0px;
+    background: #000000;
+  }
+
+  .news-list-img {
+    width: 100%px;
+    height: 100%;
+  }
+
+  /* Delete */
+  .post {
+    flex-direction: column;
+  }
+
+  .post-list-content {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .post-image {
+    max-width: 100%;
+  }
+
   .overlay a {
     font-size: 20px;
   }
+
   .overlay .closebtn {
     font-size: 40px;
     top: 15px;
     right: 35px;
   }
-}
 
-/* Mobile */
-@media only screen and (max-width: 599px) {
+  .news-banner-title {
+    font-size: 45px;
+    line-height: normal;
+  }
+
+  .news-banner-text {
+    top: 400px;
+  }
+
   .header-img img {
     width: 100%;
     height: 100%;
@@ -1065,9 +1385,6 @@ ul {
     padding-bottom: 65px;
   }
 
-  .hamburger {
-    display: none;
-  }
   .date {
     display: none;
   }
@@ -1093,11 +1410,11 @@ ul {
   }
 
   .header-logo {
-    margin-left: 20px;
+    margin-left: 0px;
   }
 
   .mic {
-   display: none;
+    display: none;
   }
 
   .heading {
@@ -1170,6 +1487,7 @@ ul {
     padding-bottom: 10px;
     color: #e87155;
   }
+
   .hero-text {
     font-size: 40px;
     line-height: 50px;
@@ -1196,22 +1514,17 @@ ul {
   }
 
   .django {
-    position: absolute;
-    width: 58.64px;
-    height: 83.25px;
-    margin-top: 30px;
-    left: 166px;
-    top: 760px;
-}
+    display: none;
+  }
 
-.speaker-img{
-  display: block;
-}
+  .speaker-img {
+    display: block;
+  }
 
   .djc-default .h1 {
     font-size: 50px;
     line-height: 50px;
-    margin: 0;
+    margin-left: -30% !important;
     width: 300px !important;
     padding-top: 45px !important;
     padding-bottom: 31px !important;
@@ -1236,7 +1549,8 @@ ul {
     font-style: normal;
     font-weight: 700;
     color: black;
-    width: 600px !important; /* 388px */
+    width: 600px !important;
+    /* 388px */
     display: block;
     font-size: 50px;
     line-height: 50px;
@@ -1253,15 +1567,16 @@ ul {
   }
 
   .default-img {
-    margin-top: -47px !important;
+    margin-top: -77px !important;
     position: absolute;
     margin-right: 7%;
-    border: 5px solid #e87155;
+    /* border: 5px solid #e87155; */
   }
 
   .default-hero {
     padding-bottom: 130px;
   }
+
   .text {
     width: 100% !important;
   }
@@ -1271,91 +1586,53 @@ ul {
     margin-top: 100px;
   }
 
-  .info{
-    text-align: justify;
+  .info {
+    margin-top: 122px;
     margin-bottom: 25px;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
-   
+    word-wrap: break-word;
+  }
+
+  .info-news {
+    font-family: "Circular Std";
+    font-weight: 200;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   
 }
 
-@media only screen and (min-width: 669px) and (max-width:769px){
-  body{
-    overflow-x: hidden;
-  }
-
-  .header-img img {
+  .roadmap .month {
     width: 100%;
-    height: 100%;
-    padding-right: 30px;
-    object-fit: cover;
-    margin-top: 5px;
+    justify-content: flex-start;
+    padding-left: 20px;
+    border: 2px solid #000000;
+    border-bottom: none;
+    border-left: none;
+    font-size: 26px;
   }
 
-  .hero {
-    padding-bottom: 130px;
-  
+  .code-image {
+    top: 10px;
+    right: 0;
+    height: 50px;
   }
 
-  .hero-empty {
-  height: 250px;
-}
-
-  nav .hamburger {
-    padding: 11px 9px;
+  .roadmap .dates .date {
+    display: block;
+    font-size: 16px;
+    line-height: 23px;
   }
 
-
-  nav .menu{
-    padding-left: 288px;
+  .roadmap .dates {
+    padding-left: 20px;
   }
 
-.container {
-  width: 90%;
-
-
-}
-
-.hero-text {
-  font-weight: 800;
-  font-size: 55px;
-  line-height: 73px;
-  padding-top: 44px;
-  margin-bottom: 10px;
-}
-
-/* show arrow on Tablet */
-.description img {
-  display:block;
-  width: 50%;
-}
-
-.django {
-  top: 971px;
-  left: 55px;
-}
-
-.mini-container {
-  width: 80%;
-  margin-right: auto;
-  margin-left: auto;
-  /* padding: 0; */
-}
-.info{
-  text-align: justify;
-  margin-bottom: 25px;
-  font-size: 30px;
-  margin-top: 50px;
-
- 
-}
-.mic{
-  left: 513px;
-  top: 40px;
-}
-
+  .roadmap-section {
+    margin-top: 50px;
+  }
 }
