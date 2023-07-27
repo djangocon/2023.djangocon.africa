@@ -27,8 +27,8 @@ Of course, there will be one! We are organizing Django Girls Zanzibar which will
 
 Django Girls Zanzibar will be held on the 4th of November 2023. We scheduled it before the conference to enable the attendees to attend DjangoCon Africa talks and sprints after attending the workshop and being introduced to Python and Django.
 
-
-<!-- - [hello@djangocon.africa](mailto:{{ site.contact_us_email }})
+## Contact us
+- [hello@djangocon.africa](mailto:{{ site.contact_us_email }})
 - [sponsors@djangocon.africa](mailto:{{ site.sponsors_email }})
 - [conduct@djangocon.africa](mailto:{{ site.conduct_email }})
-- [visas@djangocon.africa](mailto:{{ site.visa_email }}) -->
+- [visas@djangocon.africa](mailto:{{ site.visa_email }})
