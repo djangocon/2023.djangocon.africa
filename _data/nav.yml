@@ -37,9 +37,12 @@
   link: /news/
 - name: Teams
   link: /teams
+
 - name: Travellers
-  link: /travellers
+  link: #
   sublink:
+    - name: Info
+      link: /travellers
     - name: A letter from Africa
       link: /letter-from-africa
 

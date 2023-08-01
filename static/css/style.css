@@ -301,7 +301,7 @@ nav .ticket {
 }
 
 nav .hamburger {
-  padding: 11px 9px;
+  display: none;
 }
 
 nav .hamburger-mb {
@@ -314,24 +314,17 @@ nav .closeIcon {
 }
 
 nav .menu {
-  position: absolute;
-  transform: translateY(-100%);
   transition: transform 0.2s;
   top: 0;
   list-style: none;
   display: flex;
   justify-content: space-between;
   width: 100%;
-  background: #fffae9;
-  padding-top: 160px;
-  padding-bottom: 70px;
-  padding-right: 300px;
-  padding-left: 300px;
+  padding-top: 60px;
   z-index: 2;
-}
-
-nav .showMenu {
-  transform: translateY(0);
+  max-width: 1195px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 nav .menu .menu__link {
@@ -353,7 +346,6 @@ nav .active {
 
 .menu__item-container {
   display: flex;
-  justify-content: space-between;
 }
 
 .menu__item--has-sublinks {
@@ -370,7 +362,7 @@ nav .active {
   grid-template-rows: 1fr;
 }
 
-.menu__sublinks > div {
+.menu__sublinks>div {
   overflow: hidden;
 }
 
@@ -393,14 +385,28 @@ nav .active {
 
 .menu__dropdown-icon {
   margin-left: 10px;
+  margin-bottom: 10px;
   transition: rotate 0.3s ease;
 }
 
 @media only screen and (max-width: 1200px) {
+  nav .hamburger {
+    display: flex;
+    padding: 11px 9px;
+  }
+
   nav .menu {
     flex-direction: column;
     width: 100%;
     padding: 70px 30px 0 30px;
+    position: absolute;
+    transform: translateY(-100%);
+    padding-bottom: 70px;
+    background: #fffae9;
+  }
+
+  nav .showMenu {
+    transform: translateY(0);
   }
 
   .menu__item {
@@ -413,7 +419,7 @@ nav .active {
     padding-bottom: 0;
   }
 
-  .menu__sublinks-container > :first-child {
+  .menu__sublinks-container> :first-child {
     padding-top: 10px;
   }
 }
@@ -561,6 +567,11 @@ ul {
 .sponsor-img {
   width: 50%;
   object-fit: cover;
+}
+
+.sponsor
+img {
+  width: 100%;
 }
 
 .roadmap {
@@ -1224,8 +1235,7 @@ ul {
 .post-image {
   margin-top: 30px;
   margin-bottom: 30px;
-  width: 100%;
-  max-width: 834px;
+  width: 300px;
   height: auto;
 }
 
@@ -1274,6 +1284,7 @@ ul {
   .ticket-mb {
     display: block;
   }
+
   .ticket-mb {
     font-family: "Edmondsans";
     font-style: normal;
