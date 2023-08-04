@@ -1,7 +1,7 @@
 ---
 title: Where to stay
 layout: default
-permalink: /where-tostay/
+permalink: /where-to-stay/
 ---
 
 # Where to stay

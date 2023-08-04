@@ -53,6 +53,7 @@ On the beach, it’s fine to wear swimming gear (bikini, etc) - but that’s for
 
 **For the conference itself**, please adhere to a smart casual dress code.
 
+## Guide books
 
-
+Bradt's [*Zanzibar* (2022)](https://www.bradtguides.com/product/zanzibar-10/), available in paperback or as an ebook, is recommended.
 
