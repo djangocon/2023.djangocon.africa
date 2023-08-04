@@ -1038,10 +1038,6 @@ img {
   margin: 0px;
 }
 
-.container a {
-  text-decoration: none;
-}
-
 .container .progress {
   color: white;
   width: 0%;
