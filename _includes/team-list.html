@@ -42,7 +42,12 @@
           {% endif %}
           <!-- website -->
           {% if team.website != "" %}
-          <a href="https://{{ team.website }}" target="_blank">
+            {% if team.website contains '://' %}
+              {% assign website = team.website %}
+            {% else %}
+              {% assign website = 'https://' | append: team.website %}
+            {% endif %}
+          <a href="{{ website }}" target="_blank">
             <img class="social-icon" src="/static/img/site/pwebsite.svg" alt="Email" />
           </a>
           {% endif %}
