@@ -1,7 +1,7 @@
 ---
 title: Tickets
 layout: default
-permalink: /ticket
+permalink: /ticket/
 ---
 
 Ticket <br> Order 🛍️ 
