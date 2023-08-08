@@ -734,6 +734,13 @@ img {
   margin-top: 30px;
 }
 
+.ticket-quantity, #donationQuantity{
+  color: #000;
+  margin: 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
 #frequently-asked-questions {
   text-align: center;
 }

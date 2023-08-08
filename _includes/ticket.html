@@ -45,9 +45,9 @@
 
                     if (ticket.ticket_type.toLowerCase() === "donation") {
                         priceCell.textContent = "";
-                        quantityCell.innerHTML = `<input type="number" id="donationQuantity" min="">`;
+                        quantityCell.innerHTML = `<input type="number" id="donationQuantity" placeholder="Enter Amount" min="">`;
                     } else {
-                        quantityCell.innerHTML = `<input type="number" min="1" max="5">`;
+                        quantityCell.innerHTML = `<input class="ticket-quantity" type="number" min="1" max="5">`;
                     }
 
                     row.appendChild(ticketTypeCell);
