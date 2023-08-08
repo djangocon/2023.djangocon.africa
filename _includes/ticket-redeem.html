@@ -98,6 +98,7 @@
             .then(data => {
                 if (data.message !== "successful") {
                     alert(data.message);
+                    payButton.disabled = false;
                     return;
                 }
                 // Redirect to payment page
