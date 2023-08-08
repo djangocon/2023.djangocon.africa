@@ -21,7 +21,7 @@
     <div class="col-md-6">
         <div class="form-floating">
             <input type="tel" class="form-control" id="phone" placeholder="+233000003030" required>
-            <label for="phone">Phone Number</label>
+            <label class="phone-label" for="phone">Phone Number</label>
         </div>
     </div>
     <div class="col-md-6">
@@ -66,14 +66,48 @@
         const v = document.getElementById("voucher")
         const selectedCountry = countrySelect.value;
 
+        // Check if all fields are filled
+        if (!fname.value || !email.value || !phone.value || !v.value) {
+            alert("Please fill all fields");
+            return;
+        }
+
+          // validate email if it's full email address
+        const emailRegex = /\S+@\S+\.\S+/;
+        if (!emailRegex.test(email.value)) {
+            email.classList.add("is-invalid");
+            alert("Please enter a valid email address");
+            return;
+        }
+
+        // remove invalid class from email input
+        email.classList.remove("is-invalid");
+
+
+        // check if phone number is 11 digits or more with country code not mandatory
+        const phoneRegex = /^\+?[0-9]{10,}$/;
+        
+        if (!phoneRegex.test(phone.value)) {
+            phone.classList.add("is-invalid");
+            alert("Please enter a valid phone number");
+            return;
+        }
+
+        phone.classList.remove("is-invalid");
+
         // Check if a country is selected
         if (!selectedCountry) {
             countrySelect.classList.add("is-invalid");
             return;
         }
+        // remove invalid class from country select
+        countrySelect.classList.remove("is-invalid");
 
-       
         payButton.disabled = true;
+
+        payButton.innerHTML = `<span class="spinner-grow text-dark" role="status" aria-hidden="true"></span>
+  <span class="sr-only">Loading...</span>`;
+
        
         const postData = {
             voucher: v.value,

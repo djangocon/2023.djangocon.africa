@@ -137,14 +137,50 @@
         const phone = document.getElementById("phone")
         const selectedCountry = countrySelect.value;
 
-        // Check if a country is selected
+        // Check if the form is valid
+        if (!fname.value || !email.value || !phone.value) {
+            alert("Please fill in all fields");
+            return;
+        }
+
+
+        const emailRegex = /\S+@\S+\.\S+/;
+       
+        if (!emailRegex.test(email.value)) {
+            email.classList.add("is-invalid");
+            alert("Please enter a valid email address");
+            return;
+        }
+
+        // remove invalid class from email input
+        email.classList.remove("is-invalid");
+
+        
+        const phoneRegex = /^\+?[0-9]{10,}$/;
+
+        if (!phoneRegex.test(phone.value)) {
+            phone.classList.add("is-invalid");
+            alert("Please enter a valid phone number");
+            return;
+        }
+
+        phone.classList.remove("is-invalid");
+
+
+         // Check if a country is selected
         if (!selectedCountry) {
             countrySelect.classList.add("is-invalid");
             return;
         }
 
-        loadingModal.style.display = "block";
+        countrySelect.classList.remove("is-invalid");
+
+       
         payButton.disabled = true;
+
+        payButton.innerHTML = `<span class="spinner-grow text-dark" role="status" aria-hidden="true"></span>
+  <span class="sr-only">processing payment...</span>`;
+
         // Prepare the POST data
         const postData = {
             email_address: email.value,
@@ -156,7 +192,7 @@
 
 
         const paymentUrl = baseUrl + "/initialize-payment"
-        loadingModal.style.display = "none";
+       
 
         fetch(paymentUrl, {
             method: "POST",
