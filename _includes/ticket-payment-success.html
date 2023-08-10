@@ -1,0 +1,20 @@
+<div>
+    <h4>Yah! 🎉🥳🎊 ticket purchase was successful!</h4>
+    <h4>Your Ticket ID 🪪 : <strong id="txRef"></strong></h4>
+    <h4>An email 📧 has been sent 🚚 to you 🤪 </h4> <br>
+    <h1>See you 👀 in ✈️  Zanzibar, Tanzania 🇹🇿 🚀🚀</h1>
+    
+</div>
+<script>
+    // Extract tx_ref from query parameter
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const txRef = urlParams.get("tx_ref");
+
+    // Display tx_ref
+    const txRefElement = document.getElementById("txRef");
+    txRefElement.textContent = txRef;
+
+    // Remove query parameters from URL
+    history.replaceState(null, null, window.location.pathname);
+</script>

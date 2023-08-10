@@ -1,0 +1,215 @@
+<div id="loadingModal" class="modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <p class="mt-3">Processing your payment...</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2 class="card-title">Order Summary</h2>
+<div>
+    <div class="card border-black mb-3">
+        <div class="card-body text-black">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ticket Type</th>
+                        <th>Qty</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="summaryTableBody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <form class="row g-3">
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input type="text" class="form-control" id="fullname" placeholder="Noah Alorwu" required>
+                <label for="fullname">Fullname</label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                <label for="email">Email address</label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input type="tel" class="form-control" id="phone" placeholder="+233000003030" required>
+                <label for="phone">Phone Number</label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-floating">
+                <select class="form-select" id="listCountries" required>
+                    <option selected></option>
+                </select>
+                <label for="listCountries">Country</label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <button type="submit" id='payButton' class="proposal-post-button text-center">Pay for Ticket 🎟️</button>
+        </div>
+    </form>
+</div>
+<!-- ... (your HTML content) ... -->
+<script>
+
+    const countries = ["Afghanistan", "Aland Islands", "Albania", "Algeria", "American Samoa", "Andorra", "Angola", "Anguilla", "Antarctica", "Antigua and Barbuda", "Argentina", "Armenia", "Aruba", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia", "Bonaire, Sint Eustatius and Saba", "Bosnia and Herzegovina", "Botswana", "Bouvet Island", "Brazil", "British Indian Ocean Territory", "Brunei Darussalam", "Bulgaria", "Burkina Faso", "Burundi", "Cambodia", "Cameroon", "Canada", "Cape Verde", "Cayman Islands", "Central African Republic", "Chad", "Chile", "China", "Christmas Island", "Cocos (Keeling) Islands", "Colombia", "Comoros", "Congo", "Congo, Democratic Republic of the Congo", "Cook Islands", "Costa Rica", "Cote D'Ivoire", "Croatia", "Cuba", "Curacao", "Cyprus", "Czech Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Ethiopia", "Falkland Islands (Malvinas)", "Faroe Islands", "Fiji", "Finland", "France", "French Guiana", "French Polynesia", "French Southern Territories", "Gabon", "Gambia", "Georgia", "Germany", "Ghana", "Gibraltar", "Greece", "Greenland", "Grenada", "Guadeloupe", "Guam", "Guatemala", "Guernsey", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Heard Island and McDonald Islands", "Holy See (Vatican City State)", "Honduras", "Hong Kong", "Hungary", "Iceland", "India", "Indonesia", "Iran, Islamic Republic of", "Iraq", "Ireland", "Isle of Man", "Israel", "Italy", "Jamaica", "Japan", "Jersey", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Korea, Democratic People's Republic of", "Korea, Republic of", "Kosovo", "Kuwait", "Kyrgyzstan", "Lao People's Democratic Republic", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libyan Arab Jamahiriya", "Liechtenstein", "Lithuania", "Luxembourg", "Macao", "Macedonia, the Former Yugoslav Republic of", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Martinique", "Mauritania", "Mauritius", "Mayotte", "Mexico", "Micronesia, Federated States of", "Moldova, Republic of", "Monaco", "Mongolia", "Montenegro", "Montserrat", "Morocco", "Mozambique", "Myanmar", "Namibia", "Nauru", "Nepal", "Netherlands", "Netherlands Antilles", "New Caledonia", "New Zealand", "Nicaragua", "Niger", "Nigeria", "Niue", "Norfolk Island", "Northern Mariana Islands", "Norway", "Oman", "Pakistan", "Palau", "Palestinian Territory, Occupied", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Pitcairn", "Poland", "Portugal", "Puerto Rico", "Qatar", "Reunion", "Romania", "Russian Federation", "Rwanda", "Saint Barthelemy", "Saint Helena", "Saint Kitts and Nevis", "Saint Lucia", "Saint Martin", "Saint Pierre and Miquelon", "Saint Vincent and the Grenadines", "Samoa", "San Marino", "Sao Tome and Principe", "Saudi Arabia", "Senegal", "Serbia", "Serbia and Montenegro", "Seychelles", "Sierra Leone", "Singapore", "St Martin", "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "South Georgia and the South Sandwich Islands", "South Sudan", "Spain", "Sri Lanka", "Sudan", "Suriname", "Svalbard and Jan Mayen", "Swaziland", "Sweden", "Switzerland", "Syrian Arab Republic", "Taiwan, Province of China", "Tajikistan", "Tanzania, United Republic of", "Thailand", "Timor-Leste", "Togo", "Tokelau", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey", "Turkmenistan", "Turks and Caicos Islands", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States", "United States Minor Outlying Islands", "Uruguay", "Uzbekistan", "Vanuatu", "Venezuela", "Viet Nam", "Virgin Islands, British", "Virgin Islands, U.s.", "Wallis and Futuna", "Western Sahara", "Yemen", "Zambia", "Zimbabwe"
+    ]
+    const countrySelect = document.getElementById("listCountries");
+
+    // Add options for each country
+    countries.forEach(country => {
+        const option = document.createElement("option");
+        option.value = country;
+        option.textContent = country;
+        countrySelect.appendChild(option);
+    });
+
+    const loadingModal = document.getElementById("loadingModal");
+    const baseUrl = "https://africa-djc.koyeb.app"
+    const apiUrl = baseUrl + "/ticket-types";
+    const formData = JSON.parse(localStorage.getItem("formData"));
+    const summaryTableBody = document.getElementById("summaryTableBody");
+    const cardSummary = document.getElementById("cardSummaryBody")
+     let totalOutstandingAmount = 0;
+    // Fetch ticket data from API
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+
+            formData.tickets.forEach(ticket => {
+                const ticketData = data.find(item => item.id === ticket.ticket_type_id);
+                if (ticketData) {
+
+                    const row = document.createElement("tr");
+                    const ticketTypeCell = document.createElement("td");
+                    const quantityCell = document.createElement("td");
+                    const priceCell = document.createElement("td");
+                  
+                    ticketTypeCell.textContent = ticketData.ticket_type;
+                    quantityCell.textContent = ticket.quantity;
+                    priceCell.textContent = "$" + ticketData.price;
+
+                    let totalAmount = ticketData.price * ticket.quantity;
+
+                    if (ticketData.ticket_type.toLowerCase() === "donation") {
+                        quantityCell.textContent = "";
+                        priceCell.textContent = "$" + ticket.quantity
+                        totalAmount = ticket.quantity; // Use quantity as total for donation
+                    }
+
+                    totalOutstandingAmount += totalAmount;
+                    row.appendChild(ticketTypeCell);
+                    row.appendChild(quantityCell);
+                    row.appendChild(priceCell);
+
+                    summaryTableBody.appendChild(row);
+                }
+            });
+
+            const totalRow = document.createElement("tr");
+            totalRow.innerHTML = `
+        <td colspan="1" style="padding-top:23px;"><strong>Total Amount to Pay:</strong></td>
+        <td style="padding-top:23px;padding-left:3px; text-color: "><strong>  $${totalOutstandingAmount.toFixed(2)}</strong></td>
+    `;
+            summaryTableBody.appendChild(totalRow);
+        })
+        .catch(error => console.error("Error fetching ticket data:", error));
+
+    const payButton = document.getElementById("payButton");
+
+    payButton.addEventListener("click", function (event) {
+        event.preventDefault();
+        
+        const fname = document.getElementById("fullname")
+        const email = document.getElementById("email")
+        const phone = document.getElementById("phone")
+        const selectedCountry = countrySelect.value;
+
+        // Check if the form is valid
+        if (!fname.value || !email.value || !phone.value) {
+            alert("Please fill in all fields");
+            return;
+        }
+
+
+        const emailRegex = /\S+@\S+\.\S+/;
+       
+        if (!emailRegex.test(email.value)) {
+            email.classList.add("is-invalid");
+            alert("Please enter a valid email address");
+            return;
+        }
+
+        // remove invalid class from email input
+        email.classList.remove("is-invalid");
+
+        
+        const phoneRegex = /^\+?[0-9]{10,}$/;
+
+        if (!phoneRegex.test(phone.value)) {
+            phone.classList.add("is-invalid");
+            alert("Please enter a valid phone number");
+            return;
+        }
+
+        phone.classList.remove("is-invalid");
+
+
+         // Check if a country is selected
+        if (!selectedCountry) {
+            countrySelect.classList.add("is-invalid");
+            return;
+        }
+
+        countrySelect.classList.remove("is-invalid");
+
+       
+        payButton.disabled = true;
+
+        payButton.innerHTML = `<span class="spinner-grow text-dark" role="status" aria-hidden="true"></span>
+  <span class="sr-only">processing payment...</span>`;
+
+        // Prepare the POST data
+        const postData = {
+            email_address: email.value,
+            full_name: fname.value,
+            phone_number: phone.value,
+            country: selectedCountry,
+            tickets: formData.tickets
+        };
+
+
+        const paymentUrl = baseUrl + "/initialize-payment"
+       
+
+        fetch(paymentUrl, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(postData)
+        })
+            .then(response => response.json())
+            .then(data => {
+                // Redirect the user to the provided URL
+                if (data.message) {
+                    window.location.href = data.message;
+                }
+            })
+            .catch(error => {
+                console.error("Error sending POST request:", error);
+            });
+    });
+</script>

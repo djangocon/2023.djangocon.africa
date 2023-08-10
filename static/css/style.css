@@ -94,6 +94,7 @@
 800 - Extra Bold (Ultra Bold)
 */
 
+
 * {
   margin: 0;
   padding: 0;
@@ -388,6 +389,36 @@ nav .active {
   margin-bottom: 10px;
   transition: rotate 0.3s ease;
 }
+
+
+ .modal {
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   z-index: 9999;
+ }
+
+ .modal-dialog {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+ }
+
+ .modal-content {
+   background-color: transparent;
+   border: none;
+   box-shadow: none;
+ }
+
+ .spinner-border {
+   width: 3rem;
+   height: 3rem;
+ }
 
 @media only screen and (max-width: 1200px) {
   nav .hamburger {
@@ -701,6 +732,13 @@ img {
   gap: 20px;
 
   margin-top: 30px;
+}
+
+.ticket-quantity, #donationQuantity{
+  color: #000;
+  margin: 0;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 #frequently-asked-questions {
@@ -1036,10 +1074,6 @@ img {
 .container p {
   padding: 0px;
   margin: 0px;
-}
-
-.container a {
-  text-decoration: none;
 }
 
 .container .progress {

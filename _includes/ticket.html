@@ -1,0 +1,101 @@
+<body>
+    <div class="container mt-4">
+        <form id="orderForm">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Ticket Type</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                    </tr>
+                </thead>
+                <tbody id="ticketTableBody">
+                    <!-- Ticket data will be dynamically added here -->
+                </tbody>
+            </table>
+            <br>
+            <div>
+                <h3>Have a voucher? <a href="redeem">Click here</a></h3>
+            </div>
+         <br>
+            <button id="submitBtn" class="proposal-post-button text-center">Proceed with order</button>
+        </form>
+    </div>
+
+    <script>
+        const apiUrl = "https://africa-djc.koyeb.app/ticket-types";
+        const submitBtn = document.getElementById("submitBtn");
+        let data; // Declare data variable
+
+        // Fetch ticket data from API
+        fetch(apiUrl)
+            .then(response => response.json())
+            .then(fetchedData => {
+                data = fetchedData; // Assign fetched data to the data variable
+                const ticketTableBody = document.getElementById("ticketTableBody");
+
+                data.forEach(ticket => {
+                     const row = document.createElement("tr");
+                    const ticketTypeCell = document.createElement("td");
+                    const priceCell = document.createElement("td");
+                    const quantityCell = document.createElement("td");
+
+                    ticketTypeCell.textContent = ticket.ticket_type;
+                    priceCell.textContent = "$" + ticket.price;
+
+                    if (ticket.ticket_type.toLowerCase() === "donation") {
+                        priceCell.textContent = "";
+                        quantityCell.innerHTML = `<input type="number" id="donationQuantity" placeholder="Enter Amount" min="">`;
+                    } else {
+                        quantityCell.innerHTML = `<input class="ticket-quantity" type="number" min="1" max="5">`;
+                    }
+
+                    row.appendChild(ticketTypeCell);
+                    row.appendChild(priceCell);
+                    row.appendChild(quantityCell);
+
+                    ticketTableBody.appendChild(row);
+                });
+            })
+            .catch(error => console.error("Error fetching ticket data:", error));
+
+      submitBtn.addEventListener("click", function (event) {
+            event.preventDefault();
+            let isQuantityGreaterThanZero = false;
+            const tickets = [];
+            // const form = document.getElementById("orderForm");
+            const formData = new FormData(document.getElementById("orderForm"));
+            const quantityInputs = document.querySelectorAll("input[type='number']");
+
+            formData.tickets = [];
+
+            quantityInputs.forEach(input => {
+                const quantity = parseInt(input.value);
+
+                if (quantity > 0) {
+                    isQuantityGreaterThanZero = true;
+                    const ticketType = input.closest("tr").querySelector("td:first-child").textContent;
+                    const ticketTypeId = data.find(ticket => ticket.ticket_type === ticketType).id;
+
+                    tickets.push({
+                        ticket_type_id: ticketTypeId,
+                        quantity: quantity
+                    });
+                }
+
+            });
+
+            if (!isQuantityGreaterThanZero) {
+                alert("Please select at least one ticket quantity greater than 0.");
+                return; // Exit early if no valid tickets
+            }
+
+            
+            const formDataObject = { tickets };
+            
+            localStorage.setItem("formData", JSON.stringify(formDataObject));
+            
+            window.location.href = window.location.href + "summary";
+        });
+    </script>
+</body>
