@@ -46,6 +46,7 @@
     </div>
   </section>
 
+  {%comment%}
   <section>
     <div class="mini-container roadmap-section">
       <img class="code-image" alt="code image" src="/static/img/site/code.png" />
@@ -77,26 +78,98 @@
       </div>
     </div>
   </section>
+  {% endcomment %}
 
-
-  {% comment %}
   <section>
     <div class="mini-container speaker">
       <!-- <div class="mic"></div> -->
       <div class="speaker-img">
         <img src="/static/img/site/mic.svg" alt="sdas" />
         <div>
-          <h3 class="heading">Speakers</h3>
+          <h3 class="heading">Our Speakers</h3>
           <p class="sub-text">
-            We will soon announce call for abstracts. So if you’re planning to speak at DjangoCon
-            Africa, be on the lookout!<br />Learn more about speaking at DjangoCon Africa by
-            <strong><a href="">clicking here</a></strong>.
+            We’re delighted to announce our first confirmed speakers, more will be coming soon.
           </p>
         </div>
-      </div>
-  </section>
-  {% endcomment %}
+        <div>
+          <div class="row">
+            <Kojo class="col">
+              <h1>Kojo Idrissa</h1>
+              <strong>“Mastering Django by solving local problems”</strong>
+              <p>Kojo (USA) is our first keynote speaker. He will be speaking about practices and patterns in
+                problem-solving and how
+                they apply across the globe.</p>
+          </div>
+          <div class="col">
+            <h1>Flavio Percoco and Honza Kral</h1>
+            <strong>“From idea to production”</strong>
+            <p>Flavio (Italy) and Honza (Czech Republic) will speak about what’s needed to turn a software idea to a
+              reality.
+            </p>
+          </div>
+          <div class="col">
+            <h1>Anna Makarudze</h1>
+            <strong>“Navigating the open-source world as a minority”</strong>
+            <p>Anna (Zimbabwe) spent several years working as the President of the Django Software Foundation. She will
+              share her
+              insights on how those in ethnic, gender and other minorities can succeed, and communities can support
+              them.
+            </p>
+          </div>
 
+          <div class="col">
+            <h1>Dawn Wages</h1>
+            <strong>“Supercharging your Python development environment with VS Code and Dev Containers”</strong>
+            <p>Dawn (USA) will discuss developer tools for Python/Django programmers, and the benefits that Visual
+              Studio Code’s Dev
+              Containers can offer. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="mini-container">
+    <h1 class="heading" style="margin-bottom: 30px;">What’s happening at DjangoCon Africa</h1>
+    <div>
+      <h4 class="sub-heading">Talks</h4>
+      <p class="sub-text">Three days of talks, on programming, technology, careers, society and business.</p>
+
+    </div>
+
+    <div>
+      <h4 class="sub-heading">Workshops and tutorials</h4>
+      <p class="sub-text">Hands-on training and learning sessions, led by experts in the field.
+      </p>
+    </div>
+
+    <div>
+      <h4 class="sub-heading">Collaboration</h4>
+      <p class="sub-text">Work together on code, and contribute to major projects - including Django itself.
+      </p>
+    </div>
+
+    <div>
+      <h4 class="sub-heading">Django Girls</h4>
+      <p class="sub-text">A training workshop aimed at women, providing an introduction to web application development. Tens of
+        thousands of women
+        across the world have had their introduction to Django through this hugely successful programme.
+      </p>
+    </div>
+
+    <div>
+      <h4 class="sub-heading">Discovery</h4>
+      <p class="sub-text">DjangoCon Africa is an opportunity to discover places and people as well as technology. It will bring
+        together
+        participants from across Africa and the rest of the world, for mutual understanding of contexts, challenges and
+        opportunities.</p>
+    </div>
+
+
+  </div>
+
+  <section>
+
+  </section>
   <section>{% include sponsors.html %}</section>
 
   <section>
@@ -111,7 +184,7 @@
   </section>
 
   {% include footer.html %}
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="//code.tidio.co/ypalbp3puqa6ycruaz2ujgjuudsphjwz.js" async></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
