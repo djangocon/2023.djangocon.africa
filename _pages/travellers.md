@@ -15,7 +15,7 @@ Zanzibar, a province of Tanzania, is a cluster of islands in the Indian Ocean. D
 
 Zanzibar is a very popular tourist destination, receiving about 400 thousand visitors each year.
 
-See our guide on [Where to stay](/where-to-stay)
+See our guide on [Where to stay](/where-to-stay).
 
 
 ## Getting to Zanzibar
