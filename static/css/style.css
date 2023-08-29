@@ -457,7 +457,7 @@ nav .active {
 
 .hero {
   background-color: #35ffce;
-  padding-bottom: 150px;
+  padding-bottom: 15px;
 }
 
 .hero-date {
@@ -469,9 +469,9 @@ nav .active {
   font-family: "Circular Std";
   font-style: normal;
   font-weight: 700;
-  font-size: 65px;
+  font-size: 30px;
   line-height: 73px;
-  padding-top: 100px;
+  padding-top: 20px;
   width: 80%;
   margin-bottom: 10px;
 }
@@ -1684,4 +1684,12 @@ img {
   .roadmap-section {
     margin-top: 50px;
   }
+}
+
+
+.card .card-body {background-color: #35ffce;}
+.card h5 {
+  font-size: 16px;
+  font-family: southAfrica;
+  src: url(/static/fonts/southafirkas.ttf);
 }

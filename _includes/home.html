@@ -33,137 +33,70 @@
 
 <body>
   <section>{% include hero.html %}</section>
-  <section>
-    <div>
-      <img class="django" src="/static/img/site/django.svg" alt="" />
-      <div class="info mini-container">
-        The inaugural DjangoCon Africa is coming to {{ site.host_city_and_country }}. Join a diverse community of Django
-        enthusiasts from all corners of the world and all skill levels. This conference aims to educate, inspire and
-        bring together the global Django community. Whether you're a seasoned practitioner or just starting out, you'll
-        leave with new skills, best practices, and innovative ideas to enhance your development experience. And for
-        those who can't make it in person, all talks will be available online.
-      </div>
-    </div>
-  </section>
 
-  {%comment%}
-  <section>
-    <div class="mini-container roadmap-section">
-      <img class="code-image" alt="code image" src="/static/img/site/code.png" />
-
-      <h3 class="heading">Our Roadmap</h3>
-      <!-- Roadmaps -->
-      <div class="roadmaps">
-        {% for month in site.data.roadmap %}
-        <!-- {{ month.month }} -->
-        <div class="roadmap">
-          <div class="month sub-heading">{{ month.month }}</div>
-          <div class="dates">
-            {% for date in month.dates %}
-            <div class="dateAndIcon" data-event-date="{{ date.date }}">
-              <span class="checkIcon">
-                <img id="check" src="/static/img/site/check.svg" alt="checked icon" />
-                <img id="uncheck" src="/static/img/site/uncheck.svg" alt="unchecked icon" />
-              </span>
-              <span class="date">
-                {{ date.dateCardinal }} - {% if date.url %}
-                <a href="{{ date.url }}">{{ date.text }}</a>
-                {% else %} {{ date.text }} {% endif %}
-              </span>
-            </div>
-            {% endfor %}
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-  </section>
-  {% endcomment %}
-
-  <section>
-    <div class="mini-container speaker">
-      <!-- <div class="mic"></div> -->
-      <div class="speaker-img">
-        <img src="/static/img/site/mic.svg" alt="sdas" />
-        <div>
-          <h3 class="heading">Our Speakers</h3>
-          <p class="sub-text">
-            We’re delighted to announce our first confirmed speakers, more will be coming soon.
-          </p>
-        </div>
-        <div>
-          <div class="row">
-            <Kojo class="col">
-              <h1>Kojo Idrissa</h1>
-              <strong>“Mastering Django by solving local problems”</strong>
-              <p>Kojo (USA) is our first keynote speaker. He will be speaking about practices and patterns in
-                problem-solving and how
-                they apply across the globe.</p>
-          </div>
-          <div class="col">
-            <h1>Flavio Percoco and Honza Kral</h1>
-            <strong>“From idea to production”</strong>
-            <p>Flavio (Italy) and Honza (Czech Republic) will speak about what’s needed to turn a software idea to a
-              reality.
-            </p>
-          </div>
-          <div class="col">
-            <h1>Anna Makarudze</h1>
-            <strong>“Navigating the open-source world as a minority”</strong>
-            <p>Anna (Zimbabwe) spent several years working as the President of the Django Software Foundation. She will
-              share her
-              insights on how those in ethnic, gender and other minorities can succeed, and communities can support
-              them.
-            </p>
-          </div>
-
-          <div class="col">
-            <h1>Dawn Wages</h1>
-            <strong>“Supercharging your Python development environment with VS Code and Dev Containers”</strong>
-            <p>Dawn (USA) will discuss developer tools for Python/Django programmers, and the benefits that Visual
-              Studio Code’s Dev
-              Containers can offer. </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
   <div class="mini-container">
-    <h1 class="heading" style="margin-bottom: 30px;">What’s happening at DjangoCon Africa</h1>
-    <div>
-      <h4 class="sub-heading">Talks</h4>
-      <p class="sub-text">Three days of talks, on programming, technology, careers, society and business.</p>
+    <h1 class="heading" style="margin-bottom: 30px; margin-top: 30px;">What's happening at DjangoCon Africa</h1>
+
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Talks</h5>
+          </div>
+          <div class="card-footer">
+            <p class="text-body-secondary">Three days of talks, on programming, technology, careers, society and business, with speakers from across the world. <em>We've confirmed our first speakers, more coming soon.</em></p>
+            <a href="/talks" class="btn btn-primary">Read more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Workshops and tutorials</h5>
+          </div>
+          <div class="card-footer">
+            <p class="text-body-secondary">Hands-on training and learning sessions, led by experts in the field.</p>
+            <p class="text-body-secondary"><em>Details to be published soon.</em></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Collaboration</h5>
+          </div>
+          <div class="card-footer">
+            <p class="text-body-secondary">Work together on code, and contribute to major projects - including Django itself</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col col-sm-12 col-md-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Django Girls</h5>
+          </div>
+          <div class="card-footer">
+            <p class="text-body-secondary">A training workshop aimed at women, providing an introduction to web application development. Tens of thousands of women
+          across the world have had their introduction to Django through this hugely successful programme</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col col-sm-12 col-md-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Discovery</h5>
+          </div>
+          <div class="card-footer">
+            <p class="text-body-secondary">DjangoCon Africa is an opportunity to discover places and people as well as technology. It will bring together participants from across Africa and the rest of the world, for mutual understanding of contexts, challenges and opportunities.</p>
+          </div>
+        </div>
+      </div>
 
     </div>
-
-    <div>
-      <h4 class="sub-heading">Workshops and tutorials</h4>
-      <p class="sub-text">Hands-on training and learning sessions, led by experts in the field.
-      </p>
-    </div>
-
-    <div>
-      <h4 class="sub-heading">Collaboration</h4>
-      <p class="sub-text">Work together on code, and contribute to major projects - including Django itself.
-      </p>
-    </div>
-
-    <div>
-      <h4 class="sub-heading">Django Girls</h4>
-      <p class="sub-text">A training workshop aimed at women, providing an introduction to web application development. Tens of
-        thousands of women
-        across the world have had their introduction to Django through this hugely successful programme.
-      </p>
-    </div>
-
-    <div>
-      <h4 class="sub-heading">Discovery</h4>
-      <p class="sub-text">DjangoCon Africa is an opportunity to discover places and people as well as technology. It will bring
-        together
-        participants from across Africa and the rest of the world, for mutual understanding of contexts, challenges and
-        opportunities.</p>
-    </div>
-
 
   </div>
 
