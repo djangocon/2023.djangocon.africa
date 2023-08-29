@@ -64,6 +64,31 @@ permalink: /talks/
         </div>
       </div>
     </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Mariusz Felisiak</h5>
+          <p class="card-text">Wonderful world of the limitless Django Lookups</p>
+        </div>
+        <div class="card-footer">
+          <p class="text-body-secondary">Mariusz (Poland) is one of the most important people in the world of Django; he has been a Django Fellow since 2019. This talk will dive deep into Lookups, a key component of the ORM.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Samweli Twesa Mwakisambwe</h5>
+          <p class="card-text">Making map visualisations and animations using Python</p>
+        </div>
+        <div class="card-footer">
+          <p class="text-body-secondary">Samweli (Tanzania) will speak about using open-source Python tools to visualise and and analyse geospatial data.</p>
+        </div>
+      </div>
+    </div>
+
     <div class="col">
       <div class="card h-100">
         <div class="card-body">
@@ -75,6 +100,19 @@ permalink: /talks/
         </div>
       </div>
     </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Fuad Habib</h5>
+          <p class="card-text">Django Unchained: Empowering Africa's Youth Through Coding</p>
+        </div>
+        <div class="card-footer">
+          <p class="text-body-secondary">Fuad (Tanzania) will talk about real-world examples of successful youth-led projects in Africa, and the tangible opportunities Django presents for entrepreneurship and job creation.</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <p><strong>More coming soon!</strong></p>
