@@ -1,0 +1,45 @@
+<div class="container">
+
+  <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-4">
+
+    {% for speaker in site.speakers %}
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-header">
+          <h5 class="card-title">{{ speaker.name }}</h5>
+        </div>
+        <div class="card-body">
+          <p class="text-body-secondary">{{ speaker.description }}</p>
+        </div>
+
+        <div class="card-footer">
+          <!-- website -->
+          {% if speaker.website != "" %}
+            {% if speaker.website contains '://' %}
+              {% assign website = speaker.website %}
+            {% else %}
+              {% assign website = 'https://' | append: speaker.website %}
+            {% endif %}
+            <a href="{{ website }}" target="_blank">
+            <img class="social-icon" src="/static/img/site/pwebsite.svg" alt="website" />
+            </a>
+          {% endif %}
+          <!-- linkedin -->
+          {% if team.linkedin != "" %}
+          <a href="{{ site.l }}/{{ team.linkedin }}" target="_blank">
+            <img class="social-icon" src="/static/img/site/plinkedin.svg" alt="LinkedIn" />
+          </a>
+          {% endif %}
+        </div>
+      </div>
+
+    </div>
+
+    {% endfor %}
+
+  </div>
+
+  <p><strong>More coming soon!</strong></p>
+
+</div>
