@@ -113,6 +113,30 @@ permalink: /talks/
       </div>
     </div>
 
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Jon Atkinson</h5>
+          <p class="card-text">Leaving the cloud</p>
+        </div>
+        <div class="card-footer">
+          <p class="text-body-secondary">Jon (United Kingdom) is Technical Director at Giant Digital; in this talk he will question the thinking that "the cloud" should be the default starting-point for our deployment needs, and explore some older, simpler options.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Vuyisile Ndlovu</h5>
+          <p class="card-text">Python debugging: techniques and tools</p>
+        </div>
+        <div class="card-footer">
+          <p class="text-body-secondary">Programmers spend a lot of their time debugging. Vuyisile (Zimbabwe) will introduce systematic approaches to the art, and some Python tools that Python developers can incorporate into their work.</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <p><strong>More coming soon!</strong></p>
