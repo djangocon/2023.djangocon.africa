@@ -3,68 +3,142 @@ title: Talks
 layout: default
 permalink: /talks/
 ---
-{: .talks}
-## Why you should speak at DjangoCon Africa
 
-- Speakers get a free ticket to DjangoCon Africa! (Travel costs are not included, but potential speakers are encouraged to apply for financial aid. Notification of financial aid decisions will be sent.)
-- Professionally produced video of your talk posted on our YouTube channel. 
-- Professional photographer available  to capture your talk. 
-- Expose the Django community to new tools, practices, or ideas.
-- Expand your technical, professional, and personal networks.
-- Share your discoveries with a large audience.
-- Give something back to the Django community!
+# Talks
 
+<div class="container">
 
+  <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Kojo Idrissa</h5>
+          <p class="card-text"><em>Keynote</em>: Mastering Django by solving local problems</p>
+        </div>
+        <div class="card-footer">
+          <p class="text-body-secondary">Kojo (USA) is one of the leaders of the North American Django community, and our first keynote speaker. He will be speaking  about practices and patterns in problem-solving and how they apply across the globe.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Flavio Percoco and Honza Kral</h5>
+          <p class="card-text">From idea to production</p>
+        </div>
+        <div class="card-footer">
+          <p class="text-body-secondary">A talk about what’s needed to turn a software idea to a reality. Flavio (Italy) is a software engineering leader, working at some of the best-known companies in OSS. Honza (Czech Republic) is a Django Core contributor.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Anna Makarudze</h5>
+          <p class="card-text">Navigating the open-source world as a minority</p>
+        </div>
+        <div class="card-footer">
+          <p class="text-body-secondary">Anna (Zimbabwe) spent several years working as the President of the Django Software Foundation. She will share her insights on how those in ethnic, gender and other minorities can succeed, and communities can support them.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Dawn Wages</h5>
+          <p class="card-text">Supercharging your Python development environment with VS Code and Dev Containers</p>
+        </div>
+        <div class="card-footer">
+          <p class="text-body-secondary">Dawn (USA) is a product manager at Microsoft. She will discuss developer tools for Python/Django programmers, and the benefits that Visual Studio Code’s Dev Containers can offer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Sheena O'Connell</h5>
+          <p class="card-text">How Django helped Umuzi survive COVID</p>
+        </div>
+        <div class="card-footer">
+          <p class="text-body-secondary">Sheena (South Africa) will discuss how COVID disrupted the work of Umuzi, a non-profit training provider, and how Django helped Umuzi weather the disruption.</p>
+        </div>
+      </div>
+    </div>
 
-{: .talks-list}
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Mariusz Felisiak</h5>
+          <p class="card-text">Wonderful world of the limitless Django Lookups</p>
+        </div>
+        <div class="card-footer">
+          <p class="text-body-secondary">Mariusz (Poland) is one of the most important people in the world of Django; he has been a Django Fellow since 2019. This talk will dive deep into Lookups, a key component of the ORM.</p>
+        </div>
+      </div>
+    </div>
 
-## COVID-19
-Please see our COVID-19 Policy for more information.
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Samweli Twesa Mwakisambwe</h5>
+          <p class="card-text">Making map visualisations and animations using Python</p>
+        </div>
+        <div class="card-footer">
+          <p class="text-body-secondary">Samweli (Tanzania) will speak about using open-source Python tools to visualise and and analyse geospatial data.</p>
+        </div>
+      </div>
+    </div>
 
-At this stage, we are planning for all presenters to be in Zanzibar to present their talks in person. Things can always change depending on how the pandemic progresses throughout the year. 
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Daniele Procida</h5>
+          <p class="card-text">And all that jazz...</p>
+        </div>
+        <div class="card-footer">
+          <p class="text-body-secondary">Daniele (Italy) joined the Django Core team in 2013. He'll be discussing the parallels between music and software, and what Africa and Black culture mean for them.</p>
+        </div>
+      </div>
+    </div>
 
-## Proposing for DjangoCon Africa
-## Selection process
-We’ll choose a selection of talks and tutorials that we think will make for the most enjoyable and engaging programme for our attendees. Volunteers from the Django community will be invited to help us select talks that will be interesting and useful to our attendees. Community volunteers and conference organizers will review anonymized submissions and together decide which talks to accept.
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Fuad Habib</h5>
+          <p class="card-text">Django Unchained: Empowering Africa's Youth Through Coding</p>
+        </div>
+        <div class="card-footer">
+          <p class="text-body-secondary">Fuad (Tanzania) will talk about real-world examples of successful youth-led projects in Africa, and the tangible opportunities Django presents for entrepreneurship and job creation.</p>
+        </div>
+      </div>
+    </div>
 
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Jon Atkinson</h5>
+          <p class="card-text">Leaving the cloud</p>
+        </div>
+        <div class="card-footer">
+          <p class="text-body-secondary">Jon (United Kingdom) is Technical Director at Giant Digital; in this talk he will question the thinking that "the cloud" should be the default starting-point for our deployment needs, and explore some older, simpler options.</p>
+        </div>
+      </div>
+    </div>
 
+    <div class="col">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Vuyisile Ndlovu</h5>
+          <p class="card-text">Python debugging: techniques and tools</p>
+        </div>
+        <div class="card-footer">
+          <p class="text-body-secondary">Programmers spend a lot of their time debugging. Vuyisile (Zimbabwe) will introduce systematic approaches to the art, and some Python tools that Python developers can incorporate into their work.</p>
+        </div>
+      </div>
+    </div>
 
-{::options parse_block_html="true" /}
-<div class="talk-section" >
-## Talks (November 7th, 8th, & 9th)
-{: .head-text}
-Duration: 20-25 minutes or 40-45 minutes
-{: .sub-head-text}
+  </div>
 
-We are looking for original and exciting talks that can benefit the diverse interests of our audience. Don’t feel confined to Django-centric topics; we also love talks about everything Python, Open Source, Community, Web Development, User Experience, and more. If you’re a first-time attendee - don’t worry! We would love to be remembered as the conference where you started your speaking career.
-{: .talk-section-text}
+  <p><strong>More coming soon!</strong></p>
+
 </div>
-
-{::options parse_block_html="true" /}
-<div class="talk-section" >
-## Workshops (November 10th & 11th)
-{: .head-text}
-Duration: 2 - 3 hours
-{: .sub-head-text}
-
-We’re open to all kinds of ideas, especially ones we haven’t thought of yet! Technical tutorials tend to be more popular, but we welcome all topics. Tutorials can be aimed at any level of experience — just be clear about what you expect people to know or have experience of.
-{: .talk-section-text}
-</div>
-
-{::options parse_block_html="true" /}
-<div class="talk-section" >
-## Lightning Talks :zap: (November 7th, 8th, & 9th)
-{: .head-text}
-Duration: Maximum 5 minutes
-{: .sub-head-text}
-
-Not up for a full talk or workshop? Want to give your first talk at a conference? Lightning Talks are talks under 5 minutes with or without slides on almost any topic you want! Even if you’re nervous or shy, remember: It’s a maximum of 5 minutes. Registration will take place at the conference.
-{: .talk-section-text}
-</div>
-
-
-<div class="conference-information" >
-## Pre-conference information
-You will have the option of uploading a rough transcript of your presentation about two weeks before the conference to allow the captioning team to train on any jargon used in your presentation. This is by no means required, but it will provide a more accessible experience for your audience.
-
-The organizing team reserves the right to request a review of the draft slides at any point up to the start of the conference for any reason, including but not limited to content, message quality, and more. Failure to provide these slides in a timely manner may result in your removal from the program. We understand that the slides are draft quality and will not be shared outside of the programme and code of conduct teams.
