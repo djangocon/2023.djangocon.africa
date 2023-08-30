@@ -1,15 +1,8 @@
-- name: Info
-  link: #
-  sublink:  
-  - name: About 
-    link: /about/
-  
-  # - name: FAQ
-  #   link: /faq/
+- name: Home
+  link: /
 
-
-- name: Talks
-  link: /talks/
+- name: Speakers
+  link: /speakers/
 # - name: Information
 #   link: #
 #   sublink:

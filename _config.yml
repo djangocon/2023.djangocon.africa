@@ -37,7 +37,11 @@ collections:
   sponsors:
     output: false
     permalink: /:collection/
+  speakers:
+    output: false
+    permalink: /:collection/
   
+
 # Our DjangoCon Africa settings...
 year: 2023 
 conference_duration_days: 6
