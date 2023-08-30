@@ -27,7 +27,7 @@ permalink: /talks/
           <p class="card-text">From idea to production</p>
         </div>
         <div class="card-footer">
-          <p class="text-body-secondary">A talk about what’s needed to turn a software idea to a reality. Flavio (Italy) is a software engineering leader, working at some of the best-known companies in OSS. Honza (Czech Republic) is a Django Core contributor. Flavio is </p>
+          <p class="text-body-secondary">A talk about what’s needed to turn a software idea to a reality. Flavio (Italy) is a software engineering leader, working at some of the best-known companies in OSS. Honza (Czech Republic) is a Django Core contributor.</p>
         </div>
       </div>
     </div>
@@ -49,7 +49,7 @@ permalink: /talks/
           <p class="card-text">Supercharging your Python development environment with VS Code and Dev Containers</p>
         </div>
         <div class="card-footer">
-          <p class="text-body-secondary">Dawn (USA) is a product manager at Microsoft. She will discuss developer tools for Python/Django programmers, and the benefits that Visual Studio Code’s Dev Containers can offer</p>
+          <p class="text-body-secondary">Dawn (USA) is a product manager at Microsoft. She will discuss developer tools for Python/Django programmers, and the benefits that Visual Studio Code’s Dev Containers can offer.</p>
         </div>
       </div>
     </div>
