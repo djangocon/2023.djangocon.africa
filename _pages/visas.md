@@ -17,7 +17,7 @@ That depends on what country issued your passport; see the [foreign affairs](#) 
 ### I was asked to upload some document, What do I do about this?
 
 - **Other relevant documents:** Your bank statement should suffix for this.
-- [Business License](https://drive.google.com/file/d/1pHVz9Xp_ReI4MCFM20y0En5mDLSpRo4t/view?usp=sharing)
+- **[Business License](https://drive.google.com/file/d/1pHVz9Xp_ReI4MCFM20y0En5mDLSpRo4t/view?usp=sharing):** Download the [business license](https://drive.google.com/file/d/1pHVz9Xp_ReI4MCFM20y0En5mDLSpRo4t/view?usp=sharing) and upload as PDF for the application
 
 ### I was asked for 'Company name/ Organization registration No'
 - PyCon Tanzania Registration number is 530245
