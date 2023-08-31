@@ -14,6 +14,15 @@ Visa Support
 
 That depends on what country issued your passport; see the [foreign affairs](#) website for more information.
 
+### I was asked to upload some document, What do I do about this?
+
+- **Other relevant documents:** Your bank statement should suffix for this.
+- [Business License](https://drive.google.com/file/d/1pHVz9Xp_ReI4MCFM20y0En5mDLSpRo4t/view?usp=sharing)
+
+### I was asked for 'Company name/ Organization registration No'
+- PyCon Tanzania Registration number is 530245
+
+
 ### I need a letter to obtain a visa. Can you help me with that ?
 
 We sure can! Click on <a class="notice" style="font-weight: 700;" href="" data-bs-toggle="modal" data-bs-target="#inviteModal">Get Invitation Letter</a> to request your letter of invitation for your visa application at the {{site.host_city_and_country}} Consulate.<br>

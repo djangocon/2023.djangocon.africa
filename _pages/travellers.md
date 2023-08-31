@@ -27,11 +27,11 @@ It's also possible to fly to Dar es Salaam (Abeid Amani Karume International Air
 [Expert Africa's flights to Zanzibar page](https://www.expertafrica.com/zanzibar/info/flights-to-zanzibar) includes some further useful basic information about travel.
 
 
-## Visas
+## [Visas](/visas)
 
-Visitors from most countries will require a visa. This can be obtained at the airport on arrival, but the queues can be long, and payment is required in hard currency cash. *It's strongly recommended to get an electronic visa in advance.*
+Visitors from most countries will require a [visa](/visas). This can be obtained at the airport on arrival, but the queues can be long, and payment is required in hard currency cash. *It's strongly recommended to get an electronic [visa](/visas) in advance.*
 
-See the [official Tanzanian government guidelines](https://visa.immigration.go.tz/guidelines) for more information, including list of countries whose nationals **must** obtain a visa in advance, and those whose nationals do not require a visa at all.
+See the [official Tanzanian government guidelines](https://visa.immigration.go.tz/guidelines) for more information, including list of countries whose nationals **must** obtain a [visa](/visas) in advance, and those whose nationals do not require a visa at all.
 
 ## Health, vaccinations and precautions
 
