@@ -6,7 +6,6 @@ permalink: /visas/
 description: Information about obtaining a Visa to visit DjangoCon Africa
 ---
 
-
 Visa Support
 {: .h1}
 
@@ -43,7 +42,7 @@ Send an <a href="mailto:{{site.visa_email}}">email</a> to our visa team and we'l
 
 <div class="modal fade" id="inviteModal" tabindex="-1" aria-labelledby="inviteModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content">
+    <div class="modal-content" style="background-color: #ffffff">
       <div class="modal-header">
         <h5 class="modal-title" id="inviteModalLabel">
           Djc Africa'23 Invitation Letter
