@@ -8,4 +8,5 @@ mastodon: ""
 twitter: ""
 website: ""
 linkedin: ""
+image: busola400.jpg
 ---
