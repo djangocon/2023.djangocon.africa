@@ -8,4 +8,5 @@ mastodon: ""
 twitter: "sheena_oconnell"
 website: ""
 linkedin: "sheena-o-connell-0bb72527"
+image: "sheena400.jpg"
 ---

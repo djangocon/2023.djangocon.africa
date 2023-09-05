@@ -7,4 +7,5 @@ description: "Kojo (USA) is one of the leaders of the North American Django comm
 twitter: ""
 website: "https://kojoidrissa.com"
 linkedin: "kojo🧐-idrissa-8228b01b/"
+image: "kojo400.png"
 ---

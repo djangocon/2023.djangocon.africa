@@ -8,4 +8,5 @@ mastodon: ""
 twitter: ""
 website: "https://www.jonatkinson.co.uk"
 linkedin: ""
+image: "jon400.png"
 ---

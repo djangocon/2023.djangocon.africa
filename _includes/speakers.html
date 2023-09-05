@@ -6,6 +6,7 @@
 
     <div class="col">
       <div class="card h-100">
+        {% if speaker.image %}<img src="/static/img/speakers/{{ speaker.image }}" alt="">{% endif %}
         <div class="card-header">
           <h5 class="card-title">{{ speaker.name }}</h5>
         </div>

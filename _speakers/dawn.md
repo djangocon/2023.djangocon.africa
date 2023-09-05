@@ -8,4 +8,5 @@ mastodon: ""
 twitter: "dawnwagessays"
 website: "http://dawnwages.info"
 linkedin: "dawnwages"
+image: "dawn400.jpg"
 ---

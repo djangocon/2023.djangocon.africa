@@ -8,4 +8,5 @@ mastodon: "@EvilDMP@mastodon.online"
 twitter: ""
 website: "https://vurt.eu"
 linkedin: "daniele-procida"
+image: "daniele400.jpg"
 ---

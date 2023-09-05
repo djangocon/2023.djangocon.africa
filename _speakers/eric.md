@@ -8,4 +8,5 @@ mastodon: ""
 twitter: "_EricOuma"
 website: ""
 linkedin: "eric-odhiambo-ouma"
+image: "eric400.jpg"
 ---
