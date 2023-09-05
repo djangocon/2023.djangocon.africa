@@ -8,4 +8,5 @@ mastodon: "@felixxm@fosstodon.org"
 twitter: ""
 website: "https://www.mariuszfelisiak.org"
 linkedin: "mariuszfelisiak/"
+image: "mariusz400.png"
 ---

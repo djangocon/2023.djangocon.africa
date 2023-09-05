@@ -8,4 +8,5 @@ mastodon: ""
 twitter: "annamakarudze"
 website: "https://makarudze.com"
 linkedin: "anna-makarudze"
+image: anna400.jpg
 ---

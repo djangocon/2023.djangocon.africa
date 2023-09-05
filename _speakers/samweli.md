@@ -7,5 +7,5 @@ description: "Samweli (Tanzania) will speak about using open-source Python tools
 mastodon: ""
 twitter: ""
 website: ""
-linkedin: "mariuszfelisiak/"
+linkedin: ""
 ---

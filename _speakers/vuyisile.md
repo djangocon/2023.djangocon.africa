@@ -8,4 +8,5 @@ mastodon: ""
 twitter: "terrameijar"
 website: "https://vuyisile.com"
 linkedin: "vuyisile-ndlovu-080b3891"
+image: vuyisile400.jpg
 ---

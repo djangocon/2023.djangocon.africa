@@ -8,4 +8,5 @@ mastodon: "https://chaos.social/@flaper87"
 twitter: "flaper87"
 website: "https://flaper87.com"
 linkedin: "fpercoco"
+image: "flavio400.png"
 ---
