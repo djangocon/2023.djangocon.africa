@@ -8,4 +8,5 @@ twitter: ""
 website: "https://kojoidrissa.com"
 linkedin: "kojo🧐-idrissa-8228b01b/"
 image: "kojo400.png"
+mastodon: "https://fosstodon.org/@kojoidrissa"
 ---
