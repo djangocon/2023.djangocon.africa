@@ -8,4 +8,5 @@ mastodon: ""
 twitter: ""
 website: ""
 linkedin: ""
+image: samweli400.jpg
 ---
