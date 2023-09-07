@@ -8,5 +8,5 @@ twitter: "elegant_tolly"
 website: "https://www.outreachy.org/"
 linkedin: "https://www.linkedin.com/in/omotola-omotayo-9406b8162/"
 image: omotola400.jpg
-mastodon:
+mastodon: ""
 ---
