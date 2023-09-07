@@ -779,7 +779,7 @@ img {
   padding: 0;
 }
 
-.djc-default p:nth-child(n + 1) {
+.djc-default p:nth-child(n + 2) {
   padding-top: 30px;
   width: 100%;
 }
@@ -1686,6 +1686,7 @@ img {
 }
 
 
+.card .card-body {font-size: 1rem; line-height: 24px;}
 .card .card-header {background-color: #35ffce;}
 .card .card-footer {
     background-color: #35ffce;
