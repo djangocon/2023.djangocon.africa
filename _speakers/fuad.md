@@ -8,4 +8,5 @@ mastodon: ""
 twitter: "AviTheDev"
 website: "https://fuadhabib.xyz"
 linkedin: "fuad-habib-25378b160"
+image: fuad400.jpg
 ---

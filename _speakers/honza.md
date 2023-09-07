@@ -8,4 +8,5 @@ mastodon: ""
 twitter: "honzakral"
 website: ""
 linkedin: "honzakral"
+image: honza400.jpg
 ---
