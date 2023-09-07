@@ -1687,7 +1687,10 @@ img {
 
 
 .card .card-header {background-color: #35ffce;}
-.card .card-footer {background-color: #35ffce;}
+.card .card-footer {
+    background-color: #35ffce;
+    min-height: 72px;
+}
 .card h5 {
   font-size: 16px;
   font-family: southAfrica;
