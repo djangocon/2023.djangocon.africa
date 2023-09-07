@@ -7,6 +7,6 @@ description: "Brayan Kai (Kenya) is a data scientist. He is an active open-sourc
 mastodon: ""
 twitter: "Kai_mwanyumba"
 website: ""
-linkedin: "honzakral"
+linkedin: "brayan-mwanyumba-309498227"
 image: brayan400.jpg
 ---
