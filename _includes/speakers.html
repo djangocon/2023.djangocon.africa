@@ -6,7 +6,7 @@
 
     <div class="col">
       <div class="card h-100">
-        {% if speaker.image %}<img src="/static/img/speakers/{{ speaker.image }}" alt="">{% endif %}
+        {% if speaker.image != "" %}<img src="/static/img/speakers/{{ speaker.image }}" alt="">{% endif %}
         <div class="card-header">
           <h5 class="card-title">{{ speaker.name }}</h5>
         </div>
@@ -22,16 +22,30 @@
             {% else %}
               {% assign website = 'https://' | append: speaker.website %}
             {% endif %}
-            <a href="{{ website }}" target="_blank">
-            <img class="social-icon" src="/static/img/site/pwebsite.svg" alt="website" />
-            </a>
+              <a href="{{ website }}" target="_blank">
+              <img class="social-icon" src="/static/img/site/pwebsite.svg" alt="website" />
+              </a>
           {% endif %}
           <!-- linkedin -->
-          {% if speaker.linkedin != "" %}
-          <a href="{{ site.l }}/{{ speaker.linkedin }}" target="_blank">
-            <img class="social-icon" src="/static/img/site/plinkedin.svg" alt="LinkedIn" />
-          </a>
+
+          {% if speaker.mastodon != "" %}
+            <a href="{{ speaker.mastodon }}" target="_blank">
+              <img class="social-icon" src="/static/img/site/pmastodon.svg" alt="Mastodon" />
+            </a>
           {% endif %}
+
+          {% if speaker.twitter != "" %}
+            <a href="https://twitter.com/@{{ speaker.twitter }}" target="_blank">
+              <img class="social-icon" src="/static/img/site/ptwitter.svg" alt="Twitter" />
+            </a>
+          {% endif %}
+
+          {% if speaker.linkedin != "" %}
+            <a href="{{ site.l }}/{{ speaker.linkedin }}" target="_blank">
+              <img class="social-icon" src="/static/img/site/plinkedin.svg" alt="LinkedIn" />
+            </a>
+          {% endif %}
+
         </div>
       </div>
 
