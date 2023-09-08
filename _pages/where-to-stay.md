@@ -23,13 +23,27 @@ There are also numerous minibuses and taxis that ply the route - it's on the mai
 
 ## Some suggestions
 
-*This section will be expanded in coming days.*
-
 See [Expert Africa's curated list of places to stay in Stone Town](https://www.expertafrica.com/zanzibar/stone-town/where-to-stay) for some ideas (these are mostly at the higher-end of the market).
 
 
 ### Mid-range options
 
+* [Dhow Palace Hotel](https://dhowpalace-hotel.com) USD ~115/night for a double room
+* [Jafferji House & Spa](http://jafferjihouse.net) from USD ~115/night for a double room
+* [Kisiwa House](https://kisiwahouse.com) USD ~175/night for a double room
+
+### Budget
+
+* [Karibu Inn](http://karibu-inn.hotels-zanzibar.net/en/), [Zava House Stone Town](https://zavahousestonetown.zanzibar-hotels.net/en/), [Zlife Hostel](http://zlife-hostel.hotels-zanzibar.net/en/) - the organisers are familiar with and have stayed in all these hotels, and can recommend them as clean and comfortable. Private rooms range from USD ~30 per night.
+
+Also:
+
 * [Shangani Hotel](https://www.shanganihotelznz.com)
 * [Funguni Palace Hotel](http://www.fungunipalace.com)
 * [Rumaisa Hotel](https://www.rumaisahotel.com)
+
+#### Hostel accommodation
+
+* [Lost and Found Hostel](https://www.hostelworld.com/st/hostels/p/274508/lost-and-found/) - the organisers are familiar with and have stayed in this hostel, which is clean and comfortable. It offers accommodation in shared dormitories, with curtains for privacy, and private lockers for security. USD ~17 per night.
+
+
