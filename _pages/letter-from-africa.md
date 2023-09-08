@@ -17,7 +17,9 @@ Perhaps it's a long way from where you are, maybe in Europe, or the Americas (or
 
 These are the things that most visitors come for, and if you're visiting, you should certainly include some time before and after the conference to discover some of them. (When you get back home, the answer to the question "What did you see in Zanzibar?" should not be "Mostly the inside of the conference venue.")
 
-But, as well as English, as already mentioned, we have another language in common: **Python**. We don't want you to come as a tourist. We want you to come as a *Pythonista*. **You're part of the community already, you just haven't got here yet.**
+To help you see things in Zanzibar in a way that hardly any tourist ever will, we have planned an [introduction and orientation day](/introduction-day) for our first day, to discover Zanzibar through local eyes.
+
+As well as English, as already mentioned, we have another language in common: **Python**. We don't want you to come as a tourist. We want you to come as a *Pythonista*. **You're part of the community already, you just haven't got here yet.**
 
 **What about the software community you'll meet here?** Probably, many things about it will be very familiar. As programmers, Africans build applications, have opinions on software architecture and bang their heads on their keyboards sometimes, and generally do all the things that you do too. The topics and preoccupations of the conference will be familiar too: technical internals, better ways of doing things, diversity, sustainability. People with preconceived notions might be rather surprised to discover the depth of skill, knowledge and experience in African software.
 
