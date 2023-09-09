@@ -7,6 +7,6 @@ description: "Lidya (Ethiopia) is a researcher, data analyst and technology enth
 twitter: "LidyaKef"
 website: ""
 linkedin: "lidya-k-tilahun-534129180"
-image: ""
-mastodon: ""
+image: "lidya400.jpg"
+mastodon: "https://mastodon.social/@HotMitmita"
 ---
