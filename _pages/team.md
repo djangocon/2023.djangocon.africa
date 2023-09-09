@@ -1,7 +1,7 @@
 ---
-title: Our Teams
+title: Our Team
 layout: default
-permalink: /teams
+permalink: /team
 ---
 
 The organizing team
