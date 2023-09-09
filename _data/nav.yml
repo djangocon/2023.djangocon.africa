@@ -21,6 +21,8 @@
       link: /sponsor-us
     - name: Our sponsors
       link:  /our-sponsors
+    - name: Donate
+      link:  /donate
 
 - name: Grant 
   link: /grant/
