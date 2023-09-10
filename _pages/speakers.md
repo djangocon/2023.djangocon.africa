@@ -4,7 +4,8 @@ layout: default
 permalink: /speakers/
 ---
 
-# Talks
-
+Speakers
+{: .h1}
+<br>
 {% include speakers.html %}
 
