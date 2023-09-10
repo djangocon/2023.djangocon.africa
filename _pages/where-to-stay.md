@@ -28,7 +28,7 @@ See [Expert Africa's curated list of places to stay in Stone Town](https://www.e
 
 ### Mid-range options
 
-* [Dhow Palace Hotel](https://dhowpalace-hotel.com) USD ~115/night for a double room
+* [Dhow Palace Hotel](http://dhow-palace.hotels-zanzibar.net/) USD ~115/night for a double room
 * [Jafferji House & Spa](http://jafferjihouse.net) from USD ~115/night for a double room
 * [Kisiwa House](https://kisiwahouse.com) USD ~175/night for a double room
 
