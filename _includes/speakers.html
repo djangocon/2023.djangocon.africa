@@ -16,37 +16,32 @@
 
         <div class="card-footer">
           <!-- website -->
-          {% if speaker.website != "" %}
-            {% if speaker.website contains '://' %}
-              {% assign website = speaker.website %}
-            {% else %}
-              {% assign website = 'https://' | append: speaker.website %}
-            {% endif %}
-              <a href="{{ website }}" target="_blank">
+          {% if speaker.website %}
+              <a href="{{ speaker.website }}" target="_blank">
               <img class="social-icon" src="/static/img/site/pwebsite.svg" alt="website" />
               </a>
           {% endif %}
           <!-- linkedin -->
 
-          {% if speaker.mastodon != "" %}
+          {% if speaker.mastodon %}
             <a href="{{ speaker.mastodon }}" target="_blank">
               <img class="social-icon" src="/static/img/site/pmastodon.svg" alt="Mastodon" />
             </a>
           {% endif %}
 
-          {% if speaker.twitter != "" %}
-            <a href="https://twitter.com/@{{ speaker.twitter }}" target="_blank">
+          {% if speaker.twitter %}
+            <a href="https://twitter.com/{{ speaker.twitter }}" target="_blank">
               <img class="social-icon" src="/static/img/site/ptwitter.svg" alt="Twitter" />
             </a>
           {% endif %}
 
-          {% if speaker.linkedin != "" %}
+          {% if speaker.linkedin %}
             <a href="{{ site.l }}/{{ speaker.linkedin }}" target="_blank">
               <img class="social-icon" src="/static/img/site/plinkedin.svg" alt="LinkedIn" />
             </a>
           {% endif %}
 
-          {% if speaker.github != "" %}
+          {% if speaker.github %}
             <a href="https://github.com/{{ speaker.github }}" target="_blank">
               <img class="social-icon" src="/static/img/site/pgithub.svg" alt="GitHub" />
             </a>
