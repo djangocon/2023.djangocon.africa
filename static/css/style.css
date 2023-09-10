@@ -391,34 +391,34 @@ nav .active {
 }
 
 
- .modal {
-   display: none;
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background-color: rgba(0, 0, 0, 0.5);
-   z-index: 9999;
- }
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
 
- .modal-dialog {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   height: 100%;
- }
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
 
- .modal-content {
-   background-color: transparent;
-   border: none;
-   box-shadow: none;
- }
+.modal-content {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
 
- .spinner-border {
-   width: 3rem;
-   height: 3rem;
- }
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
 
 @media only screen and (max-width: 1200px) {
   nav .hamburger {
@@ -604,9 +604,14 @@ ul {
   object-fit: cover;
 }
 
-.sponsor
-img {
+.sponsor img {
   width: 100%;
+}
+
+
+.sponsor {
+  width: 300px;
+  height: auto;
 }
 
 .roadmap {
@@ -738,7 +743,8 @@ img {
   margin-top: 30px;
 }
 
-.ticket-quantity, #donationQuantity{
+.ticket-quantity,
+#donationQuantity {
   color: #000;
   margin: 0;
   padding: 5px 10px;
@@ -1686,12 +1692,20 @@ img {
 }
 
 
-.card .card-body {font-size: 1rem; line-height: 24px;}
-.card .card-header {background-color: #35ffce;}
-.card .card-footer {
-    background-color: #35ffce;
-    min-height: 72px;
+.card .card-body {
+  font-size: 1rem;
+  line-height: 24px;
 }
+
+.card .card-header {
+  background-color: #35ffce;
+}
+
+.card .card-footer {
+  background-color: #35ffce;
+  min-height: 72px;
+}
+
 .card h5 {
   font-size: 16px;
   font-family: southAfrica;
