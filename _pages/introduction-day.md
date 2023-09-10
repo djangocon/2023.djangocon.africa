@@ -17,6 +17,9 @@ With local members of the organising team as our hosts, we'll go together on a r
 
 We'll visit markets and have lunch - definitely not the tourist lunch! - and experience some things as Zanzibaris do, and see them with their eyes.
 
+<img class="post-img" src="/static/img/site/Zanzibar_Boys_on_a_bike.jpg" alt="Boys on a bike in Zanzibar" />
+<!-- By Kajselius - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=88005548 -->
+
 ## An introduction to each other
 
 It's also a day for introductions to each other.
