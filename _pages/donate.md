@@ -9,7 +9,7 @@ Support us with a donation
 
 ## GoFundMe campaign
 
-If you'd like to support DjangoCon Africa but are not able to commit to a formal sponsorship package, we invite you to support us through our GoFundMe campaign: [DjangoCon Africa financial assistance fund](https://www.gofundme.com/manage/djangocon-africa-financial-assistance-fund).
+If you'd like to support DjangoCon Africa but are not able to commit to a formal sponsorship package, we invite you to support us through our GoFundMe campaign: [DjangoCon Africa financial assistance fund](https://www.gofundme.com/djangocon-africa-financial-assistance-fund).
 
 
 ## Bank transfer
