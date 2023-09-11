@@ -17,8 +17,8 @@ With local members of the organising team as our hosts, we'll go together on a r
 
 We'll visit markets and have lunch - definitely not the tourist lunch! - and experience some things as Zanzibaris do, and see them with their eyes.
 
-<img class="post-img" src="/static/img/site/Zanzibar_Boys_on_a_bike.jpg" alt="Boys on a bike in Zanzibar" />
-<!-- By Kajselius - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=88005548 -->
+<img class="post-img captioned" src="/static/img/site/market.jpg" alt="Market, Zanzibar" /><br>
+<span class="caption">Photo by kind permission of <a href="https://walkandalie.com/">Walker Angell</a></span>
 
 ## An introduction to each other
 
@@ -27,3 +27,6 @@ It's also a day for introductions to each other.
 At DjangoCon Africa there will be many attendees who have never been to a DjangoCon before, or to an African city (never mind an African software conference). It will be a new experience for many of us, with new people from cultures we may not have met before.
 
 Discovering Zanzibar City together will be the perfect way to start the event, and an experience that you couldn't possibly otherwise have.
+
+<img class="post-img captioned" src="/static/img/site/jaws-corner.jpg" alt="Jaws Corner, Zanzibar" /><br>
+<span class="caption">Photo by kind permission of <a href="https://walkandalie.com/">Walker Angell</a></span>

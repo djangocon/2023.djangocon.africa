@@ -1711,3 +1711,6 @@ ul {
   font-family: southAfrica;
   src: url(/static/fonts/southafirkas.ttf);
 }
+
+img.captioned {margin-bottom: 0}
+span.caption {font-style: italic; font-size: 80%}
