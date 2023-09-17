@@ -5,10 +5,9 @@
         DjangoCon Africa is made possible by the generous support of our sponsors. We are grateful for their support and encourage you to learn more about them.
       </p>
   <br><br>
-   {% assign sponsors_by_level = "Diamond|Platinum|Gold|Lanyard|Silver|Bronze|Opportunity
-  Grant|Community|Partners" | split: "|" %} {% for level in sponsors_by_level %} {% assign sponsors_in_level
-  = site.sponsors | where: 'level', level | where: 'hidden', false %} {% assign sponsors_count =
-  sponsors_in_level | size %} {% if sponsors_count != 0 %}
+   {% assign sponsors_by_level = "Diamond|Platinum|Gold|Lanyard|Silver|Bronze|Opportunity Grant|Community|Partners" | split: "|" %} 
+   {% for level in sponsors_by_level %} {% assign sponsors_in_level = site.sponsors | where: 'level', level | where: 'hidden', false %} 
+   {% assign sponsors_count = sponsors_in_level | size %} {% if sponsors_count != 0 %}
   <div class="sponsor-section">
     <h4 class="sponsor-heading">{{ level }}</h4>
     <div class="sponsor-images">
