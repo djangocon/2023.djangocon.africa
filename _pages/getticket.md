@@ -1,7 +1,7 @@
 ---
 title: Tickets
 layout: default
-permalink: /get-ticket
+permalink: #
 ---
 
 <!-- Purchase 🎟️

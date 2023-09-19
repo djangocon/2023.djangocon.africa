@@ -13,11 +13,44 @@
                     <!-- Ticket data will be dynamically added here -->
                 </tbody>
             </table>
-            <br>
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+               Prefer WhatsApp? Click to Purchase A Ticket 🎟️
+            </button>
+
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content" style="background-color: #ffffff">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Purchase Ticket Using WhatsApp</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div style="text-align:center">
+                                <img src="/static/img/site/ticketqr.png" alt="Early Bird" width="250px" />
+                            </div>
+                            <div>
+                                <br>
+                                <h1 class="sub-heading">Simply follow these steps</h1>
+                                <p>1️⃣ Start by sending us a message on WhatsApp using this number: <a
+                                        href="tel:tel:+255 719 555 222" target="_blank">tel:+255 719 555 222</a> or
+                                    click
+                                    to <a href="https://wa.me/message/W32U6NBW654NP1" target="_blank">send a message</a>
+                                    directly.</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div>
                 <h3>Have a voucher? <a href="redeem">Click here</a></h3>
             </div>
-         <br>
+
+            <br>
             <button id="submitBtn" class="proposal-post-button text-center">Proceed with order</button>
         </form>
     </div>
@@ -35,7 +68,7 @@
                 const ticketTableBody = document.getElementById("ticketTableBody");
 
                 data.forEach(ticket => {
-                     const row = document.createElement("tr");
+                    const row = document.createElement("tr");
                     const ticketTypeCell = document.createElement("td");
                     const priceCell = document.createElement("td");
                     const quantityCell = document.createElement("td");
@@ -59,7 +92,7 @@
             })
             .catch(error => console.error("Error fetching ticket data:", error));
 
-      submitBtn.addEventListener("click", function (event) {
+        submitBtn.addEventListener("click", function (event) {
             event.preventDefault();
             let isQuantityGreaterThanZero = false;
             const tickets = [];
@@ -90,11 +123,11 @@
                 return; // Exit early if no valid tickets
             }
 
-            
+
             const formDataObject = { tickets };
-            
+
             localStorage.setItem("formData", JSON.stringify(formDataObject));
-            
+
             window.location.href = window.location.href + "summary";
         });
     </script>

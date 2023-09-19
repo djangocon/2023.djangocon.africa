@@ -1,10 +1,10 @@
 ---
 title: Payment Success
 layout: default
-permalink: /ticket/payment-success
+permalink: /get-ticket/payment-success
 ---
 
-Payment Successful 👏🏽
+Payment <br>Status ⏳
 {: .h1}
 <br>
 

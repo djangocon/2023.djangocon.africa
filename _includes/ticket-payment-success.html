@@ -1,19 +1,53 @@
 <div>
-    <h4>Yah! 🎉🥳🎊 ticket purchase was successful!</h4>
-    <h4>Your Ticket ID 🪪 : <strong id="txRef"></strong></h4>
-    <h4>An email 📧 has been sent 🚚 to you 🤪 </h4> <br>
-    <h1>See you 👀 in ✈️  Zanzibar, Tanzania 🇹🇿 🚀🚀</h1>
-    
+    <h4 id="successMessage">Yah! 🎉🥳🎊 ticket purchase was successful!</h4>
+    <h4 id="ticketId">Your Ticket ID 🪪 : <strong id="txRef"></strong></h4>
+    <h4 id="emailMessage">An email 📧 has been sent 🚚 to you 🤪</h4><br>
+    <h1 id="seeYou">See you 👀 in ✈️ Zanzibar, Tanzania 🇹🇿 🚀🚀</h1>
+    <h1 id="failureMessage">We're sorry! <br> Looks like your payment failed 😞</h1>
 </div>
+
 <script>
-    // Extract tx_ref from query parameter
+    // Extract tx_ref and status from query parameters
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const txRef = urlParams.get("tx_ref");
+    const status = urlParams.get("status");
 
     // Display tx_ref
     const txRefElement = document.getElementById("txRef");
     txRefElement.textContent = txRef;
+
+    // Check the status and display the appropriate message
+    if (status === "successful" || status === "success" ) {
+       const failureMessage = document.getElementById("failureMessage");
+        failureMessage.style.display = "none"
+
+
+    } else {
+        // Payment failed
+        const successMessage = document.getElementById("successMessage");
+        successMessage.style.display = "none";
+
+        const seeYou = document.getElementById("seeYou");
+        seeYou.style.display = "none";
+
+        // Remove the email message
+        const emailMessage = document.getElementById("emailMessage");
+        emailMessage.style.display = "none";
+
+
+        const ticketId = document.getElementById("ticketId");
+        ticketId.style.display = "none";
+
+        // Remove the see message
+        const seeMessage = document.getElementById("seeMessage");
+        seeMessage.style.display = "none"
+
+        // Display a failure message
+        const failureMessage = document.getElementById("failureMessage");
+        failureMessage.style.display = "block"
+        
+    }
 
     // Remove query parameters from URL
     history.replaceState(null, null, window.location.pathname);

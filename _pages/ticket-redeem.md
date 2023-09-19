@@ -1,7 +1,7 @@
 ---
 title: Ticket Summary
 layout: default
-permalink: /ticket/redeem
+permalink: /get-ticket/redeem
 ---
 
 Redeem <br> Ticket 🎟️

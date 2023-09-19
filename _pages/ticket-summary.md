@@ -1,7 +1,7 @@
 ---
 title: Ticket Summary
 layout: default
-permalink: /ticket/summary
+permalink: /get-ticket/summary
 ---
 
 {% include ticket-summary.html %}
