@@ -13,14 +13,21 @@ We need to raise funds to support the attendance of speakers and other attendees
 
 The economics of an event such as this are an enormous challenge, as we strive to provide a high-quality conference experience, while carefully balancing the way we spend our limited funds, and making this an inclusive event.
 
-All the funds we raise for this purpose will be used specifically to provide financial assistance - *every amount we receive, however small, will directly help a traveller get to DjangoCon Africa*
+All the funds we raise for this purpose will be used specifically to provide financial assistance - *every amount we receive, however small, will directly help a traveller get to DjangoCon Africa*.
+
+So far we have raised:
+
+* GoFundMe: €493
+* direct donations: €820
+* total: €1253
+
 
 ## GoFundMe campaign
 
 If you'd like to support DjangoCon Africa but are not able to commit to a formal sponsorship package, we invite you to support us through our GoFundMe campaign: [DjangoCon Africa financial assistance fund](https://www.gofundme.com/djangocon-africa-financial-assistance-fund).
 
 
-## Bank transfer
+## Direct donations
 
 Or if it’s easier, you can make a direct bank transfer to:
 
