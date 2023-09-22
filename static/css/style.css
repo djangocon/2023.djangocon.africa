@@ -530,7 +530,7 @@ nav .active {
 }
 
 h2 {
-  font-family: "southAfrica";
+  font-family: "southAfrica"; /*TODO: choose a font that can handle question marks. This one can't*/
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -918,6 +918,11 @@ ul {
   margin-top: 50px;
   margin-left: 40px;
   margin-right: 40px;
+}
+
+.post-content p {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
 }
 
 .post-paragraph {
