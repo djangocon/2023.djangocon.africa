@@ -8,6 +8,10 @@ meta: We are excited to announce the first DjangoCon Africa event, taking place 
 layout: post-details
 ---
 
+<hr/>
+**Update:** Proposals are now closed! Sorry if you just got the news! 
+<hr>
+
 Our Call for Proposals is now open and will run from the 31st of May to the 12th of July 2023. 
 If you think you have something great to talk about – submit your idea! If you are unsure, speak to someone or contact one of our speaker mentors to discuss your idea. 
 <!--more-->
@@ -29,7 +33,7 @@ Please read both these pages carefully before submitting your talk:
 - [**Speaking**](/talks)
 - [**Speaker Resources**](/speaker-resources)
 
-<button class="proposal-post-button text-center" onclick="window.location.href='https://cfp-2023.djangocon.africa/'">SUBMIT A PROPOSAL HERE</button>
+<button class="proposal-post-button text-center" onclick="window.location.href='https://hmpg.net/'">SUBMIT A PROPOSAL HERE</button>
 
 
 Submissions from anywhere in the world are welcome until 12th July 2023.
