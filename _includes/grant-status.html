@@ -1,0 +1,92 @@
+<body>
+<br>
+<h1>Check Your Grant Application Status</h1> <br>
+<form id="statusForm" class="row g-3">
+    <div class="col-md-4">
+        <div class="form-floating">
+            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+            <label for="email">Email address</label>
+        </div>
+    </div>
+    <div class="col-md-6">
+<button id="statusButton" class="proposal-post-button text-center">Check Status</button>
+    </div>
+</form>
+    <div class="col-md-9">
+<div class="card border-dark" id="statusResult" style="display: none;">
+    <div class="card-body" id="result">
+    </div>
+</div>
+</div>
+
+<script>
+
+  
+    const statusButton = document.getElementById("statusButton");
+
+    statusButton.addEventListener("click", function (event) {
+        event.preventDefault();
+        const emailInput = document.getElementById("email")
+       const statusResult =  document.getElementById("statusResult")
+       const result =  document.getElementById("result")
+
+       const email = emailInput.value;
+       
+        if (!email) {
+            alert("Please provide your e-mail");
+            return;
+        }
+
+
+        const emailRegex = /\S+@\S+\.\S+/;
+
+        if (!emailRegex.test(email)) {
+            emailInput.classList.add("is-invalid");
+            alert("Please enter a valid email address");
+            return;
+        }
+
+        emailInput.classList.remove("is-invalid");
+
+        statusButton.innerHTML = `<span class="spinner-grow text-dark" role="status" aria-hidden="true"></span>
+  <span class="sr-only">Loading...</span>`;
+
+        statusButton.disabled = true;
+
+        const grantStatusUrl = "https://djc-africa-api.vercel.app/grant-status/"+email
+
+        // Fetch ticket data from API
+        fetch(grantStatusUrl)
+            .then(response => response.json())
+            .then(data => {
+                const status = data.status;
+                const message = data.message;
+                const applicantName = data.applicant_name;
+                 
+                if (data.status !== 400) {
+                    statusResult.style.display = "block"
+                     result.innerHTML = `
+                            <p>Hello 👋🏽 <strong>${applicantName}</strong></p>
+                            <p>Your Application Status: <strong>${status}</strong></p>
+                            <p>${message}</p><br>
+                        `;
+                        statusButton.disabled = false;
+                         statusButton.innerHTML = "Check Status"
+
+                 } else {
+                    statusResult.style.display = "block"
+                    result.innerHTML = `
+                            <p>${message}</p>
+                            <br>
+                        `;
+
+                        statusButton.disabled = false;
+                         statusButton.innerHTML = "Check Status"
+                 }
+             
+            })
+            .catch(error => console.error("Error grant status data:", error));
+
+    });
+</script>
+</body>

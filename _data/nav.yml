@@ -25,7 +25,12 @@
       link:  /donate
 
 - name: Grant 
-  link: /grant/
+  link: #
+  sublink:
+    - name: Grant
+      link: /grant/
+    - name: Status
+      link: /grant-status/
 - name: Conduct
   link: /conduct/
 - name: News
