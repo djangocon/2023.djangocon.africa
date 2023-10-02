@@ -53,7 +53,7 @@
 
             statusButton.disabled = true;
 
-            const grantStatusUrl = "http://127.0.0.1:8000/grant-status/" + email
+            const grantStatusUrl = "https://djc-africa-api.vercel.app/grant-status/" + email
 
             // Fetch ticket data from API
             fetch(grantStatusUrl)
@@ -71,7 +71,8 @@
                             <p>Your Application Status: <strong>${status}</strong></p>
                             <p>${message}</p>
                         `;
-                        if (voucher !== "") {
+                        console.log("voucher", voucher)
+                        if (voucher !== null) {
                             html += `<p>Voucher Code Redeem 🎟️: <strong><a href="/get-ticket/redeem?voucher=${voucher}">${voucher}</a></strong></p>
                             `;
                         }
