@@ -52,6 +52,15 @@
         countrySelect.appendChild(option);
     });
 
+
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const voucher = urlParams.get("voucher");
+        const voucherElement = document.getElementById("voucher");
+        if (voucher !== ""){
+            voucherElement.value = voucher;
+        }
+      
   
     const baseUrl = "https://africa-djc.koyeb.app"
     
@@ -133,6 +142,7 @@
                 if (data.message !== "successful") {
                     alert(data.message);
                     payButton.disabled = false;
+                    payButton.innerHTML = "Redeem Ticket 🎟️" 
                     return;
                 }
                 // Redirect to payment page
