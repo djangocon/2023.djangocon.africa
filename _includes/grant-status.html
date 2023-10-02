@@ -71,7 +71,7 @@
                             <p>Your Application Status: <strong>${status}</strong></p>
                             <p>${message}</p>
                         `;
-                        if (voucher) {
+                        if (voucher !== "") {
                             html += `<p>Voucher Code Redeem 🎟️: <strong><a href="/get-ticket/redeem?voucher=${voucher}">${voucher}</a></strong></p>
                             `;
                         }
