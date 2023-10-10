@@ -17,9 +17,9 @@ All the funds we raise for this purpose will be used specifically to provide fin
 
 So far we have raised:
 
-* GoFundMe: €1668
+* GoFundMe: €3498
 * direct donations: €820
-* total: €2488
+* total: €4318
 
 
 ## GoFundMe campaign
