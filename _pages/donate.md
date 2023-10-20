@@ -45,8 +45,8 @@ Or if it’s easier, you can make a direct bank transfer to:
 
 ### US Dollar
 
-* ACH and wire routing number: 084009519
-* account number: 9600000000237227
+* ACH and wire routing number: 026073150
+* account number: 8310585258
 * account type: Checking
 * bank address: Wise 30 W. 26th Street, Sixth Floor, New York NY 10010, United States
 
