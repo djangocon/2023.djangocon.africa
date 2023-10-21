@@ -421,7 +421,67 @@ nav .active {
 }
 
 
+ table {
+   width: 100%;
+   border-collapse: collapse;
+ }
 
+ th,
+ td {
+   border: 1px solid black;
+   padding: 8px;
+   text-align: left;
+ }
+
+ .event-card {
+   padding: 10px;
+   border: 1px solid #ccc;
+   background-color: #fff;
+ }
+
+ .event-card.red {
+   background-color: #e87155;
+ }
+
+ .highlight-ongoing {
+   background-color: #35ffce;
+ }
+
+
+
+ .badge{
+  text-align: left;
+  margin-left: 87%;
+  color: #020202;
+  
+ }
+
+ .button-container {
+   display: flex;
+   justify-content:left;
+ }
+
+ .button-talk {
+   padding: 5px 5px;
+   margin: 2px;
+   border: none;
+   border-radius: 5px;
+   font-size: 12px;
+   font-weight: bold;
+   text-align: center;
+   text-decoration: none;
+ }
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link{
+  background-color: #000000;
+}
+
+.nav-link {
+  color: #000000;
+   font-family: "Edmondsans";
+   font-size: larger;
+   text-transform: uppercase;
+}
  .grant-status {
    background-color: #f0f0f0;
    /* Gray background color */
@@ -433,6 +493,12 @@ nav .active {
  }
 
 @media only screen and (max-width: 1200px) {
+  .badge {
+      text-align: left;
+      margin-left: 60%;
+      color: #020202;
+  
+    }
   nav .hamburger {
     display: flex;
     padding: 11px 9px;

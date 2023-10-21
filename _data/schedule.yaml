@@ -1,0 +1,289 @@
+- day: 1
+  events:
+    - date: "06-11-2023"
+      time: "8:00"
+      event: Introductions
+      endtime: "8:30"
+
+    - date: "06-11-2023"
+      time: "11:00"
+      event: Keynote
+      speaker: Kojo Idrissa
+      title: "Mastering Django By Solving Local Problems"
+      category: Society
+      endtime: "12:30"
+
+    - date: "06-11-2023"  
+      time: "11:00"
+      event: Break
+
+    - date: "06-11-2023"
+      time: "11:30"
+      endtime: ""
+      event: Short talk
+      speaker: Eva Nanyonga
+      title: Testing for GOATS
+      category: Programming
+
+    - date: "06-11-2023"
+      time: "12:00"
+      endtime: ""
+      event: Short talk
+      speaker: Fuad Habib
+      title: "Django Unchained: Empowering Africa's Youth Through Coding"
+      category: Society
+    
+    - date: "06-11-2023"
+      time: "12:30"
+      endtime: ""
+      event: Short talk
+      speaker: Omotola
+      title: Internships and Mentorships, a Catalyst for Career Growth in Open Source and Tech Ecosystem
+      category: Careers
+
+    - date: "06-11-2023"
+      time: "13:00"
+      endtime: ""
+      event: Lunch
+
+    - date: "06-11-2023"
+      time: "14:00"
+      endtime: ""
+      event: Short talk
+      speaker: Honza and Flavio
+      title: From Idea to Production
+      category: Programming
+    
+    - date: "06-11-2023"
+      time: "14:30"
+      endtime: ""
+      event: Short talk
+      speaker: Lidya Tilahun
+      title: e-farming
+      category: Society
+
+    - date: "06-11-2023"
+      time: "15:00"
+      endtime: ""
+      event: Short talk
+      speaker: Vuyisile Ndlovu
+      title: "Python Debugging: Techniques & Tools"
+      category: Programming
+
+    - date: "06-11-2023"
+      time: "15:30"
+      endtime: ""
+      event: Break
+
+    - date: "06-11-2023"
+      time: "16:00"
+      endtime: ""
+      event: Long talk
+      speaker: Sheena O'Connell
+      title: A Tale from the Trenches - How Django Helped Umuzi Survive Covid
+      category: Society
+
+    - date: "06-11-2023"
+      time: "16:45"
+      endtime: ""
+      event: Lighting talks
+
+    - date: "06-11-2023"
+      time: "17:15"
+      endtime: "17:30"
+      event: Closing remarks
+
+
+- day: 2
+  events:
+    - date: "07-11-2023"
+      time: "9:00"
+      endtime: ""
+      event: Introductions
+
+    - date: "07-11-2023"
+      time: "10:00"
+      endtime: ""
+      event: Keynote
+      speaker: Mark Smith
+      title: "Being a Django Developer"
+      category: Career
+
+    - date: "07-11-2023"
+      time: "11:00"
+      endtime: ""
+      event: Break
+
+    - date: "07-11-2023"
+      time: "11:30"
+      endtime: ""
+      event: Short talk
+      speaker: Dawn Wages
+      title: Supercharging your Python Development Environment with VS Code and Dev Containers
+      category: Programming
+
+    - date: "07-11-2023"
+      time: "12:00"
+      endtime: ""
+      event: Short talk
+      speaker: Busola Marcus
+      title: "Working Remotely in Africa: Unleashing the Potential of a Connected Continent"
+      category: Careers
+
+    - date: "07-11-2023"
+      time: "12:30"
+      endtime: ""
+      event: Short talk
+      speaker: Jon Atkinson
+      title: Leaving The Cloud
+      category: Programming
+
+    - date: "07-11-2023"
+      time: "13:00"
+      endtime: ""
+      event: Lunch
+
+    - date: "07-11-2023"
+      time: "14:00"
+      endtime: ""
+      event: Short talk
+      speaker: Ruth Ikegah
+      title: Growing your Tech Career in Open Source
+      category: Careers
+
+    - date: "07-11-2023"
+      time: "14:30"
+      endtime: ""
+      event: Short talk
+      speaker: Eric Odhiambo
+      title: Supercharging Django Admin with Typesense
+      category: Programming
+
+    - date: "07-11-2023"
+      time: "15:00"
+      endtime: ""
+      event: Short talk
+      speaker: Mariam Muhammed
+      title: "Enhancing Django Web Application Performance through Caching: Effective Strategies and Best Practices"
+      category: Programming
+
+    - date: "07-11-2023"
+      time: "15:30"
+      endtime: ""
+      event: Break
+
+    - date: "07-11-2023"
+      time: "16:00"
+      endtime: ""
+      event: Long talk
+      speaker: Anna Makarudze
+      title: Navigating the Open-Source World as a Minority
+      category: Society
+
+    - date: "07-11-2023"
+      time: "16:45"
+      endtime: ""
+      event: Lighting talks
+
+    - date: "07-11-2023"
+      time: "17:15"
+      endtime: "17:30"
+      event: Closing remarks
+
+
+- day: 3
+  events:
+    - date: "08-11-2023"
+      time: "9:00"
+      endtime: ""
+      event: Introductions
+
+    - date: "08-11-2023"
+      time: "10:00"
+      endtime: ""
+      event: Keynote
+      speaker: Velda Kiara
+      title: "Django Unchained: Pushing the Web Framework to Its Limits and Beyond!"
+      category: Programming
+    
+    - date: "08-11-2023"
+      time: "11:00"
+      endtime: ""
+      event: Break
+    
+    - date: "08-11-2023"
+      time: "11:30"
+      endtime: ""
+      event: Short talk
+      speaker: Mariusz Felisiak
+      title: Wonderful world of the limitless Django Lookups
+      category: Programming
+
+    - date: "08-11-2023"
+      time: "12:00"
+      endtime: ""
+      event: Short talk
+      speaker: Samweli Twesa Mwakisambwe
+      title: Making map visualizations and animations using Python
+      category: Programming
+
+    - date: "08-11-2023"
+      time: "12:30"
+      endtime: ""
+      event: Short talk
+      speaker: Brayan Kai
+      title: Effective Strategies for Disability Inclusion in Open Source Communities
+      category: Society
+    
+    - date: "08-11-2023"
+      time: "13:00"
+      endtime: ""
+      event: Lunch
+
+    - date: "08-11-2023"
+      time: "14:00"
+      endtime: ""
+      event: Short talk
+      speaker: Atieno Ouma
+      title: QuerySet Optimization Techniques in Django
+      category: Programming
+
+    - date: "08-11-2023"
+      time: "14:30"
+      endtime: ""
+      event: Short talk
+      speaker: Sal
+      title: Leveraging Distributed Workers for Scalable and Asynchronous Processing
+      category: Programming
+
+    - date: "08-11-2023"
+      time: "15:00"
+      endtime: ""
+      event: Short talk
+      speaker: Tahaa Farooq
+      title: Writing Security Tools In Django
+      category: Programming
+
+    - date: "08-11-2023"
+      time: "15:30"
+      endtime: ""
+      event: Break
+
+
+    - date: "08-11-2023"
+      time: "16:00"
+      endtime: ""
+      event: Long talk
+      speaker: Daniele Procida
+      title: And all that jazz
+      category: Society
+
+    - date: "08-11-2023"
+      time: "16:45"
+      endtime: ""
+      event: Lighting talks
+
+    - date: "08-11-2023"
+      time: "17:15"
+      endtime: "17:30"
+      event: Closing remarks

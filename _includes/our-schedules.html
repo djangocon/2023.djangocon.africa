@@ -1,0 +1,170 @@
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+            type="button" role="tab" aria-controls="pills-home" aria-selected="true">Talks: Day 1</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+            type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Talks: Day 2</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+            type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Talks: Day 3</button>
+    </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+        tabindex="0">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Schedules</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in site.data.schedule %}
+                {% if item.day == 1 %}
+                {% assign current_date = "now" | date: "%m-%d-%Y" %}
+                {% assign current_time = "now" | date: "%l:%M" %}
+                {% for event in item.events %}
+                {% assign event_start_time = event.time | split: " - " | first | date: "%l:%M" %}
+                {% assign event_end_time = event.endtime | split: " - " | last | date: "%l:%M" %}
+                {% assign event_date = event.date | date: "%m-%d-%Y" %}
+                <tr>
+                    <td>
+                        {{ event_start_time }} - {{ event_end_time }}
+                    </td>
+                    <td>
+                        <div
+                            class="event-card {% unless event.speaker %}red{% endunless %} {% if  current_date == event_date and current_time >= event_start_time and current_time <= event_end_time %}highlight-ongoing{% endif %}">
+
+
+                            {% if event.speaker %}
+                            <div>
+                                <h3><strong>{{ event.title }}</strong></h3>
+                                <span class="button-container">
+                                    <button class="button-talk" style="color: #3498db;">{{event.event}}</button>
+                                    <button class="button-talk"  style="color: #e74c3c">{{event.category}}</button>
+                                </span><br>
+
+                                <h4>{{ event.speaker }}</h4>
+
+                            </div>
+                            {%else%}
+                            <h3><strong>{{ event.event }}</strong></h3>
+                            {% endif %}
+                            {% if current_date == event_date and current_time >= event_start_time and current_time <= event_end_time %} <h5
+                                class="badge">Ongoing 😉</h5>
+                                {% endif %}
+                        </div>
+                    </td>
+                </tr>
+                {% endfor %}
+                {% endif %}
+                {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Schedules</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in site.data.schedule %}
+            {% if item.day == 2 %}
+            {% assign current_time = "now" | date: "%l:%M" %}
+            {% for event in item.events %}
+            {% assign event_start_time = event.time | split: " - " | first | date: "%l:%M" %}
+            {% assign event_end_time = event.endtime | split: " - " | last | date: "%l:%M" %}
+            <tr>
+                <td>
+                    {{ event_start_time }} - {{ event_end_time }}
+                </td>
+                <td>
+                    <div
+                        class="event-card {% unless event.speaker %}red{% endunless %} {% if current_time >= event_start_time and current_time <= event_end_time %}highlight-ongoing{% endif %}">
+    
+    
+                        {% if event.speaker %}
+                        <div>
+                            <h3><strong>{{ event.title }}</strong></h3>
+                            <span class="button-container">
+                                <button class="button-talk" style="color: #3498db;">{{event.event}}</button>
+                                <button class="button-talk" style="color: #e74c3c">{{event.category}}</button>
+                            </span><br>
+    
+                            <h4>{{ event.speaker }}</h4>
+    
+                        </div>
+                        {%else%}
+                        <h3><strong>{{ event.event }}</strong></h3>
+                        {% endif %}
+                        {% if current_time >= event_start_time and current_time <= event_end_time %} <h5 class="badge">
+                            Ongoing 😉</h5>
+                            {% endif %}
+                    </div>
+                </td>
+            </tr>
+            {% endfor %}
+            {% endif %}
+            {% endfor %}
+        </tbody>
+    </table>
+    </div>
+    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Schedules</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in site.data.schedule %}
+                {% if item.day == 3 %}
+                {% assign current_time = "now" | date: "%l:%M" %}
+                {% for event in item.events %}
+                {% assign event_start_time = event.time | split: " - " | first | date: "%l:%M" %}
+                {% assign event_end_time = event.endtime | split: " - " | last | date: "%l:%M" %}
+                <tr>
+                    <td>
+                        {{ event_start_time }} - {{ event_end_time }}
+                    </td>
+                    <td>
+                        <div
+                            class="event-card {% unless event.speaker %}red{% endunless %} {% if current_time >= event_start_time and current_time <= event_end_time %}highlight-ongoing{% endif %}">
+        
+        
+                            {% if event.speaker %}
+                            <div>
+                                <h3><strong>{{ event.title }}</strong></h3>
+                                <span class="button-container">
+                                    <button class="button-talk" style="color: #3498db;">{{event.event}}</button>
+                                    <button class="button-talk" style="color: #e74c3c">{{event.category}}</button>
+                                </span><br>
+        
+                                <h4>{{ event.speaker }}</h4>
+        
+                            </div>
+                            {%else%}
+                            <h3><strong>{{ event.event }}</strong></h3>
+                            {% endif %}
+                            {% if current_time >= event_start_time and current_time <= event_end_time %} <h5 class="badge">
+                                Ongoing 😉</h5>
+                                {% endif %}
+                        </div>
+                    </td>
+                </tr>
+                {% endfor %}
+                {% endif %}
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>

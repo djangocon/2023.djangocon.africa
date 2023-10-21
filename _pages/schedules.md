@@ -4,7 +4,9 @@ layout: default
 permalink: /talks/schedules/
 ---
 
-Schedules ⏳
+Schedules 
 {: .h1}
-We will publish the schedule for the conference closer to the event. 
-Currently, we are still accepting talk proposals. If you would like to give a talk, please submit a proposal **[here](/talks/).**
+
+All sessions are in East Africa Time (UTC+03:00).
+
+{% include our-schedules.html%}
