@@ -286,14 +286,14 @@
 
 
                     if (twitter) {
-                        twitterLink.href = twitter;
+                        twitterLink.href =  "{{ site.t }}/" + twitter;
                         twitterLink.style.display = "block";
                     } else {
                         twitterLink.style.display = "none";
                     }
 
                     if (linkedin) {
-                        linkedinLink.href = linkedin;
+                        linkedinLink.href = "{{ site.l }}/"+linkedin;
                         linkedinLink.style.display = "block";
                     } else {
                         linkedinLink.style.display = "none";
