@@ -444,9 +444,30 @@ nav .active {
  }
 
  .highlight-ongoing {
-   background-color: #35ffce;
+   background-color: #077258;
  }
 
+.modal-image-speaker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+
+    .speaker-info {
+      display: flex;
+      align-items: center;
+    }
+  
+    .image-container {
+      flex: 0 0 auto;
+      margin-right: 10px;
+    }
+  
+    .name-container {
+      flex: 1;
+    }
 
 
  .badge{
@@ -491,6 +512,31 @@ nav .active {
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
    max-width: 400px;
  }
+#socialLinks {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+#socialLinks li {
+  margin: 0;
+}
+
+#socialLinks a {
+  text-decoration: none;
+  padding: 0 10px;
+}
+.centered-list {
+  display: flex;
+  justify-content: center;
+}
+
+#talkDescription {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
 
 @media only screen and (max-width: 1200px) {
   .badge {
