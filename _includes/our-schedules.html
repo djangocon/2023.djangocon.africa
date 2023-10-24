@@ -31,16 +31,16 @@
 <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
     <li class="nav-item" role="presentation">
         <button class="nav-link" id="pills-day-one-tab" data-bs-toggle="pill" data-bs-target="#pills-day-one" type="button"
-            role="tab" aria-controls="pills-day-one" aria-selected="false" data-date="2023-11-06">Talks: Day 1</button>
+            role="tab" aria-controls="pills-day-one" aria-selected="false" data-date="2023-11-07">Talks: Day 1</button>
     </li>
     <li class="nav-item" role="presentation">
         <button class="nav-link" id="pills-day-two-tab" data-bs-toggle="pill" data-bs-target="#pills-day-two"
-            type="button" role="tab" aria-controls="pills-day-two" aria-selected="false" data-date="2023-11-07">Talks:
+            type="button" role="tab" aria-controls="pills-day-two" aria-selected="false" data-date="2023-11-08">Talks:
             Day 2</button>
     </li>
     <li class="nav-item" role="presentation">
         <button class="nav-link" id="pills-day-three-tab" data-bs-toggle="pill" data-bs-target="#pills-day-three"
-            type="button" role="tab" aria-controls="pills-day-three" aria-selected="false" data-date="2023-11-08">Talks:
+            type="button" role="tab" aria-controls="pills-day-three" aria-selected="false" data-date="2023-11-09">Talks:
             Day 3</button>
     </li>
 </ul>
@@ -357,10 +357,10 @@
     });
 
 // Tabs activation based on the date
-    var currentDate = new Date();
-    var day = currentDate.getDate();
-    var month = currentDate.getMonth() + 1; 
-    var year = currentDate.getFullYear();
+    var current_date = new Date();
+    var day = current_date.getDate();
+    var month = current_date.getMonth() + 1; 
+    var year = current_date.getFullYear();
 
     // Format the date in YYYY-MM-DD format
     var formattedDate = year + '-' + (month < 10 ? '0' : '') + month + '-' + (day < 10 ? '0' : '') + day;

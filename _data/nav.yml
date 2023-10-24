@@ -1,8 +1,20 @@
-- name: Home
-  link: /
+# - name: Home
+#   link: /
+
+- name: About
+  link: #
+  sublink:
+    - name: Team
+      link: /team
+    - name: Conduct
+      link: /conduct/
+
+- name: Schedules
+  link: /schedules/
 
 - name: Speakers
   link: /speakers/
+
 # - name: Information
 #   link: #
 #   sublink:
@@ -31,12 +43,11 @@
       link: /grant/
     - name: Status
       link: /grant-status/
-- name: Conduct
-  link: /conduct/
+
+
 - name: News
   link: /news/
-- name: Team
-  link: /team
+
 
 - name: Travellers
   link: #

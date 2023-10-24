@@ -1,11 +1,11 @@
 - day: 1
   events:
-    - date: "06-11-2023"
+    - date: "07-11-2023"
       time: "8:00"
       event: Introductions
       endtime: "8:30"
 
-    - date: "06-11-2023"
+    - date: "07-11-2023"
       time: "11:00"
       event: Keynote
       speaker: Kojo Idrissa
@@ -19,11 +19,11 @@
       mastodon: "https://fosstodon.org/@kojoidrissa"
       endtime: "12:30"
 
-    - date: "06-11-2023"  
+    - date: "07-11-2023"  
       time: "11:00"
       event: Break
 
-    - date: "06-11-2023"
+    - date: "07-11-2023"
       time: "11:30"
       endtime: ""
       event: Short talk
@@ -37,7 +37,7 @@
       image: eva400.jpg
       description:
 
-    - date: "06-11-2023"
+    - date: "07-11-2023"
       time: "12:00"
       endtime: ""
       event: Short talk
@@ -51,7 +51,7 @@
       image: fuad400.jpg
       description:
     
-    - date: "06-11-2023"
+    - date: "07-11-2023"
       time: "12:30"
       endtime: ""
       event: Short talk
@@ -65,12 +65,12 @@
       mastodon:
       description:
 
-    - date: "06-11-2023"
+    - date: "07-11-2023"
       time: "13:00"
       endtime: ""
       event: Lunch
 
-    - date: "06-11-2023"
+    - date: "07-11-2023"
       time: "14:00"
       endtime: ""
       event: Short talk
@@ -84,7 +84,7 @@
       image: honza400.jpg
       description:
     
-    - date: "06-11-2023"
+    - date: "07-11-2023"
       time: "14:30"
       endtime: ""
       event: Short talk
@@ -98,7 +98,7 @@
       mastodon: "https://mastodon.social/@HotMitmita"
       description:
 
-    - date: "06-11-2023"
+    - date: "07-11-2023"
       time: "15:00"
       endtime: ""
       event: Short talk
@@ -112,12 +112,12 @@
       image: vuyisile400.jpg
       description:
 
-    - date: "06-11-2023"
+    - date: "07-11-2023"
       time: "15:30"
       endtime: ""
       event: Break
 
-    - date: "06-11-2023"
+    - date: "07-11-2023"
       time: "16:00"
       endtime: ""
       event: Long talk
@@ -131,12 +131,12 @@
       image: "sheena400.jpg"
       description:
 
-    - date: "06-11-2023"
+    - date: "07-11-2023"
       time: "16:45"
       endtime: ""
       event: Lighting talks
 
-    - date: "06-11-2023"
+    - date: "07-11-2023"
       time: "17:15"
       endtime: "17:30"
       event: Closing remarks
@@ -149,7 +149,7 @@
       endtime: ""
       event: Introductions
 
-    - date: "07-11-2023"
+    - date: "08-11-2023"
       time: "10:00"
       endtime: ""
       event: Keynote
@@ -289,12 +289,12 @@
 
 - day: 3
   events:
-    - date: "08-11-2023"
+    - date: "09-11-2023"
       time: "9:00"
       endtime: ""
       event: Introductions
 
-    - date: "08-11-2023"
+    - date: "09-11-2023"
       time: "10:00"
       endtime: ""
       event: Keynote
@@ -308,12 +308,12 @@
       twitter: "VeldaKiara"
       description:
     
-    - date: "08-11-2023"
+    - date: "09-11-2023"
       time: "11:00"
       endtime: ""
       event: Break
     
-    - date: "08-11-2023"
+    - date: "09-11-2023"
       time: "11:30"
       endtime: ""
       event: Short talk
@@ -327,7 +327,7 @@
       image: "mariusz400.png"
       description:
 
-    - date: "08-11-2023"
+    - date: "09-11-2023"
       time: "12:00"
       endtime: ""
       event: Short talk
@@ -341,7 +341,7 @@
       image: samweli400.jpg
       description:
 
-    - date: "08-11-2023"
+    - date: "09-11-2023"
       time: "12:30"
       endtime: ""
       event: Short talk
@@ -355,12 +355,12 @@
       image: brayan400.jpg
       description:
     
-    - date: "08-11-2023"
+    - date: "09-11-2023"
       time: "13:00"
       endtime: ""
       event: Lunch
 
-    - date: "08-11-2023"
+    - date: "09-11-2023"
       time: "14:00"
       endtime: ""
       event: Short talk
@@ -374,7 +374,7 @@
       image: "atieno400.jpg"
       description:
 
-    - date: "08-11-2023"
+    - date: "09-11-2023"
       time: "14:30"
       endtime: ""
       event: Short talk
@@ -389,7 +389,7 @@
       description:
 
 
-    - date: "08-11-2023"
+    - date: "09-11-2023"
       time: "15:00"
       endtime: ""
       event: Short talk
@@ -403,13 +403,13 @@
       twitter: "tahaafarooq"
       description:
 
-    - date: "08-11-2023"
+    - date: "09-11-2023"
       time: "15:30"
       endtime: ""
       event: Break
 
 
-    - date: "08-11-2023"
+    - date: "09-11-2023"
       time: "16:00"
       endtime: ""
       event: Long talk
@@ -423,12 +423,12 @@
       image: "daniele400.jpg"
       description:
 
-    - date: "08-11-2023"
+    - date: "09-11-2023"
       time: "16:45"
       endtime: ""
       event: Lighting talks
 
-    - date: "08-11-2023"
+    - date: "09-11-2023"
       time: "17:15"
       endtime: "17:30"
       event: Closing remarks
