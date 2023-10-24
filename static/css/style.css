@@ -421,13 +421,13 @@ nav .active {
 }
 
 
- table {
+ .table-schedules {
    width: 100%;
    border-collapse: collapse;
  }
 
- th,
- td {
+ .table-schedules th,
+ .table-schedules td {
    border: 1px solid black;
    padding: 8px;
    text-align: left;

@@ -379,7 +379,7 @@
       endtime: ""
       event: Short talk
       speaker: Sal
-      title: Leveraging Distributed Workers for Scalable and Asynchronous Processing
+      title: "Django and Celery: Leveraging Distributed Workers for Scalable and Asynchronous Processing"
       category: Programming
       mastodon:
       website:
