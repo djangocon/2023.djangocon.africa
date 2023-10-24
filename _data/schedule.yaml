@@ -378,14 +378,14 @@
       time: "14:30"
       endtime: ""
       event: Short talk
-      speaker: Sal
+      speaker: Salim Abdella
       title: "Django and Celery: Leveraging Distributed Workers for Scalable and Asynchronous Processing"
       category: Programming
       mastodon:
       website:
       linkedin: ""
-      image: 
-      twitter: 
+      image: "sal.jpg"
+      twitter: "iamsalimabdella"
       description:
 
 

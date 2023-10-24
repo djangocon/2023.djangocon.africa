@@ -1,6 +1,6 @@
 ---
 hidden: false
-level: "Partners"
+level: "Community"
 name: "Pycon Tanzania"
 logo: "/static/img/sponsors/pycontz.png"
 

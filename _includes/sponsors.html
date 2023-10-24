@@ -20,7 +20,7 @@
     >.
   </p>
  
-  {% assign sponsors_by_level = "Diamond|Platinum|Gold|Lanyard|Silver|Bronze|Opportunity Grant|Community|Partners" | split: "|" %} 
+  {% assign sponsors_by_level = "Diamond|Platinum|Gold|Lanyard|Silver|Bronze|Opportunity Grant|Special|Community|Partners" | split: "|" %} 
   {% for level in sponsors_by_level %} 
   {% assign sponsors_in_level = site.sponsors | where: 'level', level | where: 'hidden', false %} 
   {% assign sponsors_count = sponsors_in_level | size %} {% if sponsors_count != 0 %}
