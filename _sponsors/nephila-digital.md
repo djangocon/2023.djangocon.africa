@@ -2,7 +2,7 @@
 hidden: false
 level: "Special"
 name: "Nephila Digital"
-logo: "/static/img/sponsors/nephila_logo.png"
+logo: "/static/img/sponsors/nephila.png"
 logo_orientation: "landscape"
 url_target: "https://www.nephila.digital/en"
 url_friendly: "Nephila Digital"
