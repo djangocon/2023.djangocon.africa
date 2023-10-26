@@ -1,7 +1,7 @@
 ---
 title: Schedules
 layout: default
-permalink: /schedules
+permalink: /schedules/
 redirect_from:
   - /talks/schedules/
 ---
