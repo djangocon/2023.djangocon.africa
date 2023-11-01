@@ -72,17 +72,17 @@
       event: Lunch
 
     - date: "07-11-2023"
-      time: "2:00"
-      endtime: "2:30"
+      time: "2:30"
+      endtime: "3:00"
       event: Short talk
-      speaker: Honza and Flavio
-      title: From Idea to Production
+      speaker: Eric Odhiambo
+      title: Supercharging Django Admin with Typesense
       # category: Programming
-      mastodon: https://fosstodon.org/@honzakral
-      twitter: "honzakral"
+      mastodon:
+      twitter: "_EricOuma"
       website:
-      linkedin: "honzakral"
-      image: honza400.jpg
+      linkedin: "eric-odhiambo-ouma"
+      image: "eric400.jpg"
       description:
     
     - date: "07-11-2023"
@@ -145,7 +145,7 @@
 
 - day: 2
   events:
-    - date: "07-11-2023"
+    - date: "08-11-2023"
       time: "9:00"
       endtime: "9:30"
       event: Introductions
@@ -164,12 +164,12 @@
       image: "marksmith.jpeg"
       description:
 
-    - date: "07-11-2023"
+    - date: "08-11-2023"
       time: "11:00"
       endtime: "11:30"
       event: Break
 
-    - date: "07-11-2023"
+    - date: "08-11-2023"
       time: "11:30"
       endtime: "12:00"
       event: Short talk
@@ -183,7 +183,7 @@
       image: "dawn400.jpg"
       description:
 
-    - date: "07-11-2023"
+    - date: "08-11-2023"
       time: "12:00"
       endtime: "12:30"
       event: Short talk
@@ -197,7 +197,7 @@
       image: "busola400.jpg"
       description:
 
-    - date: "07-11-2023"
+    - date: "08-11-2023"
       time: "12:30"
       endtime: "1:00"
       event: Short talk
@@ -211,12 +211,12 @@
       image: "jon400.png"
       description:
 
-    - date: "07-11-2023"
+    - date: "08-11-2023"
       time: "1:00"
       endtime: "2:00"
       event: Lunch
 
-    - date: "07-11-2023"
+    - date: "08-11-2023"
       time: "2:00"
       endtime: "2:30"
       event: Short talk
@@ -230,21 +230,22 @@
       image: ruth400.jpg
       description:
 
-    - date: "07-11-2023"
-      time: "2:30"
-      endtime: "3:00"
+    - date: "08-11-2023"
+      time: "2:00"
+      endtime: "2:30"
       event: Short talk
-      speaker: Eric Odhiambo
-      title: Supercharging Django Admin with Typesense
+      speaker: Honza and Flavio
+      title: From Idea to Production
       # category: Programming
-      mastodon:
-      twitter: "_EricOuma"
+      mastodon: https://fosstodon.org/@honzakral
+      twitter: "honzakral"
       website:
-      linkedin: "eric-odhiambo-ouma"
-      image: "eric400.jpg"
+      linkedin: "honzakral"
+      image: honza400.jpg
       description:
 
-    - date: "07-11-2023"
+
+    - date: "08-11-2023"
       time: "3:00"
       endtime: "3:30"
       event: Short talk
@@ -258,12 +259,12 @@
       image: "mariam400.jpg"
       description:
 
-    - date: "07-11-2023"
+    - date: "08-11-2023"
       time: "3:30"
       endtime: "4:00"
       event: Break
 
-    - date: "07-11-2023"
+    - date: "08-11-2023"
       time: "4:00"
       endtime: "4:45"
       event: Long talk
@@ -277,12 +278,12 @@
       image: anna400.jpg
       description:
 
-    - date: "07-11-2023"
+    - date: "08-11-2023"
       time: "4:45"
       endtime: "5:15"
       event: Lighting talks
 
-    - date: "07-11-2023"
+    - date: "08-11-2023"
       time: "5:15"
       endtime: "5:30"
       event: Closing remarks
