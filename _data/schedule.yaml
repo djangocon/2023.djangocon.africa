@@ -120,12 +120,12 @@
 
     - date: "07-11-2023"
       time: "4:00"
-      endtime: "4:30"
+      endtime: "4:45"
       event: Long talk
       speaker: Sheena O'Connell
       title: A Tale from the Trenches - How Django Helped Umuzi Survive Covid
       # category: Society
-      mastodon:
+      mastodon: https://fosstodon.org/@sheena
       twitter: "sheena_oconnell"
       website:
       linkedin: "sheena-o-connell-0bb72527"
