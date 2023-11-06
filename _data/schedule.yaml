@@ -2,7 +2,9 @@
   events:
     - date: "07-11-2023"
       time: "9:00"
-      event: Introductions
+      event: Introduction
+      title:  Welcome and code of conduct
+      speaker: Jess and Masud
       endtime: "9:30"
 
     - date: "07-11-2023"
@@ -11,13 +13,27 @@
       speaker: Kojo Idrissa
       title: "Mastering Django By Solving Local Problems"
       # category: Society
-      description: Testttttting 
+      description:  
       twitter:
       website: "https://kojoidrissa.com"
       linkedin: "kojo🧐-idrissa-8228b01b/"
       image: "kojo400.png"
       mastodon: "https://fosstodon.org/@kojoidrissa"
       endtime: "10:30"
+
+    - date: "07-11-2023"  
+      time: "10:30"
+      event: Short Talk
+      endtime: "11:00"
+      speaker: 
+      title: 
+      description:  
+      twitter:
+      website: 
+      linkedin: 
+      image: 
+      mastodon: 
+
 
     - date: "07-11-2023"  
       time: "11:00"
@@ -72,31 +88,31 @@
       event: Lunch
 
     - date: "07-11-2023"
-      time: "2:30"
-      endtime: "3:00"
+      time: "2:00"
+      endtime: "2:30"
       event: Short talk
-      speaker: Eric Odhiambo
-      title: Supercharging Django Admin with Typesense
+      speaker: Honza and Flavio
+      title: From Idea to Production
       # category: Programming
-      mastodon:
-      twitter: "_EricOuma"
+      mastodon: https://fosstodon.org/@honzakral
+      twitter: "honzakral"
       website:
-      linkedin: "eric-odhiambo-ouma"
-      image: "eric400.jpg"
+      linkedin: "honzakral"
+      image: honza400.jpg
       description:
     
     - date: "07-11-2023"
-      time: "2:30"
-      endtime: "3:00"
+      time: "02:30"
+      endtime: "03:00"
       event: Short talk
-      speaker: Lidya Tilahun
-      title: e-farming
-      # category: Society
-      twitter: "LidyaKef"
-      website:
-      linkedin: "lidya-k-tilahun-534129180"
-      image: "lidya400.jpg"
-      mastodon: "https://mastodon.social/@HotMitmita"
+      speaker: Mariusz Felisiak
+      title: Wonderful world of the limitless Django Lookups
+      # category: Programming
+      mastodon: "https://fosstodon.org/@felixxm"
+      twitter:
+      website: "https://www.mariuszfelisiak.org"
+      linkedin: "mariuszfelisiak/"
+      image: "mariusz400.png"
       description:
 
     - date: "07-11-2023"
@@ -145,10 +161,12 @@
 
 - day: 2
   events:
-    - date: "08-11-2023"
+    - date: "07-11-2023"
       time: "9:00"
+      event: Introduction
+      title:  Welcome and code of conduct
+      speaker: " "
       endtime: "9:30"
-      event: Introductions
 
     - date: "08-11-2023"
       time: "9:30"
@@ -163,6 +181,22 @@
       linkedin: ""
       image: "marksmith.jpeg"
       description:
+    
+
+    - date: "09-11-2023"
+      time: "10:30"
+      endtime: "11:00"
+      event: Short talk
+      speaker: Daniele Procida
+      title: Success in job applications
+      # category: Society
+      mastodon: "https://mastodon.online/@EvilDMP"
+      twitter:
+      website: "https://vurt.eu"
+      linkedin: "daniele-procida"
+      image: "daniele400.jpg"
+      description:
+
 
     - date: "08-11-2023"
       time: "11:00"
@@ -229,21 +263,20 @@
       linkedin:
       image: ruth400.jpg
       description:
-
+    
     - date: "08-11-2023"
-      time: "2:00"
-      endtime: "2:30"
+      time: "2:30"
+      endtime: "3:00"
       event: Short talk
-      speaker: Honza and Flavio
-      title: From Idea to Production
+      speaker: Eric Odhiambo
+      title: Supercharging Django Admin with Typesense
       # category: Programming
-      mastodon: https://fosstodon.org/@honzakral
-      twitter: "honzakral"
+      mastodon:
+      twitter: "_EricOuma"
       website:
-      linkedin: "honzakral"
-      image: honza400.jpg
+      linkedin: "eric-odhiambo-ouma"
+      image: "eric400.jpg"
       description:
-
 
     - date: "08-11-2023"
       time: "3:00"
@@ -291,10 +324,12 @@
 
 - day: 3
   events:
-    - date: "09-11-2023"
+    - date: "07-11-2023"
       time: "9:00"
+      event: Introduction
+      title:  Welcome and code of conduct
+      speaker: " "
       endtime: "9:30"
-      event: Introductions
 
     - date: "09-11-2023"
       time: "9:30"
@@ -333,19 +368,20 @@
       time: "11:30"
       endtime: "12:00"
       event: Short talk
-      speaker: Mariusz Felisiak
-      title: Wonderful world of the limitless Django Lookups
-      # category: Programming
-      mastodon: "https://fosstodon.org/@felixxm"
-      twitter:
-      website: "https://www.mariuszfelisiak.org"
-      linkedin: "mariuszfelisiak/"
-      image: "mariusz400.png"
+      speaker: Lidya Tilahun
+      title: e-farming
+      # category: Society
+      twitter: "LidyaKef"
+      website:
+      linkedin: "lidya-k-tilahun-534129180"
+      image: "lidya400.jpg"
+      mastodon: "https://mastodon.social/@HotMitmita"
       description:
 
+
     - date: "09-11-2023"
-      time: "12:00"
-      endtime: "12:30"
+      time: "12:30"
+      endtime: "1:00"
       event: Short talk
       speaker: Samweli Twesa Mwakisambwe
       title: Making map visualizations and animations using Python
@@ -448,3 +484,182 @@
       time: "5:15"
       endtime: "5:30"
       event: Closing remarks
+
+- day: 4
+  events:
+    - date: "10-11-2023"
+      time: "9:00"
+      event: Introduction
+      title:  Welcome and code of conduct
+      speaker: " "
+      endtime: "9:30"
+
+    - date: "10-11-2023"
+      time: "9:30"
+      endtime: "10:30"
+      event: Workshop
+      speaker: Joseph Sowah
+      title: "Streamlining our Django Deployment Using Pulumi, and GitHub Actions"
+      # category: Programming
+      mastodon:
+      website:
+      linkedin: "joseph-anyetei-sowah"
+      image: joseph-sowah400.jpg
+      twitter: "jayso_o1"
+      description:
+
+    - date: "10-11-2023"
+      time: "9:30"
+      endtime: "10:30"
+      event: Sprint
+      speaker: " "
+      title: "Collaboration and sprints"
+      # category: Programming
+      mastodon:
+      website:
+      linkedin: ""
+      image: 
+      twitter: ""
+      description:
+
+    - date: "09-11-2023"
+      time: "11:00"
+      endtime: "11:30"
+      event: Break
+
+    - date: "10-11-2023"
+      time: "9:30"
+      endtime: "10:30"
+      event: Workshop
+      speaker: "Chris Achinga"
+      title: "Building Authentication APIs With Django"
+      # category: Programming
+      mastodon:
+      website:
+      linkedin: ""
+      image: chris400.jpg
+      twitter: "achinga_chris"
+      description:
+    
+    - date: "10-11-2023"
+      time: "11:30"
+      endtime: "12:30"
+      event: Workshop
+      speaker: "Daniele Procida"
+      title: "Job application clinic"
+      # category: Programming
+      mastodon:
+      website:
+      linkedin: "daniele-procida"
+      image: "daniele400.jpg"
+      twitter: ""
+      description:
+
+    - date: "10-11-2023"
+      time: "11:30"
+      endtime: "12:30"
+      event: Sprint
+      speaker: " "
+      title: "Collaboration and sprints"
+      # category: Programming
+      mastodon:
+      website:
+      linkedin: ""
+      image: 
+      twitter: ""
+      description:
+  
+    - date: "09-11-2023"
+      time: "1:00"
+      endtime: "2:00"
+      event: Lunch
+    
+    - date: "10-11-2023"
+      time: "2:00"
+      endtime: "3:00"
+      event: Workshop
+      speaker: "Victor Ashioya"
+      title: "Machine learning model deployment using Django"
+      # category: Programming
+      mastodon:
+      website:
+      linkedin: ""
+      image: victor400.jpg
+      twitter: "ashioyajotham"
+      description:
+
+    - date: "10-11-2023"
+      time: "2:00"
+      endtime: "3:00"
+      event: Sprint
+      speaker: " "
+      title: "Collaboration and sprints"
+      # category: Programming
+      mastodon:
+      website:
+      linkedin: ""
+      image: 
+      twitter: ""
+      description:
+
+- day: 5
+  events:
+    - date: "11-11-2023"
+      time: "9:00"
+      event: Introduction
+      title:  Welcome and code of conduct
+      speaker: " "
+      endtime: "9:30"
+
+    - date: "11-11-2023"
+      time: "9:30"
+      endtime: "10:30"
+      event: Workshop
+      speaker: Robson Kanhalelo
+      title: "Python in Orbit: Exploring Space Data and Building Web Apps with Django"
+      # category: Programming
+      mastodon:
+      website: https://kanhalelor.github.io/
+      linkedin: ""
+      image: "robson400.jpg"
+      twitter: ""
+      description:
+
+    - date: "11-11-2023"
+      time: "9:30"
+      endtime: "10:30"
+      event: Sprint
+      speaker: " "
+      title: "Collaboration and sprints"
+      # category: Programming
+      mastodon:
+      website:
+      linkedin: ""
+      image: 
+      twitter: ""
+      description:
+
+    - date: "11-11-2023"
+      time: "11:00"
+      endtime: "11:30"
+      event: Break
+
+    - date: "11-11-2023"
+      time: "11:30"
+      endtime: "1:00"
+      event: Sprint
+      speaker: " "
+      title: "Continued workshops, collaboration and sprints"
+      # category: Programming
+      mastodon:
+      website:
+      linkedin: ""
+      image: 
+      twitter: ""
+      description:
+    
+    - date: "11-11-2023"
+      time: "1:00"
+      endtime: "1:00"
+      event: Conference.close()
+    

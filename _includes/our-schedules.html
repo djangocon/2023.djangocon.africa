@@ -41,6 +41,17 @@
         <button class="nav-link" id="pills-day-three-tab" data-bs-toggle="pill" data-bs-target="#pills-day-three"
             type="button" role="tab" aria-controls="pills-day-three" aria-selected="false" data-date="2023-11-09">Day 3 # Nov 9</button>
     </li>
+
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-day-four-tab" data-bs-toggle="pill" data-bs-target="#pills-day-four"
+            type="button" role="tab" aria-controls="pills-day-four" aria-selected="false" data-date="2023-11-10">Day 4 #
+            Nov 10</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-day-five-tab" data-bs-toggle="pill" data-bs-target="#pills-day-five"
+            type="button" role="tab" aria-controls="pills-day-five" aria-selected="false" data-date="2023-11-11">Day 5 #
+            Nov 11</button>
+    </li>
 </ul>
 
 
@@ -81,7 +92,7 @@
                                 <h3><strong>{{ event.title }}</strong></h3>
                                 <span class="button-container">
                                     <button class="button-talk" style="color: #3498db;">{{event.event}}</button>
-                                    <button class="button-talk" style="color: #e74c3c">{{event.category}}</button>
+                                    <!-- <button class="button-talk" style="color: #e74c3c">{{event.category}}</button> -->
                                 </span><br>
 
                                 <div class="speaker-info">
@@ -150,7 +161,7 @@
                                 <h3><strong>{{ event.title }}</strong></h3>
                                 <span class="button-container">
                                     <button class="button-talk" style="color: #3498db;">{{event.event}}</button>
-                                    <button class="button-talk" style="color: #e74c3c">{{event.category}}</button>
+                                    <!-- <button class="button-talk" style="color: #e74c3c">{{event.category}}</button> -->
                                 </span><br>
 
                                 <div class="speaker-info">
@@ -219,7 +230,7 @@
                                 <h3><strong>{{ event.title }}</strong></h3>
                                 <span class="button-container">
                                     <button class="button-talk" style="color: #3498db;">{{event.event}}</button>
-                                    <button class="button-talk" style="color: #e74c3c">{{event.category}}</button>
+                                    <!-- <button class="button-talk" style="color: #e74c3c">{{event.category}}</button> -->
                                 </span><br>
 
                                 <div class="speaker-info">
@@ -252,6 +263,142 @@
                 {% endfor %}
             </tbody>
         </table>
+
+    </div>
+    <div class="tab-pane fade" id="pills-day-four" role="tabpanel" aria-labelledby="pills-day-four-tab" tabindex="0">
+        <table class="table-schedules">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Schedules</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in site.data.schedule %}
+                {% if item.day == 4 %}
+                {% assign current_date = "now" | date: "%m-%d-%Y" %}
+                {% assign current_time = "now" | date: "%l:%M" %}
+                {% for event in item.events %}
+                {% assign event_start_time = event.time | split: " - " | first | date: "%l:%M" %}
+                {% assign event_end_time = event.endtime | split: " - " | last | date: "%l:%M" %}
+                {% assign event_date = event.date | date: "%m-%d-%Y" %}
+                <tr>
+                    <td>
+                        {{ event_start_time }} - {{ event_end_time }}
+                    </td>
+                    <td>
+                        <div class="event-card {% unless event.speaker %}red{% endunless %} {% if  current_date == event_date and current_time >= event_start_time and current_time <= event_end_time %}highlight-ongoing{% endif %}"
+                            data-description="{{ event.description }}" data-twitter="{{ event.twitter }}"
+                            data-linkedin="{{ event.linkedin }}" data-mastodon="{{ event.mastodon }}"
+                            data-website="{{ event.website }}" data-image="{{event.image}}" data-speaker="{{event.speaker}}">
+        
+        
+                            {% if event.speaker %}
+                            <div>
+                                <h3><strong>{{ event.title }}</strong></h3>
+                                <span class="button-container">
+                                    <button class="button-talk" style="color: #3498db;">{{event.event}}</button>
+                                    <!-- <button class="button-talk" style="color: #e74c3c">{{event.category}}</button> -->
+                                </span><br>
+        
+                                <div class="speaker-info">
+        
+                                    <div class="image-container">
+                                        {% if event.image %}
+        
+                                        <img class="rounded-circle" src="/static/img/speakers/{{ event.image }}"
+                                            alt="speaker Image" style="width: 50px; height: 50px;">
+                                        {%endif%}
+                                    </div>
+                                    <div class="name-container">
+                                        <h4>{{ event.speaker }}</h4>
+                                    </div>
+                                </div>
+        
+        
+                            </div>
+                            {%else%}
+                            <h3><strong>{{ event.event }}</strong></h3>
+                            {% endif %}
+                            {% if current_date == event_date and current_time >= event_start_time and current_time <=
+                                event_end_time %} <h5 class="badge">Ongoing 😉</h5>
+                                {% endif %}
+                        </div>
+                    </td>
+                </tr>
+                {% endfor %}
+                {% endif %}
+                {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+    <div class="tab-pane fade" id="pills-day-five" role="tabpanel" aria-labelledby="pills-day-five-tab" tabindex="0">
+    <table class="table-schedules">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Schedules</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in site.data.schedule %}
+            {% if item.day == 5 %}
+            {% assign current_date = "now" | date: "%m-%d-%Y" %}
+            {% assign current_time = "now" | date: "%l:%M" %}
+            {% for event in item.events %}
+            {% assign event_start_time = event.time | split: " - " | first | date: "%l:%M" %}
+            {% assign event_end_time = event.endtime | split: " - " | last | date: "%l:%M" %}
+            {% assign event_date = event.date | date: "%m-%d-%Y" %}
+            <tr>
+                <td>
+                    {{ event_start_time }} - {{ event_end_time }}
+                </td>
+                <td>
+                    <div class="event-card {% unless event.speaker %}red{% endunless %} {% if  current_date == event_date and current_time >= event_start_time and current_time <= event_end_time %}highlight-ongoing{% endif %}"
+                        data-description="{{ event.description }}" data-twitter="{{ event.twitter }}"
+                        data-linkedin="{{ event.linkedin }}" data-mastodon="{{ event.mastodon }}"
+                        data-website="{{ event.website }}" data-image="{{event.image}}" data-speaker="{{event.speaker}}">
+    
+    
+                        {% if event.speaker %}
+                        <div>
+                            <h3><strong>{{ event.title }}</strong></h3>
+                            <span class="button-container">
+                                <button class="button-talk" style="color: #3498db;">{{event.event}}</button>
+                                <!-- <button class="button-talk" style="color: #e74c3c">{{event.category}}</button> -->
+                            </span><br>
+    
+                            <div class="speaker-info">
+    
+                                <div class="image-container">
+                                    {% if event.image %}
+    
+                                    <img class="rounded-circle" src="/static/img/speakers/{{ event.image }}"
+                                        alt="speaker Image" style="width: 50px; height: 50px;">
+                                    {%endif%}
+                                </div>
+                                <div class="name-container">
+                                    <h4>{{ event.speaker }}</h4>
+                                </div>
+                            </div>
+    
+    
+                        </div>
+                        {%else%}
+                        <h3><strong>{{ event.event }}</strong></h3>
+                        {% endif %}
+                        {% if current_date == event_date and current_time >= event_start_time and current_time <=
+                            event_end_time %} <h5 class="badge">Ongoing 😉</h5>
+                            {% endif %}
+                    </div>
+                </td>
+            </tr>
+            {% endfor %}
+            {% endif %}
+            {% endfor %}
+        </tbody>
+    </table>
 
     </div>
 </div>
