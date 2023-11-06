@@ -58,14 +58,14 @@
       time: "12:00"
       endtime: "12:30"
       event: Short talk
-      speaker: Fuad Habib
-      title: "Django Unchained: Empowering Africa's Youth Through Coding"
-      # category: Society
-      mastodon:
-      twitter: "AviTheDev"
-      website: "https://fuadhabib.xyz"
-      linkedin: "fuad-habib-25378b160"
-      image: fuad400.jpg
+      speaker: Tahaa Farooq
+      title: Writing Security Tools In Django
+      # category: Programming
+      mastodon: "https://mastodon.social/@tahaafarooq"
+      website:
+      linkedin: "tahaa-f-0784901b9"
+      image: tahaa400.jpg
+      twitter: "tahaafarooq"
       description:
     
     - date: "07-11-2023"
@@ -282,15 +282,16 @@
       time: "3:00"
       endtime: "3:30"
       event: Short talk
-      speaker: Mariam Muhammed
-      title: "Enhancing Django Web Application Performance through Caching: Effective Strategies and Best Practices"
-      # category: Programming
-      mastodon:
-      twitter:
+      speaker: Lidya Tilahun
+      title: e-farming
+      # category: Society
+      twitter: "LidyaKef"
       website:
-      linkedin:
-      image: "mariam400.jpg"
+      linkedin: "lidya-k-tilahun-534129180"
+      image: "lidya400.jpg"
+      mastodon: "https://mastodon.social/@HotMitmita"
       description:
+     
 
     - date: "08-11-2023"
       time: "3:30"
@@ -324,7 +325,7 @@
 
 - day: 3
   events:
-    - date: "07-11-2023"
+    - date: "09-11-2023"
       time: "9:00"
       event: Introduction
       title:  Welcome and code of conduct
@@ -368,15 +369,17 @@
       time: "11:30"
       endtime: "12:00"
       event: Short talk
-      speaker: Lidya Tilahun
-      title: e-farming
-      # category: Society
-      twitter: "LidyaKef"
+      speaker: Mariam Muhammed
+      title: "Enhancing Django Web Application Performance through Caching: Effective Strategies and Best Practices"
+      # category: Programming
+      mastodon:
+      twitter:
       website:
-      linkedin: "lidya-k-tilahun-534129180"
-      image: "lidya400.jpg"
-      mastodon: "https://mastodon.social/@HotMitmita"
+      linkedin:
+      image: "mariam400.jpg"
       description:
+
+      
 
 
     - date: "09-11-2023"
@@ -445,14 +448,14 @@
       time: "3:00"
       endtime: "3:30"
       event: Short talk
-      speaker: Tahaa Farooq
-      title: Writing Security Tools In Django
-      # category: Programming
-      mastodon: "https://mastodon.social/@tahaafarooq"
-      website:
-      linkedin: "tahaa-f-0784901b9"
-      image: tahaa400.jpg
-      twitter: "tahaafarooq"
+      speaker: Fuad Habib
+      title: "Django Unchained: Empowering Africa's Youth Through Coding"
+      # category: Society
+      mastodon:
+      twitter: "AviTheDev"
+      website: "https://fuadhabib.xyz"
+      linkedin: "fuad-habib-25378b160"
+      image: fuad400.jpg
       description:
 
     - date: "09-11-2023"
