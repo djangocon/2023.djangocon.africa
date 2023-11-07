@@ -187,14 +187,14 @@
       time: "10:30"
       endtime: "11:00"
       event: Short talk
-      speaker: Daniele Procida
-      title: Success in job applications
+      speaker: Joseph Adediji
+      title: "Beyond the Shell: Leveraging Django’s Management Commands for Data Import"
       # category: Society
-      mastodon: "https://mastodon.online/@EvilDMP"
+      mastodon: ""
       twitter:
-      website: "https://vurt.eu"
-      linkedin: "daniele-procida"
-      image: "daniele400.jpg"
+      website: ""
+      linkedin: "josylad"
+      image: "joseph400.jpg"
       description:
 
 
